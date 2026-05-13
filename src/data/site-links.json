@@ -1,0 +1,22 @@
+{
+  "official": [
+    {
+      "label": "Roblox Game",
+      "description": "Play Sailor Piece on Roblox",
+      "url": "https://www.roblox.com/discover/?Keyword=sailor+piece",
+      "icon": "roblox"
+    },
+    {
+      "label": "Official Discord",
+      "description": "Code drops, announcements, community",
+      "url": "https://discord.gg/sailor-piece",
+      "icon": "discord"
+    },
+    {
+      "label": "Official Trello",
+      "description": "Update tracking and patch notes from Shadowrise Devs",
+      "url": "https://trello.com/sailor-piece-official",
+      "icon": "trello"
+    }
+  ]
+}

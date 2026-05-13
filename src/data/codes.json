@@ -1,0 +1,147 @@
+{
+  "last_checked_at": "2026-05-13T12:00:00+08:00",
+  "check_frequency_hours": 48,
+  "active": [
+    {
+      "code": "HUGEUPDATEWWW",
+      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-05-09T00:00:00+08:00",
+      "notes": "Huge Update milestone code"
+    },
+    {
+      "code": "RAIDS",
+      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 5 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-05-09T00:00:00+08:00",
+      "notes": "Raids update reward bundle"
+    },
+    {
+      "code": "DELAYCODENR1",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-05-08T00:00:00+08:00",
+      "notes": "Delay compensation code 1"
+    },
+    {
+      "code": "DELAYCODENR2",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-05-08T00:00:00+08:00",
+      "notes": "Delay compensation code 2"
+    },
+    {
+      "code": "1B100MVISITS",
+      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 4 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-20T00:00:00+08:00",
+      "notes": "1.1B visits milestone"
+    },
+    {
+      "code": "1B200MVISITS",
+      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 5 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-25T00:00:00+08:00",
+      "notes": "1.2B visits milestone"
+    },
+    {
+      "code": "1B300MVISITS",
+      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 6 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-30T00:00:00+08:00",
+      "notes": "1.3B visits milestone"
+    },
+    {
+      "code": "1M100KLIKESTYYY",
+      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 4 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-15T00:00:00+08:00",
+      "notes": "1.1M likes milestone"
+    },
+    {
+      "code": "TYSMFOR400KFOLLOWONEVENT",
+      "rewards": "30 Power Shard + 40 Passive Shard + 5 Secret Chest + 100 Clan Reroll + 6 Aura Crate + 5 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-10T00:00:00+08:00",
+      "notes": "400k followers milestone"
+    },
+    {
+      "code": "ANTIMAGICUPDATE",
+      "rewards": "$350,000 + 500 Gems + 20 Power Shard + 10 Bloodline Stone + 35 Passive Shard + 40 Clan Reroll + 75 Trait Reroll + 85 Race Reroll + 75 Haki Color Reroll",
+      "min_level": 8500,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "official_discord",
+      "source_url": "https://discord.gg/sailor-piece",
+      "added_at": "2026-04-28T00:00:00+08:00",
+      "notes": "Anti-Magic Update — requires level 8,500"
+    },
+    {
+      "code": "2XLUCK",
+      "rewards": "20 Bloodline Stone + 45 Power Shard + 55 Passive Shard + 5 Secret Chest + 125 Clan Reroll + 7 Aura Crate + 6 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-01T00:00:00+08:00",
+      "notes": "Source consensus: sailorpiece.org marks active, ProGameGuides previously listed; recheck recommended"
+    },
+    {
+      "code": "CRYSTALDEFENSE",
+      "rewards": "$350,000 + 500 Gems + Clan + Race + Trait + Haki rerolls",
+      "min_level": null,
+      "verified_at": "2026-05-13T12:00:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-04-22T00:00:00+08:00",
+      "notes": "Crystal Defense event code"
+    }
+  ],
+  "expired": [
+    { "code": "RAIDSOON", "rewards": "Pre-raids teaser", "last_seen_active": "2026-04-28" },
+    { "code": "SEA2FINALLY", "rewards": "Sea 2 launch bundle", "last_seen_active": "2026-03-20" },
+    { "code": "BIGGESTUPDATEYET", "rewards": "Bundle reward", "last_seen_active": "2026-03-05" },
+    { "code": "SEABEASTS", "rewards": "Sea beasts event", "last_seen_active": "2026-02-18" },
+    { "code": "4SPECS", "rewards": "4 new specs reward", "last_seen_active": "2026-02-10" },
+    { "code": "RESTARTSORRYYYYYY", "rewards": "Server restart apology", "last_seen_active": "2026-02-05" },
+    { "code": "THEBIG1BVISITSTYYYYY", "rewards": "1B visits milestone", "last_seen_active": "2026-01-25" },
+    { "code": "1MLIKESWOAHHH", "rewards": "1M likes milestone", "last_seen_active": "2026-01-15" },
+    { "code": "FIXINGTRADINGISSUESSOON", "rewards": "Trading fix apology", "last_seen_active": "2026-01-10" },
+    { "code": "600KFAVORITES", "rewards": "Favorites milestone", "last_seen_active": "2025-12-28" },
+    { "code": "BIGUPDATENEXTSOONN", "rewards": "Update teaser", "last_seen_active": "2025-12-20" },
+    { "code": "TYFOR250KFOLLOWEVENT", "rewards": "250k followers milestone", "last_seen_active": "2025-12-15" },
+    { "code": "SORRYFORTHETRADELOCKSS", "rewards": "Trade lock apology", "last_seen_active": "2025-12-08" },
+    { "code": "SPECBUFFS", "rewards": "Spec balance changes", "last_seen_active": "2025-11-30" },
+    { "code": "TRADINGFIXEDHOPEFULLY", "rewards": "Trading fix", "last_seen_active": "2025-11-25" },
+    { "code": "CODEFORTHERESTARTSORRY3", "rewards": "Restart apology 3", "last_seen_active": "2025-11-20" },
+    { "code": "CODEFORTHERESTARTSORRY2", "rewards": "Restart apology 2", "last_seen_active": "2025-11-18" },
+    { "code": "CODEFORTHERESTARTSORRY", "rewards": "Restart apology", "last_seen_active": "2025-11-17" },
+    { "code": "RELEASE", "rewards": "Launch day bundle", "last_seen_active": "2025-11-17" }
+  ]
+}

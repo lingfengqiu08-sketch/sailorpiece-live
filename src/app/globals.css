@@ -1,26 +1,177 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg: #07111f;
+  --color-surface: #101b2a;
+  --color-surface-2: #16243a;
+  --color-border: #1e3553;
+  --color-text: #f8fafc;
+  --color-text-muted: #9bb0c8;
+  --color-accent: #19d3b2;
+  --color-accent-2: #ffb84d;
+  --color-danger: #f45b69;
+  --color-info: #5ec5ff;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(25, 211, 178, 0.06), transparent),
+    radial-gradient(1000px 500px at -10% 100%, rgba(94, 197, 255, 0.05), transparent),
+    var(--color-bg);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 8px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--color-accent);
+  color: #06121f;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 70%, transparent);
+  transition: all 0.15s ease;
+}
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--color-accent) 88%, white);
+  text-decoration: none;
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: var(--color-text);
+  padding: 0.55rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-border);
+}
+.btn-ghost:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 50%, var(--color-border));
+  text-decoration: none;
+}
+
+.surface {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.85rem;
+}
+.surface-2 {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 0.85rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.badge-fresh {
+  background: rgba(25, 211, 178, 0.16);
+  color: #2eebc7;
+  border: 1px solid rgba(25, 211, 178, 0.4);
+}
+.badge-recent {
+  background: rgba(94, 197, 255, 0.14);
+  color: #8fd6ff;
+  border: 1px solid rgba(94, 197, 255, 0.4);
+}
+.badge-aging {
+  background: rgba(255, 184, 77, 0.14);
+  color: #ffd28a;
+  border: 1px solid rgba(255, 184, 77, 0.4);
+}
+.badge-stale {
+  background: rgba(155, 176, 200, 0.1);
+  color: #c4d2e5;
+  border: 1px solid rgba(155, 176, 200, 0.3);
+}
+.badge-danger {
+  background: rgba(244, 91, 105, 0.14);
+  color: #ff8896;
+  border: 1px solid rgba(244, 91, 105, 0.4);
+}
+.badge-redeem {
+  background: rgba(25, 211, 178, 0.2);
+  color: #2eebc7;
+  border: 1px solid rgba(25, 211, 178, 0.5);
+}
+.badge-source {
+  background: transparent;
+  color: #8fd6ff;
+  border: 1px solid rgba(94, 197, 255, 0.45);
+}
+
+.tier-S {
+  background: linear-gradient(135deg, #ff8896 0%, #ffb84d 100%);
+  color: #1a0f0c;
+}
+.tier-A {
+  background: linear-gradient(135deg, #ffb84d 0%, #ffd28a 100%);
+  color: #1f1308;
+}
+.tier-B {
+  background: linear-gradient(135deg, #5ec5ff 0%, #8fd6ff 100%);
+  color: #07111f;
+}
+.tier-C {
+  background: linear-gradient(135deg, #19d3b2 0%, #2eebc7 100%);
+  color: #07111f;
+}
+.tier-D {
+  background: linear-gradient(135deg, #9bb0c8 0%, #c4d2e5 100%);
+  color: #07111f;
 }

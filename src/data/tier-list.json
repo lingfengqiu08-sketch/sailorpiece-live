@@ -1,0 +1,157 @@
+{
+  "last_reviewed_at": "2026-05-13",
+  "ranking_method": "Rankings combine public source consensus (sailorpiece.org, Beebom, ProGameGuides, PocketGamer), recent update notes, and in-game role usefulness across PvE, PvP and farming. Tiers may shift after major balance patches.",
+  "tabs": {
+    "races": {
+      "name": "Races",
+      "S": [
+        { "name": "Leviathan", "best_use": "Endgame PvE + raid", "why_ranked": "Top consensus race after Huge Update, strong damage scaling and survivability.", "last_changed": "2026-05-11" },
+        { "name": "Kitsune", "best_use": "Mobility + magic damage", "why_ranked": "High base luck multiplier and consistent meta presence.", "last_changed": "2026-05-11" },
+        { "name": "Servant", "best_use": "PvP + boss", "why_ranked": "Defensive bonuses and consistent ranking across sources.", "last_changed": "2026-05-11" },
+        { "name": "Slime", "best_use": "Survivability builds", "why_ranked": "Strong sustain mechanics, ideal for farming long encounters.", "last_changed": "2026-05-11" },
+        { "name": "SwordBlessed", "best_use": "Sword main builds", "why_ranked": "Direct synergy with top-tier swords.", "last_changed": "2026-05-11" },
+        { "name": "Galevorn", "best_use": "Speed clearing", "why_ranked": "Mobility and AoE boost; high search demand.", "last_changed": "2026-05-11" },
+        { "name": "Sunborn", "best_use": "Burst damage", "why_ranked": "Strong offensive multipliers for raid clears.", "last_changed": "2026-05-11" },
+        { "name": "Warlord", "best_use": "PvP", "why_ranked": "Endgame PvP staple in current meta.", "last_changed": "2026-05-11" },
+        { "name": "Luckborn", "best_use": "Farming + drop rates", "why_ranked": "Best-in-slot for farming devil fruits.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Vessel", "best_use": "Versatile hybrid", "why_ranked": "Balanced bonuses, easy to build around.", "last_changed": "2026-05-11" },
+        { "name": "Player", "best_use": "Beginner friendly", "why_ranked": "Default progression race with steady scaling.", "last_changed": "2026-05-11" },
+        { "name": "Shadowborn", "best_use": "Stealth + assassination", "why_ranked": "Strong long-tail demand and viable damage scaling.", "last_changed": "2026-05-11" },
+        { "name": "Hollow", "best_use": "DPS builds", "why_ranked": "Good baseline damage, lacks top-tier utility.", "last_changed": "2026-05-11" },
+        { "name": "Oni", "best_use": "Brute force", "why_ranked": "Raw strength but limited mobility.", "last_changed": "2026-05-11" },
+        { "name": "Shinigami", "best_use": "Sword + reaper builds", "why_ranked": "High search demand; competitive mid-game pick.", "last_changed": "2026-05-11" }
+      ],
+      "B": [
+        { "name": "Limitless", "best_use": "Magic-focus", "why_ranked": "Niche kit, useful with specific clans.", "last_changed": "2026-05-11" },
+        { "name": "Vampire", "best_use": "Lifesteal builds", "why_ranked": "Solid sustain but outclassed by Slime.", "last_changed": "2026-05-11" },
+        { "name": "Demon", "best_use": "Damage spike", "why_ranked": "Burst-oriented but lacks defensive layers.", "last_changed": "2026-05-11" }
+      ],
+      "C": [
+        { "name": "Skypea", "best_use": "Flavor build", "why_ranked": "Limited late-game scaling.", "last_changed": "2026-05-11" },
+        { "name": "Fishman", "best_use": "Water exploration", "why_ranked": "Niche use only, weak in PvP.", "last_changed": "2026-05-11" },
+        { "name": "Mink", "best_use": "Speed builds", "why_ranked": "Low ceiling, outclassed by Galevorn.", "last_changed": "2026-05-11" },
+        { "name": "Orc", "best_use": "Tanky melee", "why_ranked": "Outdated kit since Anti-Magic balance changes.", "last_changed": "2026-05-11" }
+      ],
+      "D": [
+        { "name": "Human", "best_use": "Default reroll", "why_ranked": "Baseline race with no special bonuses.", "last_changed": "2026-05-11" }
+      ]
+    },
+    "fruits": {
+      "name": "Devil Fruits",
+      "S": [
+        { "name": "Light", "best_use": "Mobility + ranged damage", "why_ranked": "Flight ability + concentrated beam attacks; consensus #1.", "last_changed": "2026-05-11" },
+        { "name": "Quake", "best_use": "Farming + AoE bosses", "why_ranked": "Massive AoE, strongest mob clear in current meta.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Flame", "best_use": "Early-mid game", "why_ranked": "Reliable AoE, falls off in endgame vs Light/Quake.", "last_changed": "2026-05-11" },
+        { "name": "Bomb", "best_use": "Burst damage", "why_ranked": "Decent burst but limited skill variety.", "last_changed": "2026-05-11" }
+      ],
+      "B": [
+        { "name": "Invisible", "best_use": "Stealth utility", "why_ranked": "Provides stealth but minimal combat value.", "last_changed": "2026-05-11" }
+      ]
+    },
+    "swords": {
+      "name": "Swords",
+      "S": [
+        { "name": "Shadow Monarch", "best_use": "Endgame DPS", "why_ranked": "Top S+ across all source consensus; massive AoE and iframes.", "last_changed": "2026-05-11" },
+        { "name": "Rimuru", "best_use": "Boss melt + AoE", "why_ranked": "Highest sustained DPS in raids.", "last_changed": "2026-05-11" },
+        { "name": "True Manipulator", "best_use": "PvP control", "why_ranked": "Strong CC + iframes.", "last_changed": "2026-05-11" },
+        { "name": "Yamato", "best_use": "Versatile DPS", "why_ranked": "Consistent damage with mobility.", "last_changed": "2026-05-11" },
+        { "name": "Sin of Pride", "best_use": "Heavy single-target", "why_ranked": "Top-3 single target damage.", "last_changed": "2026-05-11" },
+        { "name": "Atomic", "best_use": "AoE burst", "why_ranked": "Devastating AoE with short cooldowns.", "last_changed": "2026-05-11" },
+        { "name": "Abyssal Empress", "best_use": "PvP", "why_ranked": "CC + damage hybrid.", "last_changed": "2026-05-11" },
+        { "name": "Dragon Goddess", "best_use": "Highest base damage", "why_ranked": "Best raw damage, scales with Dragon Queen title.", "last_changed": "2026-05-11" },
+        { "name": "Great Mage", "best_use": "Magic builds", "why_ranked": "Top magic-scaling sword.", "last_changed": "2026-05-11" },
+        { "name": "Ice Queen", "best_use": "Slow + control", "why_ranked": "CC kit ideal vs mobile bosses.", "last_changed": "2026-05-11" },
+        { "name": "Anti Magic", "best_use": "Anti-mage PvP", "why_ranked": "Counter pick vs magic builds.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Ragna", "best_use": "Mid-game DPS", "why_ranked": "Solid kit, outshone only by S-tier.", "last_changed": "2026-05-11" },
+        { "name": "Shadow", "best_use": "Stealth damage", "why_ranked": "Strong synergy with Shadowborn race.", "last_changed": "2026-05-11" },
+        { "name": "Ichigo", "best_use": "Sustained DPS", "why_ranked": "Reliable mid-game choice.", "last_changed": "2026-05-11" },
+        { "name": "Aizen", "best_use": "Hybrid magic + sword", "why_ranked": "Good versatility; high search demand for the entity.", "last_changed": "2026-05-11" }
+      ],
+      "B": [
+        { "name": "Jinwoo", "best_use": "Solo Leveling fans", "why_ranked": "Acceptable damage; outshone in raids.", "last_changed": "2026-05-11" }
+      ],
+      "C": [
+        { "name": "Katana", "best_use": "Starter sword", "why_ranked": "Entry-level only.", "last_changed": "2026-05-11" },
+        { "name": "Dark Blade", "best_use": "Early game", "why_ranked": "Outdated kit.", "last_changed": "2026-05-11" },
+        { "name": "Saber", "best_use": "Beginner pick", "why_ranked": "Low-tier damage.", "last_changed": "2026-05-11" }
+      ]
+    },
+    "clans": {
+      "name": "Clans",
+      "S": [
+        { "name": "Upper", "best_use": "Endgame PvP + raid", "why_ranked": "Top tier consensus, defining clan post-Huge Update.", "last_changed": "2026-05-11" },
+        { "name": "Eminence", "best_use": "Damage scaling", "why_ranked": "Best raw damage multiplier.", "last_changed": "2026-05-11" },
+        { "name": "Espada", "best_use": "PvP", "why_ranked": "Strong CC and survivability kit.", "last_changed": "2026-05-11" },
+        { "name": "Voldigoat", "best_use": "Boss melt", "why_ranked": "Specialised single-target burst.", "last_changed": "2026-05-11" },
+        { "name": "Alter", "best_use": "Versatile", "why_ranked": "Strong with Alter Update content.", "last_changed": "2026-05-11" },
+        { "name": "Frostbane Clan", "best_use": "Control builds", "why_ranked": "Freeze synergy with Ice Queen sword.", "last_changed": "2026-05-11" },
+        { "name": "Devil", "best_use": "Dark builds", "why_ranked": "High damage, synergy with Shadowborn.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Mugetsu", "best_use": "DPS", "why_ranked": "Strong but slightly behind S-tier.", "last_changed": "2026-05-11" },
+        { "name": "Yamato", "best_use": "Versatile", "why_ranked": "Solid hybrid build option.", "last_changed": "2026-05-11" },
+        { "name": "Monarch", "best_use": "Damage scaling", "why_ranked": "Synergises with Shadow Monarch.", "last_changed": "2026-05-11" }
+      ],
+      "B": [
+        { "name": "Zoldyck", "best_use": "Assassin builds", "why_ranked": "Niche kit.", "last_changed": "2026-05-11" },
+        { "name": "Pride", "best_use": "Sin of Pride synergy", "why_ranked": "Conditional kit.", "last_changed": "2026-05-11" }
+      ],
+      "C": [
+        { "name": "Sasaki", "best_use": "Mid-game", "why_ranked": "Outdated.", "last_changed": "2026-05-11" },
+        { "name": "Raikage", "best_use": "Speed builds", "why_ranked": "Outclassed by S-tier alternatives.", "last_changed": "2026-05-11" }
+      ]
+    },
+    "haki": {
+      "name": "Haki Colors",
+      "S": [
+        { "name": "Conqueror Haki", "best_use": "PvP intimidation + AoE stun", "why_ranked": "Best-in-slot for PvP encounters.", "last_changed": "2026-05-11" },
+        { "name": "Armament Haki", "best_use": "Defense + damage boost", "why_ranked": "Essential for boss fights.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Observation Haki", "best_use": "PvP dodge + tracking", "why_ranked": "Key utility for high-level PvP.", "last_changed": "2026-05-11" }
+      ]
+    },
+    "traits": {
+      "name": "Traits",
+      "S": [
+        { "name": "Infinity", "best_use": "All-around", "why_ranked": "Best multipliers across stats.", "last_changed": "2026-05-11" },
+        { "name": "Transcendent", "best_use": "Late-game", "why_ranked": "Top tier consensus.", "last_changed": "2026-05-11" },
+        { "name": "Malevolent", "best_use": "Damage", "why_ranked": "Pure damage trait.", "last_changed": "2026-05-11" },
+        { "name": "Overlord", "best_use": "PvP", "why_ranked": "Defensive bonuses.", "last_changed": "2026-05-11" },
+        { "name": "Celestial", "best_use": "Magic", "why_ranked": "Magic-build synergy.", "last_changed": "2026-05-11" },
+        { "name": "Cataclysm", "best_use": "Burst", "why_ranked": "Burst-window trait.", "last_changed": "2026-05-11" },
+        { "name": "Singularity", "best_use": "Endgame", "why_ranked": "Stacking damage.", "last_changed": "2026-05-11" },
+        { "name": "Emperor", "best_use": "PvP", "why_ranked": "Damage + utility.", "last_changed": "2026-05-11" }
+      ],
+      "A": [
+        { "name": "Unstoppable", "best_use": "Survivability", "why_ranked": "Strong defensive trait.", "last_changed": "2026-05-11" },
+        { "name": "Dominator", "best_use": "PvP", "why_ranked": "Damage + CC.", "last_changed": "2026-05-11" },
+        { "name": "Genesis", "best_use": "Hybrid", "why_ranked": "Balanced kit.", "last_changed": "2026-05-11" },
+        { "name": "Sovereign", "best_use": "Boss damage", "why_ranked": "Single-target boost.", "last_changed": "2026-05-11" },
+        { "name": "Godspeed", "best_use": "Speed", "why_ranked": "Mobility trait.", "last_changed": "2026-05-11" }
+      ],
+      "B": [
+        { "name": "Driven", "best_use": "Mid-game", "why_ranked": "Steady scaling.", "last_changed": "2026-05-11" },
+        { "name": "Predator", "best_use": "Hunting", "why_ranked": "Damage to specific mobs.", "last_changed": "2026-05-11" },
+        { "name": "Vicious", "best_use": "Aggressive", "why_ranked": "Damage trait.", "last_changed": "2026-05-11" },
+        { "name": "Sharpened", "best_use": "Crit", "why_ranked": "Crit-build trait.", "last_changed": "2026-05-11" },
+        { "name": "Breaker", "best_use": "Defense break", "why_ranked": "Armour pen.", "last_changed": "2026-05-11" },
+        { "name": "Ascended", "best_use": "Mid-tier", "why_ranked": "All-rounder.", "last_changed": "2026-05-11" },
+        { "name": "Overdrive", "best_use": "Damage", "why_ranked": "Damage boost.", "last_changed": "2026-05-11" }
+      ],
+      "C": [
+        { "name": "Tough", "best_use": "Tank", "why_ranked": "Basic defense.", "last_changed": "2026-05-11" },
+        { "name": "Strong", "best_use": "Damage", "why_ranked": "Generic.", "last_changed": "2026-05-11" },
+        { "name": "Agile", "best_use": "Speed", "why_ranked": "Basic mobility.", "last_changed": "2026-05-11" },
+        { "name": "Steady", "best_use": "Defense", "why_ranked": "Basic.", "last_changed": "2026-05-11" },
+        { "name": "Balanced", "best_use": "Default", "why_ranked": "Default trait.", "last_changed": "2026-05-11" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "updates": [
+    {
+      "name": "Huge Update",
+      "date": "2026-05-09",
+      "summary": "Large balance pass, new raid content, milestone rewards, and 9 new codes."
+    },
+    {
+      "name": "Raids",
+      "date": "2026-04-28",
+      "summary": "Raid system released with new Raid Key currency and dedicated rewards."
+    },
+    {
+      "name": "Anti-Magic Update",
+      "date": "2026-04-15",
+      "summary": "Anti-Magic sword and balance changes; level 8,500 milestone code."
+    },
+    {
+      "name": "Sea 2 Final",
+      "date": "2026-03-20",
+      "summary": "Sea 2 progression expansion: level cap raised to 16,000, 4 new specs."
+    },
+    {
+      "name": "Sea Beasts",
+      "date": "2026-02-18",
+      "summary": "Sea beasts world bosses introduced."
+    },
+    {
+      "name": "Anti Magic Sword",
+      "date": "2026-02-10",
+      "summary": "4 new specs unlocked, magic counter mechanics."
+    },
+    {
+      "name": "Initial Release",
+      "date": "2025-11-17",
+      "summary": "Sailor Piece released by Shadowrise Devs on Roblox."
+    }
+  ]
+}
