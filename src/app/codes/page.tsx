@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "How often are new Sailor Piece codes released?",
-    a: "Codes typically drop with major updates (Sea 2, Anti-Magic, Huge Update), raid events, server-restart compensations, and milestone celebrations (visits, likes, followers). We re-check at least every 48 hours.",
+    a: "Codes typically drop with major updates (Sea 2, Anti-Magic, Huge Update), raid events, server-restart compensations, and milestone celebrations (visits, likes, followers). We re-check listed sources daily.",
   },
   {
     q: "What does verified mean on this page?",

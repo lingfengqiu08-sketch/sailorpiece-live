@@ -23,7 +23,7 @@ const FAQS = [
   },
   {
     q: "Where do I get the latest Sailor Piece codes?",
-    a: "New codes drop in the official Discord and are usually mirrored on Trello within hours. We re-check sources at least every 48 hours and timestamp every code below.",
+    a: "New codes drop in the official Discord and are usually mirrored on Trello within hours. We re-check listed sources daily and timestamp every code below.",
   },
   {
     q: "How often are new Sailor Piece codes released?",
