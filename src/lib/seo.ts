@@ -11,7 +11,6 @@ export function buildMetadata(opts: {
   ogImage?: string;
 }): Metadata {
   const url = `${SITE_URL}${opts.path}`;
-  const image = opts.ogImage ?? `${SITE_URL}/og-default.png`;
   return {
     title: opts.title,
     description: opts.description,
@@ -22,13 +21,15 @@ export function buildMetadata(opts: {
       title: opts.title,
       description: opts.description,
       siteName: SITE_NAME,
-      images: [{ url: image, width: 1200, height: 630, alt: opts.title }],
+      // Image is auto-resolved from app/opengraph-image.tsx (Next.js file-based metadata).
+      // Pass `ogImage` explicitly to override per-page.
+      ...(opts.ogImage ? { images: [{ url: opts.ogImage, width: 1200, height: 630, alt: opts.title }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: opts.title,
       description: opts.description,
-      images: [image],
+      ...(opts.ogImage ? { images: [opts.ogImage] } : {}),
     },
   };
 }
