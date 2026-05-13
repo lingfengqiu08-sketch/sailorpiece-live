@@ -6,6 +6,7 @@ import { VerificationBadge } from "./VerificationBadge";
 import { LevelEligibilityFilter } from "./LevelEligibilityFilter";
 import type { ActiveCode, ExpiredCode } from "@/lib/codes";
 import { eligibleForLevel, sortActiveCodes } from "@/lib/codes";
+import { levelBucket, trackEvent } from "@/lib/analytics";
 
 export function CodeTable({
   active,
@@ -31,13 +32,22 @@ export function CodeTable({
     return active.filter((c) => eligibleForLevel(userLevel, c)).length;
   }, [active, userLevel]);
 
-  function copyAllEligible() {
+  async function copyAllEligible() {
     const list =
       userLevel !== null
         ? active.filter((c) => eligibleForLevel(userLevel, c))
         : active;
     const txt = list.map((c) => c.code).join("\n");
-    navigator.clipboard.writeText(txt).catch(() => {});
+    try {
+      await navigator.clipboard.writeText(txt);
+      trackEvent("copy_all_eligible", {
+        code_count: list.length,
+        has_level: userLevel !== null,
+        level_bucket: levelBucket(userLevel),
+      });
+    } catch {
+      // ignore clipboard failures
+    }
   }
 
   return (
@@ -52,7 +62,14 @@ export function CodeTable({
                 <input
                   type="checkbox"
                   checked={eligibleOnly}
-                  onChange={(e) => setEligibleOnly(e.target.checked)}
+                  onChange={(e) => {
+                    setEligibleOnly(e.target.checked);
+                    trackEvent("eligible_only_toggle", {
+                      enabled: e.target.checked,
+                      has_level: userLevel !== null,
+                      level_bucket: levelBucket(userLevel),
+                    });
+                  }}
                   className="accent-[var(--color-accent)]"
                 />
                 Eligible only
@@ -146,7 +163,11 @@ export function CodeTable({
       {/* Expired (collapsed) */}
       <div className="surface p-5">
         <button
-          onClick={() => setShowExpired((v) => !v)}
+          onClick={() => {
+            const next = !showExpired;
+            setShowExpired(next);
+            trackEvent("expired_codes_toggle", { expanded: next });
+          }}
           type="button"
           className="w-full flex items-center justify-between text-left"
         >

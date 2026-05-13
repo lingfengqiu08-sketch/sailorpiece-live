@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { levelBucket, trackEvent } from "@/lib/analytics";
 
 const STORAGE_KEY = "sp:user_level";
 
@@ -10,6 +11,7 @@ export function LevelEligibilityFilter({
   onChange: (level: number | null) => void;
 }) {
   const [raw, setRaw] = useState<string>("");
+  const changedByUser = useRef(false);
 
   // Hydrate from localStorage
   useEffect(() => {
@@ -25,8 +27,23 @@ export function LevelEligibilityFilter({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (!changedByUser.current) return;
+
+    const id = window.setTimeout(() => {
+      const level = raw === "" ? null : Number(raw);
+      trackEvent("level_filter_change", {
+        has_level: level !== null,
+        level_bucket: levelBucket(level),
+      });
+    }, 700);
+
+    return () => window.clearTimeout(id);
+  }, [raw]);
+
   function handleChange(value: string) {
     const sanitised = value.replace(/[^\d]/g, "").slice(0, 6);
+    changedByUser.current = true;
     setRaw(sanitised);
     if (sanitised === "") {
       try { localStorage.removeItem(STORAGE_KEY); } catch {}
@@ -38,6 +55,7 @@ export function LevelEligibilityFilter({
   }
 
   function clear() {
+    changedByUser.current = true;
     setRaw("");
     try { localStorage.removeItem(STORAGE_KEY); } catch {}
     onChange(null);

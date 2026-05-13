@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export function CopyCodeButton({
   code,
@@ -18,6 +19,7 @@ export function CopyCodeButton({
       await navigator.clipboard.writeText(code);
       setCopied(true);
       onCopied?.(code);
+      trackEvent("copy_code", { code });
       setTimeout(() => setCopied(false), 1500);
     } catch {
       // ignore — clipboard may be denied

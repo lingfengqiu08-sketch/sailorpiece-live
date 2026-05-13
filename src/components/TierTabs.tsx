@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TAB_ORDER, TIER_ORDER, type TabKey, tierList } from "@/lib/tier-list";
+import { trackEvent } from "@/lib/analytics";
 
 const TAB_LABELS: Record<TabKey, string> = {
   races: "Races",
@@ -30,6 +31,7 @@ export function TierTabs({ defaultTab = "races" as TabKey }: { defaultTab?: TabK
 
   function pick(tab: TabKey) {
     setActive(tab);
+    trackEvent("tier_tab_click", { tab });
     if (typeof window !== "undefined") {
       history.replaceState(null, "", `#${tab}`);
     }

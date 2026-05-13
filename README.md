@@ -16,6 +16,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## SEO Checks
+
+Run the daily production smoke test:
+
+```bash
+pnpm seo:check
+```
+
+It checks the public site, sitemap, Google verification file, `www` canonical redirect, GA4 script, GSC API access, and GA4 API access. It expects local Google ADC credentials to be available through `gcloud auth application-default login`.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

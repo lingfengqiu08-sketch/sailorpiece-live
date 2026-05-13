@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "seo:check": "scripts/daily-site-check.sh",
     "start": "next start"
   },
   "dependencies": {
