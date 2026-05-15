@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-05-13T15:56:34+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use official_discord for official channel evidence. Use source_snapshot when a credible current source mirrors official code data or when sources conflict.",
+  "sources": [
+    {
+      "name": "Sailor Piece Discord",
+      "url": "https://discord.gg/sailor-piece",
+      "type": "official",
+      "accessed_at": "2026-05-13T15:56:34+08:00",
+      "notes": "Official channel URL retained for codes described as Discord game-announcements sourced. No in-game redeem_test was performed for this archive."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-13T15:56:34+08:00",
+      "notes": "Used as a current source snapshot for the May 13 code batch, including 700KFAVSTY and FREECODEHERE1."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-13T15:56:34+08:00",
+      "notes": "Used as a current source snapshot for source-only codes and level requirement cross-checks."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-13T15:56:34+08:00",
+      "notes": "Used as a conflict check for codes that some sources still listed as active."
+    }
+  ],
+  "codes_reviewed": [
+    "700KFAVSTY",
+    "FREECODEHERE1",
+    "HUGEUPDATEWWW",
+    "RAIDS",
+    "DELAYCODENR1",
+    "DELAYCODENR2",
+    "1B100MVISITS",
+    "1B200MVISITS",
+    "1B300MVISITS",
+    "1M100KLIKESTYYY",
+    "TYSMFOR400KFOLLOWONEVENT",
+    "ANTIMAGICUPDATE",
+    "2XLUCK",
+    "CRYSTALDEFENSE"
+  ],
+  "decisions": [
+    {
+      "code": "700KFAVSTY",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "May 13 current source snapshots listed the code as active and described it as official Discord game-announcements sourced."
+    },
+    {
+      "code": "FREECODEHERE1",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "May 13 current source snapshots listed the code as active and described it as official Discord game-announcements sourced."
+    },
+    {
+      "code": "2XLUCK",
+      "action": "kept_active_source_only",
+      "method": "source_snapshot",
+      "reason": "Sources conflicted. Kept active with explicit source-only notes until a redeem_test can be performed."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "2XLUCK",
+      "kept_as": "active_source_snapshot",
+      "conflict": "Listed active by current source snapshots but expired by GamesRadar.",
+      "next_step": "Redeem-test on a qualified account or keep reviewing current sources before moving to expired."
+    }
+  ],
+  "redeem_tests": []
+}

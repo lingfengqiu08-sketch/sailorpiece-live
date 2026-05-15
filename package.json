@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "codes:evidence": "node scripts/check-code-evidence.mjs",
     "seo:check": "scripts/daily-site-check.sh",
     "start": "next start"
   },

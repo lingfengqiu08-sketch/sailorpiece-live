@@ -70,6 +70,17 @@ check_public_site() {
   fi
 }
 
+check_code_evidence() {
+  local output
+
+  output="$(node scripts/check-code-evidence.mjs 2>&1)"
+  if [[ "$?" == "0" ]]; then
+    pass "$output"
+  else
+    fail "$output"
+  fi
+}
+
 check_google_apis() {
   if ! command -v gcloud >/dev/null 2>&1; then
     fail "gcloud is not installed"
@@ -130,6 +141,7 @@ check_google_apis() {
   rm -f "$gsc_out" "$ga4_out"
 }
 
+check_code_evidence
 check_public_site
 check_google_apis
 
