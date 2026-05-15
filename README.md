@@ -26,6 +26,22 @@ pnpm seo:check
 
 It checks the public site, sitemap, Google verification file, `www` canonical redirect, GA4 script, GSC API access, and GA4 API access. It expects local Google ADC credentials to be available through `gcloud auth application-default login`.
 
+## GA4 Event Assets
+
+The site sends these GA4 events: `copy_code`, `copy_all_eligible`, `level_filter_change`, `eligible_only_toggle`, `expired_codes_toggle`, `tier_tab_click`, and `official_link_click`.
+
+Create or confirm the matching GA4 custom dimensions, custom metric, and key events:
+
+```bash
+pnpm ga4:assets
+```
+
+This script needs a Google ADC token with Analytics edit scope. If it fails with `ACCESS_TOKEN_SCOPE_INSUFFICIENT`, refresh local ADC auth:
+
+```bash
+gcloud auth application-default login --scopes=https://www.googleapis.com/auth/analytics.edit,https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/webmasters.readonly
+```
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

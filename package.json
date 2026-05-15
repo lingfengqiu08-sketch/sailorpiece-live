@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "codes:evidence": "node scripts/check-code-evidence.mjs",
+    "ga4:assets": "node scripts/ensure-ga4-assets.mjs",
     "seo:check": "scripts/daily-site-check.sh",
     "start": "next start"
   },
