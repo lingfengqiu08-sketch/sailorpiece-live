@@ -124,6 +124,28 @@ export default function Home() {
       </section>
 
       <section className="mt-12">
+        <h2 className="text-2xl font-bold mb-4">Sailor Piece Build Guides</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          {[
+            { href: "/fruits", label: "Fruits", text: "Light, Quake and early-game picks" },
+            { href: "/swords", label: "Swords", text: "Raid, boss and PvP weapon picks" },
+            { href: "/clans", label: "Clans", text: "Damage, control and build synergy" },
+            { href: "/haki", label: "Haki", text: "Unlock priority and best uses" },
+            { href: "/traits", label: "Traits", text: "Passive power and reroll targets" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]"
+            >
+              <h3 className="font-semibold">{item.label}</h3>
+              <p className="text-xs text-[var(--color-text-muted)] mt-1">{item.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">What is Sailor Piece?</h2>
         <div className="surface p-6 leading-relaxed text-[var(--color-text-muted)]">
           <p>

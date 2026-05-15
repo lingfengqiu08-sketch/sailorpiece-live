@@ -21,6 +21,11 @@ export function Footer() {
             <li><Link href="/codes">Codes</Link></li>
             <li><Link href="/tier-list">Tier List</Link></li>
             <li><Link href="/races">Races</Link></li>
+            <li><Link href="/fruits">Fruits</Link></li>
+            <li><Link href="/swords">Swords</Link></li>
+            <li><Link href="/clans">Clans</Link></li>
+            <li><Link href="/haki">Haki</Link></li>
+            <li><Link href="/traits">Traits</Link></li>
             <li><Link href="/guide">Guide</Link></li>
           </ul>
         </div>

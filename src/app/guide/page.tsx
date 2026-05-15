@@ -85,7 +85,7 @@ export default function GuidePage() {
             <li>Defeat raid bosses and world bosses for small chances at Legendary / Mythical drops.</li>
           </ul>
           <p className="mt-3 text-sm">
-            See the <Link href="/tier-list/fruits">full fruit tier list</Link>.
+            See the <Link href="/fruits">full fruit guide</Link> or the <Link href="/tier-list/fruits">fruit tier list</Link>.
           </p>
         </div>
       </section>
@@ -118,6 +118,9 @@ export default function GuidePage() {
           </p>
           <p>
             <strong className="text-[var(--color-text)]">Bosses</strong> include world bosses (small chance of Legendary fruits), raid bosses (Raid Key required, better odds), and event bosses tied to live-ops updates like Anti-Magic and Crystal Defense.
+          </p>
+          <p className="text-sm">
+            Compare <Link href="/haki">haki</Link>, <Link href="/swords">swords</Link>, <Link href="/clans">clans</Link> and <Link href="/traits">traits</Link> before locking your build.
           </p>
         </div>
       </section>
