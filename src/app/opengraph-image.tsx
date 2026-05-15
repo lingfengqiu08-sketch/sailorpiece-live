@@ -1,10 +1,16 @@
 import { ImageResponse } from "next/og";
+import { codes } from "@/lib/codes";
+import { formatDate } from "@/lib/date";
+import { tierList } from "@/lib/tier-list";
 
 export const alt = "Sailor Piece Codes, Wiki & Tier List";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default function OG() {
+  const lastChecked = formatDate(codes.last_checked_at);
+  const tierCategoryCount = Object.keys(tierList.tabs).length;
+
   return new ImageResponse(
     (
       <div
@@ -46,7 +52,7 @@ export default function OG() {
               display: "flex",
             }}
           >
-            May 2026 · Checked Today
+            Checked {lastChecked}
           </div>
           <div
             style={{
@@ -88,7 +94,9 @@ export default function OG() {
           }}
         >
           <div style={{ color: "#19d3b2", fontWeight: 600, display: "flex" }}>sailorpiece.live</div>
-          <div style={{ display: "flex" }}>12 active · 19 expired · 6 tier categories</div>
+          <div style={{ display: "flex" }}>
+            {codes.active.length} active · {codes.expired.length} expired · {tierCategoryCount} tier categories
+          </div>
         </div>
       </div>
     ),

@@ -8,6 +8,8 @@ import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata } from "@/lib/seo";
 import { tierList } from "@/lib/tier-list";
+import { codes as codesData } from "@/lib/codes";
+import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
   title: "Sailor Piece Codes, Wiki, Tier List & Official Links",
@@ -42,6 +44,7 @@ const FAQS = [
 export default function Home() {
   const codes = activeCodes().slice(0, 5);
   const races = tierList.tabs.races.S ?? [];
+  const lastChecked = formatDate(codesData.last_checked_at);
 
   return (
     <>
@@ -52,7 +55,7 @@ export default function Home() {
       />
 
       <section className="text-center sm:text-left">
-        <p className="inline-block badge badge-fresh mb-4">May 2026 · checked today</p>
+        <p className="inline-block badge badge-fresh mb-4">Checked {lastChecked}</p>
         <h1 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
           Sailor Piece <span className="text-[var(--color-accent)]">Codes</span>, Wiki &amp; Tier List
         </h1>

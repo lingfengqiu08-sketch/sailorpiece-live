@@ -68,7 +68,7 @@ export default function CodesPage() {
       />
 
       <header className="mb-6">
-        <p className="inline-block badge badge-fresh mb-3">May 2026 · checked today</p>
+        <p className="inline-block badge badge-fresh mb-3">Checked {formatDate(codesData.last_checked_at)}</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
           Sailor Piece Codes Today
         </h1>

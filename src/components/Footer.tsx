@@ -1,7 +1,11 @@
 import Link from "next/link";
 import siteLinks from "@/data/site-links.json";
+import { codes } from "@/lib/codes";
+import { formatDate } from "@/lib/date";
 
 export function Footer() {
+  const lastChecked = formatDate(codes.last_checked_at);
+
   return (
     <footer className="mt-20 border-t border-[var(--color-border)]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 grid gap-8 grid-cols-2 sm:grid-cols-4 text-sm">
@@ -38,7 +42,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[var(--color-border)] py-4 text-center text-xs text-[var(--color-text-muted)]">
-        © 2026 sailorpiece.live · Last checked from listed sources on May 13, 2026
+        © 2026 sailorpiece.live · Last checked from listed sources on {lastChecked}
       </div>
     </footer>
   );

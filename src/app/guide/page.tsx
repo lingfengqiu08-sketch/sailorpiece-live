@@ -4,6 +4,8 @@ import { FAQ } from "@/components/FAQ";
 import { OfficialLinks } from "@/components/OfficialLinks";
 import { UpdateTimeline } from "@/components/UpdateTimeline";
 import { buildMetadata } from "@/lib/seo";
+import { codes } from "@/lib/codes";
+import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
   title: "Sailor Piece Wiki Guide — Islands, Fruits, Haki & Sea 2",
@@ -36,6 +38,8 @@ const FAQS = [
 ];
 
 export default function GuidePage() {
+  const lastChecked = formatDate(codes.last_checked_at);
+
   return (
     <>
       <JsonLd
@@ -48,7 +52,7 @@ export default function GuidePage() {
       />
 
       <header className="mb-8">
-        <p className="inline-block badge badge-fresh mb-3">Updated May 13, 2026</p>
+        <p className="inline-block badge badge-fresh mb-3">Updated {lastChecked}</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Sailor Piece Wiki Guide</h1>
         <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
           Everything new players need to know about Sailor Piece — devil fruits, islands, leveling, haki, bosses, and the Sea 2 expansion.
