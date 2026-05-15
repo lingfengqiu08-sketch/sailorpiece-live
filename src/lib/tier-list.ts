@@ -26,6 +26,37 @@ export type TabKey = (typeof TAB_ORDER)[number];
 
 export const TIER_ORDER: TierLetter[] = ["S", "A", "B", "C", "D"];
 
+export const TAB_LABELS: Record<TabKey, string> = {
+  races: "Races",
+  fruits: "Fruits",
+  swords: "Swords",
+  clans: "Clans",
+  haki: "Haki",
+  traits: "Traits",
+};
+
+export const TIER_PAGE_PATHS: Record<TabKey, string> = {
+  races: "/tier-list/races",
+  fruits: "/tier-list/fruits",
+  swords: "/tier-list/swords",
+  clans: "/tier-list/clans",
+  haki: "/tier-list/haki",
+  traits: "/tier-list/traits",
+};
+
+export const CATEGORY_PAGE_PATHS: Record<TabKey, string> = {
+  races: "/races",
+  fruits: "/fruits",
+  swords: "/swords",
+  clans: "/clans",
+  haki: "/haki",
+  traits: "/traits",
+};
+
+export function isTabKey(value: string): value is TabKey {
+  return (TAB_ORDER as readonly string[]).includes(value);
+}
+
 export function getTab(key: TabKey): TierTab | null {
   return tierList.tabs[key] ?? null;
 }

@@ -3,7 +3,7 @@ import { TierTabs } from "@/components/TierTabs";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata } from "@/lib/seo";
-import { tierList } from "@/lib/tier-list";
+import { TAB_LABELS, TAB_ORDER, TIER_PAGE_PATHS, flattenItems, tierList } from "@/lib/tier-list";
 
 export const metadata = buildMetadata({
   title: "Sailor Piece Tier List — Fruits, Races, Swords & Clans",
@@ -65,6 +65,21 @@ export default function TierListPage() {
           Last reviewed on <strong className="text-[var(--color-text)]">{tierList.last_reviewed_at}</strong> after the Huge Update patch.
         </p>
       </header>
+
+      <nav className="grid sm:grid-cols-3 gap-2 mb-8" aria-label="Tier list category pages">
+        {TAB_ORDER.map((key) => (
+          <Link
+            key={key}
+            href={TIER_PAGE_PATHS[key]}
+            className="surface p-3 !no-underline !text-[var(--color-text-muted)] hover:!text-[var(--color-text)] hover:border-[var(--color-accent)] transition-colors"
+          >
+            <span className="font-semibold">{TAB_LABELS[key]}</span>
+            <span className="block mt-1 text-xs">
+              Open {flattenItems(tierList.tabs[key]).length} ranked entries
+            </span>
+          </Link>
+        ))}
+      </nav>
 
       <TierTabs defaultTab="races" />
 
