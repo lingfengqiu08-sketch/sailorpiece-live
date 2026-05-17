@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 const FAQS = [
   {
     q: "What is Sailor Piece?",
-    a: "Sailor Piece is a Roblox anime RPG by Shadowrise Devs, released on November 17, 2025. Players sail across multiple seas, collect devil fruits, train haki, reroll races and clans, and progress through the Sea 2 expansion with a level cap of 16,000.",
+    a: "Sailor Piece is a Roblox anime RPG by Shadowrise Devs, released on November 17, 2025. Players sail across multiple seas, collect devil fruits, train haki, reroll races and clans, and progress through the Sea 2 expansion with the current max level listed as 20,000 on the Roblox game page.",
   },
   {
     q: "Where do I get the latest Sailor Piece codes?",
@@ -154,7 +154,7 @@ export default function Home() {
           <ul className="grid sm:grid-cols-2 gap-2 mt-4 list-disc list-inside">
             <li>30+ devil fruits across multiple rarity tiers</li>
             <li>18+ islands forming the Sea 1 and Sea 2 maps</li>
-            <li>Level cap of 6,250 (Sea 1) → 16,000 (Sea 2)</li>
+            <li>Level cap of 6,250 (Sea 1) → 20,000 current max level</li>
             <li>Races, clans, bloodlines, traits and haki colors</li>
             <li>World bosses, raid keys and the Anti-Magic system</li>
             <li>Active live-ops with weekly milestone codes</li>

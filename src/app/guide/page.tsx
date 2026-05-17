@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: "What is the max level in Sailor Piece?",
-    a: "Sea 1 ends at level 6,250. The Sea 2 expansion raised the cap to 16,000 with new specs, bosses and progression tracks.",
+    a: "Sea 1 ends at level 6,250. The official Roblox game page currently lists Sailor Piece Max Level as 20,000, with Sea 2 carrying the late-game progression.",
   },
   {
     q: "How do I get devil fruits in Sailor Piece?",
@@ -29,7 +29,7 @@ const FAQS = [
   },
   {
     q: "What is Sea 2 in Sailor Piece?",
-    a: "Sea 2 is the major content expansion that raised the level cap to 16,000, added 4 new specs, a bounty 50M target, Guilds, new bloodlines, and World Bosses. It went live in early 2026.",
+    a: "Sea 2 is the major late-game expansion with new specs, a bounty 50M target, Guilds, new bloodlines, World Bosses, and progression toward the current 20,000 max level. It went live in early 2026.",
   },
   {
     q: "How do I get haki in Sailor Piece?",
@@ -64,10 +64,10 @@ export default function GuidePage() {
         <h2 className="text-2xl font-bold mb-3">What Is Sailor Piece?</h2>
         <p className="text-[var(--color-text-muted)] leading-relaxed">
           <strong className="text-[var(--color-text)]">Sailor Piece</strong> is a Roblox anime RPG released by Shadowrise Devs on November 17, 2025.
-          It blends One Piece-style sailing and devil-fruit progression with crossover combat styles drawn from popular shonen anime. As of May 2026 it averages over 250,000 concurrent players and has surpassed 1.3 billion total visits.
+          It blends One Piece-style sailing and devil-fruit progression with crossover combat styles drawn from popular shonen anime. As of May 2026, the game page highlights frequent updates, live events and a 20,000 max level.
         </p>
         <p className="text-[var(--color-text-muted)] leading-relaxed mt-3">
-          The game is structured around two seas, with Sea 2 raising the level cap to 16,000 and introducing four new combat specs, World Bosses, Raids, Bloodlines and the Anti-Magic system.
+          The game is structured around two seas, with Sea 2 carrying the late-game path toward level 20,000 and introducing four new combat specs, World Bosses, Raids, Bloodlines and the Anti-Magic system.
         </p>
       </section>
 
@@ -98,7 +98,7 @@ export default function GuidePage() {
             The Sailor Piece world is split across 18+ islands forming the Sea 1 and Sea 2 maps. Each island has its own level bracket, quests, NPCs and unique bosses.
           </p>
           <p>
-            <strong className="text-[var(--color-text)]">Level cap:</strong> Sea 1 ends at 6,250, then unlocks Sea 2 which scales to 16,000.
+            <strong className="text-[var(--color-text)]">Level cap:</strong> Sea 1 ends at 6,250, then unlocks Sea 2 progression toward the current 20,000 max level.
           </p>
           <p>
             <strong className="text-[var(--color-text)]">Fastest leveling path:</strong> redeem all eligible <Link href="/codes">codes</Link>, pick a strong race like Luckborn or Sunborn, equip A+ tier swords, and focus on raid bosses rather than mob grinding once you pass level 3,000.
