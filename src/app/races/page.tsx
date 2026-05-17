@@ -60,6 +60,7 @@ export default function RacesPage() {
         path="/races"
         breadcrumbs={[
           { name: "Home", url: "/" },
+          { name: "Guides", url: "/guides" },
           { name: "Races", url: "/races" },
         ]}
         faq={FAQS}

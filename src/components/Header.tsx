@@ -4,7 +4,7 @@ const NAV = [
   { href: "/codes", label: "Codes" },
   { href: "/tier-list", label: "Tier List" },
   { href: "/races", label: "Races" },
-  { href: "/guide", label: "Guide" },
+  { href: "/guides", label: "Guides" },
 ];
 
 export function Header() {

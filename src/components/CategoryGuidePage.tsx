@@ -26,6 +26,7 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
         path={CATEGORY_PAGE_PATHS[category]}
         breadcrumbs={[
           { name: "Home", url: "/" },
+          { name: "Guides", url: "/guides" },
           { name: guide.title, url: CATEGORY_PAGE_PATHS[category] },
         ]}
         faq={guide.faq}
@@ -105,7 +106,7 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
         <p className="text-sm text-[var(--color-text-muted)]">
           Redeem the latest <Link href="/codes">Sailor Piece codes</Link>, compare the full{" "}
           <Link href="/tier-list">tier list hub</Link>, then cross-check the broader{" "}
-          <Link href="/guide">wiki guide</Link> before spending rerolls.
+          <Link href="/guides">guide hub</Link> before spending rerolls.
         </p>
       </section>
     </>

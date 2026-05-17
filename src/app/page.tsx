@@ -125,8 +125,15 @@ export default function Home() {
 
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">Sailor Piece Build Guides</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
+            { href: "/leveling", label: "Leveling", text: "Fast route to the 20,000 max level" },
+            { href: "/bosses", label: "Bosses", text: "Open-world, key and dungeon boss routes" },
+            { href: "/boss-keys", label: "Boss Keys", text: "How to farm and spend summon keys" },
+            { href: "/runes", label: "Runes", text: "Damage, luck and survival passive builds" },
+            { href: "/accessories", label: "Accessories", text: "Boss drops, enchants and stat priorities" },
+            { href: "/specs", label: "Specs", text: "Fighting styles and Spec Passive unlocks" },
+            { href: "/bloodlines", label: "Bloodlines", text: "Bloodline Stones and Sea 2 reroll planning" },
             { href: "/fruits", label: "Fruits", text: "Light, Quake and early-game picks" },
             { href: "/swords", label: "Swords", text: "Raid, boss and PvP weapon picks" },
             { href: "/clans", label: "Clans", text: "Damage, control and build synergy" },
@@ -160,7 +167,7 @@ export default function Home() {
             <li>Active live-ops with weekly milestone codes</li>
           </ul>
           <p className="mt-4 text-sm">
-            New to the game? Start with our <Link href="/guide">Sailor Piece guide</Link>, then redeem fresh <Link href="/codes">codes</Link> and pick a strong <Link href="/races">race</Link>.
+            New to the game? Start with the <Link href="/guides">guide hub</Link>, redeem fresh <Link href="/codes">codes</Link>, then follow the <Link href="/leveling">leveling route</Link>.
           </p>
         </div>
       </section>

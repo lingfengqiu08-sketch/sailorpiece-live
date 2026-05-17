@@ -102,8 +102,8 @@ export default function TierListPage() {
       <section className="mt-12 surface p-6">
         <h2 className="text-xl font-bold mb-3">Keep exploring</h2>
         <p className="text-sm text-[var(--color-text-muted)]">
-          Stack your S-tier picks with the latest <Link href="/codes">Sailor Piece codes</Link>, or dive deeper into{" "}
-          <Link href="/races">races</Link> and the <Link href="/guide">wiki guide</Link>.
+          Stack your S-tier picks with the latest <Link href="/codes">Sailor Piece codes</Link>, then use the{" "}
+          <Link href="/guides">guide hub</Link> for leveling, bosses, runes, accessories, specs and bloodlines.
         </p>
       </section>
     </>

@@ -14,6 +14,7 @@ export function WikiGuidePage({ guide }: { guide: WikiGuide }) {
         path={guide.path}
         breadcrumbs={[
           { name: "Home", url: "/" },
+          { name: "Guides", url: "/guides" },
           { name: guide.title, url: guide.path },
         ]}
         faq={guide.faq}

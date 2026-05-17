@@ -19,6 +19,7 @@ export function Footer() {
           <h3 className="font-semibold mb-3">Pages</h3>
           <ul className="space-y-1.5">
             <li><Link href="/codes">Codes</Link></li>
+            <li><Link href="/guides">Guides</Link></li>
             <li><Link href="/tier-list">Tier List</Link></li>
             <li><Link href="/races">Races</Link></li>
             <li><Link href="/fruits">Fruits</Link></li>
@@ -26,6 +27,9 @@ export function Footer() {
             <li><Link href="/clans">Clans</Link></li>
             <li><Link href="/haki">Haki</Link></li>
             <li><Link href="/traits">Traits</Link></li>
+            <li><Link href="/leveling">Leveling</Link></li>
+            <li><Link href="/bosses">Bosses</Link></li>
+            <li><Link href="/runes">Runes</Link></li>
             <li><Link href="/guide">Guide</Link></li>
           </ul>
         </div>
