@@ -16,7 +16,7 @@ export function GoogleAnalytics() {
       />
       <Script
         id="google-analytics"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
 window.dataLayer = window.dataLayer || [];
