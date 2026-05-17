@@ -362,4 +362,420 @@ export const WIKI_GUIDES = {
       { href: "/codes", label: "Use current codes" },
     ],
   },
+  runes: {
+    path: "/runes",
+    metaTitle: "Sailor Piece Runes Guide - Best Runes, Sources & Farming",
+    metaDescription:
+      "Sailor Piece runes guide covering Rune Dungeon, Infinite Tower secret runes, luck and damage builds, rune leveling and farming priorities.",
+    title: "Sailor Piece Runes Guide",
+    badge: "Rune system",
+    intro:
+      "Runes are one of the strongest late-game passive systems because they can raise damage, survivability or luck without replacing your core fruit, sword, race or clan.",
+    quickAnswer:
+      "Use damage runes for boss and raid clears, luck runes while farming drops, and secret runes only as a long-term chase. Current community tracking points to Rune Dungeon as the main source and Infinite Tower as the secret-rune route.",
+    facts: [
+      {
+        label: "Main source",
+        value: "Rune Dungeon",
+        note: "Most non-secret runes are tracked through Rune Dungeon farming.",
+      },
+      {
+        label: "Secret source",
+        value: "Infinite Tower",
+        note: "Secret rune routes are tied to deeper tower progression.",
+      },
+      {
+        label: "Best use",
+        value: "Swap by goal",
+        note: "Damage for clears, luck for drops, defense for hard bosses.",
+      },
+    ],
+    sections: [
+      {
+        id: "how-they-work",
+        title: "How Runes Work",
+        paragraphs: [
+          "Runes are passive equipment pieces that modify your account power after your main build is already functional. The best rune is not always the rarest one; it is the rune that supports what you are farming right now.",
+          "Damage runes speed up bosses, luck runes improve long farming sessions, and defensive runes help when you are pushing fights that would otherwise kill you.",
+        ],
+        bullets: [
+          "Use damage runes when the boss dies too slowly.",
+          "Use luck runes when you are farming keys, stones or rare drops.",
+          "Use defensive runes when survival is the limiting factor.",
+        ],
+        links: [
+          { href: "/bosses", label: "Plan boss farming" },
+          { href: "/boss-keys", label: "Farm boss keys" },
+        ],
+      },
+      {
+        id: "farming",
+        title: "Rune Farming Priority",
+        paragraphs: [
+          "The practical path is to farm Rune Dungeon until you have a usable rune for your goal, then level that rune instead of swapping constantly. A mid-tier rune that supports your route can outperform a rare rune that does nothing for your current activity.",
+          "Secret runes are long-term goals. Do not delay normal progression just because a secret rune is best in slot on paper.",
+        ],
+      },
+      {
+        id: "leveling",
+        title: "Rune Leveling",
+        paragraphs: [
+          "Rune value increases with repeated farming and leveling. Treat rune upgrades like accessory enchants: improve the best piece you actually use, then chase the next upgrade after your current setup is stable.",
+          "If your rune progress feels stuck, verify the current upgrade rule in game before spending more time. Recent community posts show players still asking about rune XP behavior after update changes.",
+        ],
+        links: [
+          { href: "/accessories", label: "Compare accessory upgrades" },
+          { href: "/traits", label: "Check passive traits" },
+        ],
+      },
+    ],
+    howTo: {
+      name: "How to choose a Sailor Piece rune",
+      steps: [
+        "Decide whether your current goal is damage, luck or survival.",
+        "Farm Rune Dungeon for a usable rune before chasing secret drops.",
+        "Equip the rune that improves your current activity.",
+        "Level the rune you actually use instead of swapping constantly.",
+        "Move to Infinite Tower secret rune goals after your build is stable.",
+      ],
+    },
+    itemList: {
+      name: "Sailor Piece Rune Build Goals",
+      items: [
+        "Damage rune for boss clears",
+        "Luck rune for rare drops",
+        "Defense rune for hard fights",
+        "Secret rune for long-term endgame",
+      ],
+    },
+    faq: [
+      {
+        q: "What do runes do in Sailor Piece?",
+        a: "Runes provide passive bonuses such as damage, survivability or luck, letting you tune your build for farming, bosses or endgame pushes.",
+      },
+      {
+        q: "Where do I get runes in Sailor Piece?",
+        a: "Current community tracking points to Rune Dungeon as the main source for normal runes and Infinite Tower as the secret-rune route.",
+      },
+      {
+        q: "Should I use damage or luck runes?",
+        a: "Use damage when clear speed is the problem. Use luck when you already clear quickly and are farming rare drops.",
+      },
+    ],
+    nextSteps: [
+      { href: "/bosses", label: "Farm bosses faster" },
+      { href: "/accessories", label: "Upgrade accessories" },
+      { href: "/codes", label: "Claim current rewards" },
+    ],
+  },
+  accessories: {
+    path: "/accessories",
+    metaTitle: "Sailor Piece Accessories Guide - Best Accessories & Enchants",
+    metaDescription:
+      "Sailor Piece accessories guide covering boss drops, one-slot accessory builds, enchanting, damage and defense priorities, and farming routes.",
+    title: "Sailor Piece Accessories Guide",
+    badge: "Accessory builds",
+    intro:
+      "Accessories are flexible power pieces because you can swap them by activity. The right accessory can make a boss route safer, a PvP setup stronger, or a farm loop faster.",
+    quickAnswer:
+      "Farm accessories from bosses, equip the best one for your current goal, then enchant it before chasing a tiny drop-rate upgrade. A fully upgraded useful accessory can beat an unenchanted rare one for day-to-day farming.",
+    facts: [
+      {
+        label: "Equip rule",
+        value: "One at a time",
+        note: "Most current guides track one active accessory slot.",
+      },
+      {
+        label: "Main source",
+        value: "Boss drops",
+        note: "Accessories are usually tied to specific boss routes.",
+      },
+      {
+        label: "Upgrade route",
+        value: "Enchant",
+        note: "Enchanting raises the value of the accessory you already use.",
+      },
+    ],
+    sections: [
+      {
+        id: "choosing",
+        title: "How to Choose Accessories",
+        paragraphs: [
+          "Pick the accessory that solves your current bottleneck. If you die during bosses, defense and damage reduction matter more than raw damage. If bosses are safe but slow, damage becomes the priority.",
+          "Do not judge accessories only by rarity. Drop source, enchant level, and your build goal matter just as much as the item name.",
+        ],
+        bullets: [
+          "Boss farming: prioritize defense, damage and consistent uptime.",
+          "PvP: prioritize high all-around stats and damage reduction.",
+          "Drop farming: stack luck through the whole build, not only accessories.",
+        ],
+        links: [
+          { href: "/bosses", label: "Find boss routes" },
+          { href: "/runes", label: "Add rune support" },
+        ],
+      },
+      {
+        id: "enchanting",
+        title: "Accessory Enchanting",
+        paragraphs: [
+          "Current accessory guides track an enchant system that can raise accessory stats beyond base values. That makes enchant planning important because an upgraded mid-tier accessory may outperform a rare item you have not improved yet.",
+          "The simple rule is to enchant your current best usable piece before spending a full session chasing a low-rate upgrade.",
+        ],
+      },
+      {
+        id: "farming",
+        title: "Farming Route",
+        paragraphs: [
+          "Start with bosses you can clear quickly for early accessories, then move into harder boss routes when your damage and survival improve. If a target drop has a low rate, increase your clear speed first.",
+          "Use codes, runes, traits and boss keys to improve the farming loop before committing to a long accessory grind.",
+        ],
+        links: [
+          { href: "/leveling", label: "Level first" },
+          { href: "/boss-keys", label: "Spend keys well" },
+        ],
+      },
+    ],
+    howTo: {
+      name: "How to upgrade Sailor Piece accessories",
+      steps: [
+        "Pick the boss route that drops an accessory matching your goal.",
+        "Farm a usable accessory before chasing best-in-slot drops.",
+        "Enchant the accessory you use most often.",
+        "Recheck your build goal before swapping to a new accessory.",
+        "Only chase low-rate drops after your clear speed is stable.",
+      ],
+    },
+    itemList: {
+      name: "Sailor Piece Accessory Priorities",
+      items: [
+        "Defense for hard bosses",
+        "Damage for faster clears",
+        "Damage reduction for PvP and endgame fights",
+        "Enchant level before rare-name chasing",
+      ],
+    },
+    faq: [
+      {
+        q: "How do I get accessories in Sailor Piece?",
+        a: "Most accessories are obtained from boss drops, with each important accessory tied to a specific boss or activity route.",
+      },
+      {
+        q: "Should I enchant a mid-tier accessory?",
+        a: "Yes if you use it every session. A well-enchanted useful accessory can be better than an unupgraded rare drop.",
+      },
+      {
+        q: "What stats matter most on accessories?",
+        a: "Damage, defense and damage reduction are the core stats. The right priority depends on whether you are farming, bossing or fighting players.",
+      },
+    ],
+    nextSteps: [
+      { href: "/bosses", label: "Farm accessory bosses" },
+      { href: "/runes", label: "Tune passive stats" },
+      { href: "/tier-list", label: "Check build tier lists" },
+    ],
+  },
+  specs: {
+    path: "/specs",
+    metaTitle: "Sailor Piece Specs Guide - Fighting Styles & Spec Passives",
+    metaDescription:
+      "Sailor Piece specs guide covering fighting styles, Spec Passives, Passive Shards, Judgement Island unlocks, sword synergy and late-game build choices.",
+    title: "Sailor Piece Specs Guide",
+    badge: "Specs and passives",
+    intro:
+      "Specs and Spec Passives are late-game build layers that matter most after your basic leveling setup is stable. They affect how your fighting style and sword scale in boss and endgame content.",
+    quickAnswer:
+      "Focus on a stable fighting style first, then unlock Spec Passives at Judgement Island when you meet the requirement. Current guides agree the Spec Passive system starts at level 10,000 and costs 5,000 Gems to unlock.",
+    facts: [
+      {
+        label: "Unlock point",
+        value: "Level 10,000",
+        note: "Current Spec Passive guides list this as the unlock level.",
+      },
+      {
+        label: "Unlock cost",
+        value: "5,000 Gems",
+        note: "Paid to the Spec Passive NPC at Judgement Island.",
+      },
+      {
+        label: "Shard source",
+        value: "After unlock",
+        note: "Passive Shards start dropping after the system is enabled.",
+      },
+    ],
+    sections: [
+      {
+        id: "specs-vs-passives",
+        title: "Specs vs Spec Passives",
+        paragraphs: [
+          "A spec is your fighting style route. A Spec Passive is an extra passive layer that improves your selected spec and sword. It does not replace fruits, races, clans or traits.",
+          "Because Spec Passives affect specs and swords, they are strongest when your build already uses those parts for real damage.",
+        ],
+        links: [
+          { href: "/swords", label: "Improve sword setup" },
+          { href: "/traits", label: "Compare passive traits" },
+        ],
+      },
+      {
+        id: "unlock",
+        title: "How to Unlock Spec Passives",
+        paragraphs: [
+          "Current May 2026 guides list the unlock at Judgement Island through the Spec Passive NPC. The common requirements are level 10,000 and 5,000 Gems.",
+          "After unlocking, Passive Shards become the roll currency. Do not plan around shard farming before the system is active on your account.",
+        ],
+      },
+      {
+        id: "farming",
+        title: "Passive Shard Farming",
+        paragraphs: [
+          "Once unlocked, community guides report Passive Shards can drop from mobs or bosses, but the rate is low. The practical route is to farm dense mob areas or bosses you can clear quickly.",
+          "Luck-supporting runes and faster clear speed matter because the system rewards many repeated chances rather than one difficult fight.",
+        ],
+        links: [
+          { href: "/runes", label: "Add luck runes" },
+          { href: "/leveling", label: "Reach unlock level" },
+        ],
+      },
+    ],
+    howTo: {
+      name: "How to start Sailor Piece Spec Passives",
+      steps: [
+        "Reach the late-game level requirement for the Spec Passive NPC.",
+        "Bring the required gems to Judgement Island.",
+        "Unlock the Spec Passive system before farming Passive Shards.",
+        "Farm dense mobs or easy bosses for repeated shard chances.",
+        "Roll passives that match your spec and sword build.",
+      ],
+    },
+    itemList: {
+      name: "Sailor Piece Spec Passive Priorities",
+      items: [
+        "Reach level 10,000",
+        "Save 5,000 Gems",
+        "Unlock at Judgement Island",
+        "Farm Passive Shards",
+        "Roll for damage or farming passives",
+      ],
+    },
+    faq: [
+      {
+        q: "How do I unlock Spec Passives in Sailor Piece?",
+        a: "Current guides list the unlock at Judgement Island after reaching level 10,000 and paying 5,000 Gems to the Spec Passive NPC.",
+      },
+      {
+        q: "Do Spec Passives affect fruits?",
+        a: "Current guides say Spec Passives affect specs and swords, not fruits, so fruit-focused builds should not overvalue them too early.",
+      },
+      {
+        q: "How do I farm Passive Shards?",
+        a: "Unlock the system first, then farm mobs or bosses repeatedly. Dense routes and luck support help because the drop rate is low.",
+      },
+    ],
+    nextSteps: [
+      { href: "/leveling", label: "Reach unlock level" },
+      { href: "/runes", label: "Improve shard farming" },
+      { href: "/swords", label: "Pair with swords" },
+    ],
+  },
+  bloodlines: {
+    path: "/bloodlines",
+    metaTitle: "Sailor Piece Bloodlines Guide - Stones, Best Rolls & Sea 2",
+    metaDescription:
+      "Sailor Piece bloodlines guide covering Bloodline Stones, Sea 2 farming, top bloodlines, pity planning and reroll mistakes.",
+    title: "Sailor Piece Bloodlines Guide",
+    badge: "Bloodlines",
+    intro:
+      "Bloodlines are a Sea 2 progression layer that can add major damage, luck, HP, lifesteal or weapon-specific bonuses. They are powerful, but expensive to chase without a plan.",
+    quickAnswer:
+      "Farm Bloodline Stones from Sea 2 routes, keep strong damage or luck rolls, and do not replace a top bloodline unless a patch clearly changes the meta. Current May 2026 guides consistently treat Primordial and Astral as top targets.",
+    facts: [
+      {
+        label: "Main currency",
+        value: "Bloodline Stone",
+        note: "Used to roll or reroll bloodlines.",
+      },
+      {
+        label: "Progression layer",
+        value: "Sea 2",
+        note: "Current guides describe bloodlines as a Sea 2 system.",
+      },
+      {
+        label: "Top targets",
+        value: "Primordial / Astral",
+        note: "Commonly ranked at the top of May 2026 bloodline lists.",
+      },
+    ],
+    sections: [
+      {
+        id: "how-they-work",
+        title: "How Bloodlines Work",
+        paragraphs: [
+          "Bloodlines are rolled with Bloodline Stones and can change your account's stat profile. The strongest rolls usually combine damage with survival, luck or weapon scaling.",
+          "Because bloodlines are expensive to chase, treat them as a late-game optimization layer. A good roll that matches your build is better than endless rerolling for a name you cannot use yet.",
+        ],
+      },
+      {
+        id: "stones",
+        title: "How to Farm Bloodline Stones",
+        paragraphs: [
+          "Current guide tracking points to Sea 2 NPC bosses and Sea Beast routes as Bloodline Stone sources. This makes Sea 2 readiness important before you commit to a reroll session.",
+          "Use luck support and fast clears before farming stones. A better rune, accessory or boss route can improve the number of roll chances you see per hour.",
+        ],
+        links: [
+          { href: "/runes", label: "Use luck runes" },
+          { href: "/bosses", label: "Farm Sea 2 bosses" },
+        ],
+      },
+      {
+        id: "rerolling",
+        title: "Reroll Strategy",
+        paragraphs: [
+          "Keep top-tier rolls that improve both farming and bossing. Primordial and Astral are repeatedly ranked near the top because they combine major damage with other useful stats.",
+          "If an update adds or changes a bloodline, wait for multiple source checks before burning your full stone stockpile. Bloodline lists have changed quickly during Sea 2 and Anti-Magic updates.",
+        ],
+        links: [
+          { href: "/codes", label: "Check fresh rewards" },
+          { href: "/specs", label: "Plan spec synergy" },
+        ],
+      },
+    ],
+    howTo: {
+      name: "How to roll Sailor Piece bloodlines safely",
+      steps: [
+        "Reach Sea 2 progression where Bloodline Stones become farmable.",
+        "Farm Sea 2 bosses or Sea Beast routes for stones.",
+        "Decide whether your build needs damage, luck, HP, lifesteal or sword scaling.",
+        "Keep strong top-tier rolls instead of chasing every new update name.",
+        "Wait for fresh source checks before rerolling after a balance patch.",
+      ],
+    },
+    itemList: {
+      name: "Sailor Piece Bloodline Reroll Checklist",
+      items: [
+        "Enough Bloodline Stones",
+        "Clear target stat profile",
+        "Luck support active",
+        "Sea 2 farming route ready",
+        "Patch notes checked",
+      ],
+    },
+    faq: [
+      {
+        q: "What is the best bloodline in Sailor Piece?",
+        a: "Current May 2026 guides consistently rank Primordial and Astral near the top, with exact order depending on whether you value all-around power, sword scaling or lifesteal.",
+      },
+      {
+        q: "How do I get Bloodline Stones?",
+        a: "Current guides point to Sea 2 NPC bosses and Sea Beast routes as Bloodline Stone sources.",
+      },
+      {
+        q: "Should I reroll a good bloodline?",
+        a: "Usually no. Keep any strong roll that matches your build until a new patch is confirmed by multiple sources.",
+      },
+    ],
+    nextSteps: [
+      { href: "/bosses", label: "Farm stone sources" },
+      { href: "/runes", label: "Improve luck setup" },
+      { href: "/specs", label: "Plan spec synergy" },
+    ],
+  },
 } satisfies Record<string, WikiGuide>;
