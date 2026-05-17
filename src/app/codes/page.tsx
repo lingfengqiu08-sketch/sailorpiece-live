@@ -75,6 +75,7 @@ export default function CodesPage() {
         <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
           {active.length} active and {expired.length} expired Sailor Piece codes. Last source check on{" "}
           <strong className="text-[var(--color-text)]">{formatDate(codesData.last_checked_at)}</strong>.
+          Source links are shown for each active code, and we only use Redeem tested after a real in-game redemption.
           Type your in-game level to filter only the codes you can redeem right now.
         </p>
       </header>

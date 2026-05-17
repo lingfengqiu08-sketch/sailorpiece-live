@@ -109,6 +109,7 @@ export function CodeTable({
               <th className="px-4 py-3">Rewards</th>
               <th className="px-4 py-3">Level</th>
               <th className="px-4 py-3">Verified</th>
+              <th className="px-4 py-3">Source</th>
               <th className="px-4 py-3 text-right">Action</th>
             </tr>
           </thead>
@@ -143,6 +144,9 @@ export function CodeTable({
                   <td className="px-4 py-3">
                     <VerificationBadge verifiedAt={c.verified_at} method={c.verification_method} />
                   </td>
+                  <td className="px-4 py-3 text-xs">
+                    <SourceLink url={c.source_url} />
+                  </td>
                   <td className="px-4 py-3 text-right">
                     <CopyCodeButton code={c.code} />
                   </td>
@@ -151,7 +155,7 @@ export function CodeTable({
             })}
             {filtered.length === 0 && (
               <tr>
-                <td colSpan={5} className="p-8">
+                <td colSpan={6} className="p-8">
                   <EmptyState />
                 </td>
               </tr>
@@ -218,7 +222,37 @@ function CodeCardMobile({
         )}
         <VerificationBadge verifiedAt={code.verified_at} method={code.verification_method} />
       </div>
+      <div className="mt-3 text-xs text-[var(--color-text-muted)]">
+        Source: <SourceLink url={code.source_url} />
+      </div>
     </div>
+  );
+}
+
+function SourceLink({ url }: { url: string | null }) {
+  if (!url) return <span>Manual check</span>;
+
+  let label = "Source";
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    label =
+      host === "gamesradar.com"
+        ? "GamesRadar"
+        : host === "pocketgamer.com"
+          ? "Pocket Gamer"
+          : host === "progameguides.com"
+            ? "Pro Game Guides"
+            : host === "discord.gg"
+              ? "Discord"
+              : host;
+  } catch {
+    label = "Source";
+  }
+
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      {label}
+    </a>
   );
 }
 
