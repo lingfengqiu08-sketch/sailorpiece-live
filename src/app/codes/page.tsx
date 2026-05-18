@@ -7,13 +7,17 @@ import { buildMetadata } from "@/lib/seo";
 import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
-  title: "Sailor Piece Codes Today — Active & Verified Rewards",
+  title: "Sailor Piece Codes Today (May 2026) — Working Rewards",
   description:
-    "Copy all working Sailor Piece codes for May 2026. Filter by your level, check rewards, status, source and real verification timestamps.",
+    "Copy working Sailor Piece codes today. Active rewards are checked daily with source links, level filters, redeem steps, expired codes, and real verification timestamps.",
   path: "/codes",
 });
 
 const FAQS = [
+  {
+    q: "Are there any working Sailor Piece codes today?",
+    a: "Yes. The active table at the top of this page lists working Sailor Piece codes we have source-checked or redeem-tested, with the latest verification timestamp shown beside each code.",
+  },
   {
     q: "How do I redeem Sailor Piece codes?",
     a: "Launch Sailor Piece on Roblox, open the in-game menu, find the Codes section, paste an active code, and press Redeem. Rewards appear in your inventory immediately.",
@@ -70,12 +74,12 @@ export default function CodesPage() {
       <header className="mb-6">
         <p className="inline-block badge badge-fresh mb-3">Checked {formatDate(codesData.last_checked_at)}</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-          Sailor Piece Codes Today
+          Sailor Piece Codes Today (May 2026)
         </h1>
         <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
-          {active.length} active and {expired.length} expired Sailor Piece codes. Last source check on{" "}
+          Copy working Sailor Piece codes for spins, boosts, currency, and update rewards. This list has {active.length} active and {expired.length} expired codes. Last source check on{" "}
           <strong className="text-[var(--color-text)]">{formatDate(codesData.last_checked_at)}</strong>.
-          Source links are shown for each active code, and we only use Redeem tested after a real in-game redemption.
+          Source links are shown for each active code, and we only mark a code as Redeem tested after a real in-game redemption.
           Type your in-game level to filter only the codes you can redeem right now.
         </p>
       </header>
@@ -84,6 +88,9 @@ export default function CodesPage() {
 
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">How to Redeem Sailor Piece Codes</h2>
+        <p className="mb-4 text-sm text-[var(--color-text-muted)] leading-relaxed">
+          Use the copy button first, then redeem inside the Roblox game. If a working code fails, try a fresh server and check the level requirement before assuming the code expired.
+        </p>
         <ol className="surface p-5 list-decimal list-inside space-y-2 text-[var(--color-text-muted)]">
           {HOWTO.steps.map((s, i) => (
             <li key={i}><span className="text-[var(--color-text)]">{s}</span></li>
@@ -113,7 +120,7 @@ export default function CodesPage() {
           <li>The <strong className="text-[var(--color-text)]">Roblox game page</strong> — milestone codes during livestreams.</li>
         </ul>
         <p className="mt-4 text-sm">
-          Want the bigger picture? Compare our <Link href="/tier-list">Sailor Piece tier list</Link> or the <Link href="/races">races guide</Link> while you wait for the next code.
+          Want the bigger picture? Compare our <Link href="/tier-list">Sailor Piece tier list</Link>, the <Link href="/races">races guide</Link>, or the <Link href="/guide">beginner guide</Link> while you wait for the next code.
         </p>
       </section>
 

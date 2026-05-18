@@ -12,9 +12,9 @@ import { codes as codesData } from "@/lib/codes";
 import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
-  title: "Sailor Piece Codes, Wiki, Tier List & Official Links",
+  title: "Sailor Piece Codes Today, Wiki, Tier List & Official Links",
   description:
-    "Active Sailor Piece codes, race / fruit / sword tier lists, wiki guide basics, Trello, Discord, Roblox game links and the latest update notes.",
+    "Copy working Sailor Piece codes today, then compare race, fruit and sword tier lists, wiki guide basics, Trello, Discord, Roblox links and update notes.",
   path: "/",
 });
 
@@ -60,18 +60,18 @@ export default function Home() {
           Sailor Piece <span className="text-[var(--color-accent)]">Codes</span>, Wiki &amp; Tier List
         </h1>
         <p className="mt-4 text-lg text-[var(--color-text-muted)] max-w-2xl">
-          Active rewards checked with real source timestamps. Find codes by your level.
-          Compare races, fruits, swords and clans. Jump to Trello, Discord or the Roblox game.
+          Copy working Sailor Piece codes checked with real source timestamps. Find codes by your level,
+          compare races, fruits, swords and clans, and jump to Trello, Discord or the Roblox game.
         </p>
         <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
-          <Link href="/codes" className="btn-primary">View all codes →</Link>
+          <Link href="/codes" className="btn-primary">View all Sailor Piece codes →</Link>
           <Link href="/tier-list" className="btn-ghost">Open tier list</Link>
         </div>
       </section>
 
       <section className="mt-12">
         <div className="flex items-end justify-between mb-4">
-          <h2 className="text-2xl font-bold">Latest Sailor Piece Codes</h2>
+          <h2 className="text-2xl font-bold">Latest Working Sailor Piece Codes</h2>
           <Link href="/codes" className="text-sm">See all →</Link>
         </div>
         <div className="grid sm:grid-cols-2 gap-3">
