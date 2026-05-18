@@ -1,0 +1,183 @@
+{
+  "checked_at": "2026-05-18T20:35:10+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Keep conflicting codes out of active unless official evidence or at least two credible current sources clearly support restoration.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Anti-Magic-Update-Sailor-Piece",
+      "type": "official_game_page",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Official page says to join the community server for exclusive reward codes, but it does not list the live code strings."
+    },
+    {
+      "name": "Pro Game Guides Discord and Trello guide",
+      "url": "https://progameguides.com/roblox/sailor-piece-discord-link-and-trello/",
+      "type": "official_link_directory",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Maps the official Discord invite and Trello board. Article says the Discord has a codes-list channel and the Trello board has an active codes column."
+    },
+    {
+      "name": "Pocket Gamer Sailor Piece codes",
+      "url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Updated May 17, 2026. Lists the same 11 active codes kept in codes.json and provides matching level gates."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Updated May 13, 2026. Matches the 11-code active set and is the cleanest source for the current minimum level requirements."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Updated May 13, 2026. Matches the retained 11-code active set and the reward bundles kept in codes.json."
+    },
+    {
+      "name": "PCGamesN Sailor Piece codes",
+      "url": "https://www.pcgamesn.com/roblox/sailor-piece-codes",
+      "type": "conflict_source",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Updated May 18, 2026. Matches the main 11-code active set but still lists ANTIMAGICUPDATE as active, creating a single-code conflict."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "conflict_source",
+      "accessed_at": "2026-05-18T20:35:10+08:00",
+      "notes": "Updated May 16, 2026. Keeps many older codes active, including 2XLUCK and CRYSTALDEFENSE, so it was treated as an overinclusive conflict source rather than restoration proof."
+    }
+  ],
+  "codes_reviewed": [
+    "700KFAVSTY",
+    "FREECODEHERE1",
+    "HUGEUPDATEWWW",
+    "RAIDS",
+    "DELAYCODENR1",
+    "DELAYCODENR2",
+    "1B100MVISITS",
+    "1B200MVISITS",
+    "1B300MVISITS",
+    "1M100KLIKESTYYY",
+    "TYSMFOR400KFOLLOWONEVENT"
+  ],
+  "decisions": [
+    {
+      "code": "700KFAVSTY",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "FREECODEHERE1",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "HUGEUPDATEWWW",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 7,500."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; Beebom matches the stored 5 Raid Key reward detail."
+    },
+    {
+      "code": "DELAYCODENR1",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "DELAYCODENR2",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "1B100MVISITS",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "1B200MVISITS",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "1B300MVISITS",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "1M100KLIKESTYYY",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 12,500."
+    },
+    {
+      "code": "TYSMFOR400KFOLLOWONEVENT",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all keep it active; level gate stays 10,000."
+    },
+    {
+      "code": "ANTIMAGICUPDATE",
+      "action": "kept_expired",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 all list it expired. PCGamesN May 18 is the only current source found that still lists it active."
+    },
+    {
+      "code": "2XLUCK",
+      "action": "kept_expired",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 list it expired. Only Pro Game Guides still keeps it active."
+    },
+    {
+      "code": "CRYSTALDEFENSE",
+      "action": "kept_expired",
+      "method": "source_snapshot",
+      "reason": "Pocket Gamer May 17, GamesRadar May 13, and Beebom May 13 list it expired. Only Pro Game Guides still keeps it active."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "ANTIMAGICUPDATE",
+      "kept_as": "expired",
+      "conflict": "PCGamesN updated May 18 still lists it active, while Pocket Gamer, GamesRadar, and Beebom all list it expired.",
+      "next_step": "Only restore if a direct official Discord/Trello capture or a second strong current source supports reactivation."
+    },
+    {
+      "code": "2XLUCK",
+      "kept_as": "expired",
+      "conflict": "Pro Game Guides still lists it active, while Pocket Gamer, GamesRadar, and Beebom list it expired.",
+      "next_step": "Only restore if a direct official Discord/Trello capture or a second strong current source supports reactivation."
+    },
+    {
+      "code": "CRYSTALDEFENSE",
+      "kept_as": "expired",
+      "conflict": "Pro Game Guides still lists it active, while Pocket Gamer, GamesRadar, and Beebom list it expired.",
+      "next_step": "Only restore if a direct official Discord/Trello capture or a second strong current source supports reactivation."
+    },
+    {
+      "code": "CODEFORTHERESTARTSORRY",
+      "kept_as": "expired",
+      "conflict": "Pro Game Guides still lists some older restart codes active even though the current consensus sources do not.",
+      "next_step": "Keep expired unless direct official evidence becomes accessible."
+    }
+  ],
+  "redeem_tests": []
+}
