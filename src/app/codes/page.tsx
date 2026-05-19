@@ -28,15 +28,15 @@ const FAQS = [
   },
   {
     q: "How often are new Sailor Piece codes released?",
-    a: "Codes typically drop with major updates (Sea 2, Anti-Magic, Huge Update), raid events, server-restart compensations, and milestone celebrations (visits, likes, followers). We re-check listed sources daily.",
+    a: "Codes usually drop with major updates, raid releases, server-restart compensations, and milestone celebrations such as visits, likes, and follows. We re-check listed sources daily because older codes can stop working fast after an update goes live.",
   },
   {
     q: "What does verified mean on this page?",
-    a: "We tag each code with the most recent time it was confirmed in the official Discord (Source checked) or successfully redeemed on a test account (Redeem tested). The badge color shows freshness.",
+    a: "We tag each code with the most recent time it was confirmed in current public sources or successfully redeemed on a test account. We only use Redeem tested after a real in-game redemption, and the badge color shows freshness.",
   },
   {
     q: "Can low level players use every Sailor Piece code?",
-    a: "No. For example ANTIMAGICUPDATE requires level 8,500. Type your level into the filter to hide codes you can't redeem yet.",
+    a: "Not always. Some codes are level-locked or restricted to newer servers. If a reliable level gate is published, we show it in the table; otherwise we label it as Level gate unverified.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function CodesPage() {
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">How to Redeem Sailor Piece Codes</h2>
         <p className="mb-4 text-sm text-[var(--color-text-muted)] leading-relaxed">
-          Use the copy button first, then redeem inside the Roblox game. If a working code fails, try a fresh server and check the level requirement before assuming the code expired.
+          Use the copy button first, then redeem inside the Roblox game. If a working code fails, try a fresh server and check the level requirement or new-server restriction before assuming the code expired.
         </p>
         <ol className="surface p-5 list-decimal list-inside space-y-2 text-[var(--color-text-muted)]">
           {HOWTO.steps.map((s, i) => (
@@ -104,7 +104,7 @@ export default function CodesPage() {
           <li><strong className="text-[var(--color-text)]">Expired.</strong> Codes are removed quickly when new updates drop. Check our active list above.</li>
           <li><strong className="text-[var(--color-text)]">Already used.</strong> Each Roblox account can claim each code only once.</li>
           <li><strong className="text-[var(--color-text)]">Case sensitive.</strong> Codes must be typed exactly as shown — copy them with the button instead of typing.</li>
-          <li><strong className="text-[var(--color-text)]">Level locked.</strong> Some milestone codes require a minimum level (e.g. ANTIMAGICUPDATE needs 8,500).</li>
+          <li><strong className="text-[var(--color-text)]">Level locked or server-limited.</strong> Some codes need a minimum level or only work in newer servers, and current public sources do not always publish the exact gate.</li>
           <li><strong className="text-[var(--color-text)]">Server pending.</strong> After a major update, codes sometimes take 10-30 minutes to propagate to all servers.</li>
         </ul>
       </section>
@@ -116,7 +116,7 @@ export default function CodesPage() {
         </p>
         <ul className="space-y-2 text-sm text-[var(--color-text-muted)] list-disc list-inside">
           <li>The official <strong className="text-[var(--color-text)]">Sailor Piece Discord</strong> — codes drop minutes after they're created.</li>
-          <li>The official <strong className="text-[var(--color-text)]">Sailor Piece Trello</strong> — patch notes and update roadmaps.</li>
+          <li>The official <strong className="text-[var(--color-text)]">Sailor Piece Trello</strong> — useful for patch notes, systems, and progression info, but its codes section can lag behind Discord.</li>
           <li>The <strong className="text-[var(--color-text)]">Roblox game page</strong> — milestone codes during livestreams.</li>
         </ul>
         <p className="mt-4 text-sm">
