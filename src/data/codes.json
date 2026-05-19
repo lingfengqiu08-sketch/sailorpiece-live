@@ -1,119 +1,149 @@
 {
-  "last_checked_at": "2026-05-18T20:35:10+08:00",
+  "last_checked_at": "2026-05-19T20:36:32+08:00",
   "check_frequency_hours": 24,
   "active": [
     {
-      "code": "700KFAVSTY",
-      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-05-13T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only. No numeric level gate is published in current sources."
     },
     {
-      "code": "FREECODEHERE1",
-      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-05-13T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only. No numeric level gate is published in current sources."
     },
     {
-      "code": "HUGEUPDATEWWW",
-      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
-      "min_level": 7500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-05-09T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 7,500 matches Pocket Gamer and GamesRadar."
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only. No numeric level gate is published in current sources."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored compensation bundle. No numeric level gate is published in current sources."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored compensation bundle. No numeric level gate is published in current sources."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored compensation bundle. No numeric level gate is published in current sources."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored Ghoul Update reward bundle. No numeric level gate is published in current sources."
+    },
+    {
+      "code": "MASTERY",
+      "rewards": "$250,000 + 400 Gems + 25 Bloodline Stone + 35 Passive Shard + 50 Clan Reroll + 75 Trait Reroll + 100 Race Reroll + 50 Haki Color Reroll",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "added_at": "2026-05-19T00:00:00+08:00",
+      "notes": "Added May 19, 2026. Pro Game Guides and Destructoid list it active today; Beebom matches the stored mastery reward bundle. No numeric level gate is published in current sources."
     },
     {
       "code": "RAIDS",
       "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 5 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
-      "min_level": 7500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
+      "min_level": null,
+      "verified_at": "2026-05-19T20:36:32+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
+      "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
       "added_at": "2026-05-09T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this reward bundle with 5 Raid Keys. Roblox official game page says exclusive codes are posted in the community server. Level gate 7,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "DELAYCODENR1",
-      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-05-08T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this delay compensation reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "DELAYCODENR2",
-      "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-05-08T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this delay compensation reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "1B100MVISITS",
-      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 4 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-04-20T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this 1.1B visits reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "1B200MVISITS",
-      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 5 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-04-25T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this 1.2B visits reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "1B300MVISITS",
-      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 6 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-04-30T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this 1.3B visits reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "1M100KLIKESTYYY",
-      "rewards": "50 Power Shard + 75 Passive Shard + 10 Secret Chest + 100 Clan Reroll + 5 Aura Crate + 4 Cosmetic Crate",
-      "min_level": 12500,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-04-15T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this 1M likes reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 12,500 matches Pocket Gamer and GamesRadar."
-    },
-    {
-      "code": "TYSMFOR400KFOLLOWONEVENT",
-      "rewards": "30 Power Shard + 40 Passive Shard + 5 Secret Chest + 100 Clan Reroll + 6 Aura Crate + 5 Cosmetic Crate",
-      "min_level": 10000,
-      "verified_at": "2026-05-18T20:35:10+08:00",
-      "verification_method": "source_snapshot",
-      "source_url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
-      "added_at": "2026-04-10T00:00:00+08:00",
-      "notes": "Revalidated May 18, 2026. Active in Pocket Gamer May 17 and GamesRadar May 13; Beebom May 13 matches this follower milestone reward bundle. Roblox official game page says exclusive codes are posted in the community server. Level gate 10,000 matches Pocket Gamer and GamesRadar."
+      "notes": "Revalidated May 19, 2026. Pro Game Guides, Beebom, and Destructoid all keep it active after the Ghoul Update wave. No numeric level gate is published in current sources."
     }
   ],
   "expired": [
+    {
+      "code": "700KFAVSTY",
+      "rewards": "Ghoul Update predecessor bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "FREECODEHERE1",
+      "rewards": "Ghoul Update predecessor bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "HUGEUPDATEWWW",
+      "rewards": "Huge update reward bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "DELAYCODENR1",
+      "rewards": "Delay compensation bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "DELAYCODENR2",
+      "rewards": "Delay compensation bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "1B100MVISITS",
+      "rewards": "1.1B visits milestone bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "1B200MVISITS",
+      "rewards": "1.2B visits milestone bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "1B300MVISITS",
+      "rewards": "1.3B visits milestone bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "1M100KLIKESTYYY",
+      "rewards": "1M likes milestone bundle",
+      "last_seen_active": "2026-05-18"
+    },
+    {
+      "code": "TYSMFOR400KFOLLOWONEVENT",
+      "rewards": "400K follow event bundle",
+      "last_seen_active": "2026-05-18"
+    },
     {
       "code": "RAIDSOON",
       "rewards": "Pre-raids teaser",

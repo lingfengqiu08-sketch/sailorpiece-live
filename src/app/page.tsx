@@ -86,7 +86,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap items-center justify-between gap-2">
                 {c.min_level === null ? (
-                  <span className="text-xs text-[var(--color-text-muted)]">Any level</span>
+                  <span className="text-xs text-[var(--color-text-muted)]">Level gate unverified</span>
                 ) : (
                   <span className="badge badge-fresh">Lv {c.min_level.toLocaleString()}</span>
                 )}

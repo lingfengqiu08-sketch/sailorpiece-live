@@ -132,7 +132,7 @@ export function CodeTable({
                   </td>
                   <td className="px-4 py-3 whitespace-nowrap">
                     {c.min_level === null ? (
-                      <span className="text-xs text-[var(--color-text-muted)]">Any level</span>
+                      <span className="text-xs text-[var(--color-text-muted)]">Level gate unverified</span>
                     ) : (
                       <span className={
                         "badge " + (eligible ? "badge-fresh" : "badge-danger")
@@ -214,7 +214,7 @@ function CodeCardMobile({
       <p className="mt-2 text-xs text-[var(--color-text-muted)] leading-relaxed">{code.rewards}</p>
       <div className="mt-3 flex items-center justify-between gap-2 flex-wrap">
         {code.min_level === null ? (
-          <span className="text-xs text-[var(--color-text-muted)]">Any level</span>
+          <span className="text-xs text-[var(--color-text-muted)]">Level gate unverified</span>
         ) : (
           <span className={"badge " + (eligible ? "badge-fresh" : "badge-danger")}>
             Lv {code.min_level.toLocaleString()}

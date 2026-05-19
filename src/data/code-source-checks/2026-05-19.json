@@ -1,0 +1,233 @@
+{
+  "checked_at": "2026-05-19T20:36:32+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Prefer official Roblox/Discord/Trello evidence when accessible; otherwise require at least two credible current sources or one current source explicitly citing the official Discord.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236",
+      "type": "official_game_page",
+      "accessed_at": "2026-05-19T20:36:32+08:00",
+      "notes": "Current page title is [GHOUL UPDATE] Sailor Piece. The description says to join the community server for more exclusive reward codes, but it does not expose the live code strings."
+    },
+    {
+      "name": "Pro Game Guides Discord and Trello guide",
+      "url": "https://progameguides.com/roblox/sailor-piece-discord-link-and-trello/",
+      "type": "official_link_directory",
+      "accessed_at": "2026-05-19T20:36:32+08:00",
+      "notes": "Updated May 5, 2026. Maps the official Discord and Trello, says the Discord has #game-announcements, #update-logs, and #codes-list, and says the Trello information column lists all active Sailor Piece codes."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-19T20:36:32+08:00",
+      "notes": "Updated May 19, 2026. Lists 9 active codes after the Ghoul Update, moves the previous 10-code set to inactive, and says new codes are posted in the official Discord game-announcements channel."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-19T20:36:32+08:00",
+      "notes": "Updated May 19, 2026. Adds the new Ghoul Update codes, provides the exact reward bundles used in codes.json, and says codes arrive in the official Discord code-list channel. It still keeps the older 10-code set in its active list, so it is also a conflict source for expirations."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-19T20:36:32+08:00",
+      "notes": "Updated May 19, 2026. Matches the 9-code active set, marks the three restart-bug codes as new-servers only, and explicitly moves the prior 10-code set into the expired list."
+    }
+  ],
+  "codes_reviewed": [
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching restart compensation bundle. Pro Game Guides and Destructoid both mark it new-servers only."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching compensation bundle."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching compensation bundle."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching compensation bundle."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching Ghoul Update reward bundle."
+    },
+    {
+      "code": "MASTERY",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both list it active on May 19, 2026, and Beebom provides the matching mastery reward bundle."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, and Destructoid all keep it active on May 19, 2026. Current sources no longer publish a numeric level gate, so min_level was cleared instead of keeping a stale older value."
+    },
+    {
+      "code": "700KFAVSTY",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "FREECODEHERE1",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "HUGEUPDATEWWW",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "DELAYCODENR1",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "DELAYCODENR2",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "1B100MVISITS",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "1B200MVISITS",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "1B300MVISITS",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "1M100KLIKESTYYY",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    },
+    {
+      "code": "TYSMFOR400KFOLLOWONEVENT",
+      "action": "moved_expired",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides and Destructoid both move it out of the active set on May 19, 2026, immediately after the Ghoul Update code drop."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "700KFAVSTY",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "FREECODEHERE1",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "HUGEUPDATEWWW",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "DELAYCODENR1",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "DELAYCODENR2",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "1B100MVISITS",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "1B200MVISITS",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "1B300MVISITS",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "1M100KLIKESTYYY",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    },
+    {
+      "code": "TYSMFOR400KFOLLOWONEVENT",
+      "kept_as": "expired",
+      "conflict": "Beebom updated May 19 still lists it active, while Pro Game Guides and Destructoid updated May 19 both move it out of the live set.",
+      "next_step": "Restore only if the official Discord or Trello shows it back in the live list, or if a second strong current source joins Beebom."
+    }
+  ],
+  "redeem_tests": []
+}
