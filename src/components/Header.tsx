@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const NAV = [
@@ -12,7 +13,16 @@ export function Header() {
     <header className="border-b border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-bg)_85%,transparent)] backdrop-blur supports-[backdrop-filter]:bg-[color-mix(in_srgb,var(--color-bg)_75%,transparent)] sticky top-0 z-30">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2 group !text-[var(--color-text)] !no-underline">
-          <span className="text-2xl">⚓</span>
+          <span className="relative h-9 w-9 shrink-0">
+            <Image
+              src="/logo-sailor-piece-icon.png"
+              alt=""
+              width={36}
+              height={36}
+              priority
+              className="h-9 w-9 object-contain"
+            />
+          </span>
           <span className="font-semibold tracking-tight">
             Sailor Piece <span className="text-[var(--color-accent)]">Guide</span>
           </span>
