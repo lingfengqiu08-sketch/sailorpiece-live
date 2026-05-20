@@ -78,6 +78,47 @@ export function WikiGuidePage({ guide }: { guide: WikiGuide }) {
         ))}
       </div>
 
+      {guide.tables && (
+        <div className="mt-12 space-y-10">
+          {guide.tables.map((table) => (
+            <section key={table.id} id={table.id} className="scroll-mt-20">
+              <h2 className="text-2xl font-bold mb-3">{table.title}</h2>
+              {table.intro && (
+                <p className="mb-4 text-[var(--color-text-muted)] leading-relaxed">{table.intro}</p>
+              )}
+              <div className="surface overflow-x-auto">
+                <table className="w-full min-w-[720px] text-sm">
+                  <thead className="bg-[var(--color-surface-2)] text-left text-xs uppercase tracking-wide text-[var(--color-text-muted)]">
+                    <tr>
+                      {table.headers.map((header) => (
+                        <th key={header} className="px-4 py-3 font-semibold">{header}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[var(--color-border)]">
+                    {table.rows.map((row) => (
+                      <tr key={row.join("|")} className="align-top">
+                        {row.map((cell, index) => (
+                          <td
+                            key={`${row.join("|")}-${index}`}
+                            className={
+                              "px-4 py-3 leading-relaxed " +
+                              (index === 0 ? "font-semibold text-[var(--color-text)]" : "text-[var(--color-text-muted)]")
+                            }
+                          >
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <FAQ items={guide.faq} />

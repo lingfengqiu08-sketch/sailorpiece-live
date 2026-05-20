@@ -17,6 +17,14 @@ export interface GuideSection {
   links?: GuideLink[];
 }
 
+export interface GuideTable {
+  id: string;
+  title: string;
+  intro?: string;
+  headers: string[];
+  rows: string[][];
+}
+
 export interface WikiGuide {
   path: string;
   metaTitle: string;
@@ -27,6 +35,7 @@ export interface WikiGuide {
   quickAnswer: string;
   facts: GuideFact[];
   sections: GuideSection[];
+  tables?: GuideTable[];
   howTo: {
     name: string;
     steps: string[];
@@ -257,30 +266,30 @@ export const WIKI_GUIDES = {
   },
   "boss-keys": {
     path: "/boss-keys",
-    metaTitle: "Sailor Piece Boss Key Guide - How to Get & Spend Keys",
+    metaTitle: "Sailor Piece Boss Keys Guide - Get Keys, Farm Fast & Spend",
     metaDescription:
-      "How to get Boss Keys in Sailor Piece from quests, chests, Merchant stock and Dungeon Shop, plus how to spend keys on Saber, Qin Shi and Ichigo.",
-    title: "Sailor Piece Boss Key Guide",
+      "How to get Boss Keys in Sailor Piece from quests, chests, Merchant stock and Dungeon Shop, plus the best order to spend keys on Saber, Qin Shi and Ichigo.",
+    title: "Sailor Piece Boss Keys Guide",
     badge: "Boss keys",
     intro:
-      "Boss Keys are one of the easiest resources to waste. This guide explains where they come from, what they unlock, and when it is worth spending them on Boss Island summons.",
+      "Boss Keys are one of the easiest resources to waste. This guide explains every practical Boss Key source, the fastest repeatable farm loop, and when it is worth spending keys on Boss Island summons.",
     quickAnswer:
-      "Get Boss Keys from repeatable quests, enemy chest drops, rotating Merchant stock and late-game Dungeon Shop routes. Spend them only when your build can clear the summoned boss and earn drops.",
+      "Get Boss Keys from repeatable quests, enemy chest drops, rotating Merchant stock and late-game Dungeon Shop routes. Farm quests and chests first, buy Merchant stock when it appears, and spend keys only when your build can clear Saber, Qin Shi or Ichigo reliably.",
     facts: [
       {
         label: "Key bosses",
-        value: "Saber, Qin Shi, Ichigo",
-        note: "These are the main Boss Island summons tied to Boss Keys.",
+        value: "1 / 3 / 5 keys",
+        note: "These are the common planning costs for Saber, Qin Shi and Ichigo summons.",
       },
       {
-        label: "Fastest safe source",
+        label: "Fast loop",
         value: "Quests + chests",
-        note: "Repeatable fights give both quest reward and chest chances.",
+        note: "Repeatable quest routes give completion rewards and enemy chest chances at the same time.",
       },
       {
-        label: "Not the same as",
-        value: "Boss Tickets",
-        note: "Keys start fights; tickets are earned and spent separately.",
+        label: "Late-game source",
+        value: "Dungeon Shop",
+        note: "Use this after dungeon progression is unlocked and Dungeon Tokens become farmable.",
       },
     ],
     sections: [
@@ -288,14 +297,15 @@ export const WIKI_GUIDES = {
         id: "sources",
         title: "How to Get Boss Keys",
         paragraphs: [
-          "The reliable loop is repeatable quest farming plus chest drops from enemies. Higher-rarity chests are better, so any build improvement that increases your luck or kill speed improves the key farm over time.",
-          "Boss Keys can also show up in rotating Merchant stock, and late-game players can use Dungeon Shop routes after unlocking the relevant dungeon progression.",
+          "The reliable loop is repeatable quest farming plus chest drops from enemies. Quests can reward Boss Keys, while the enemies you kill during the route can drop chests that may contain more keys.",
+          "Higher-rarity chests are better, so luck and kill speed both matter. A high-luck build sees better chest quality over a long session, while a high-damage build simply creates more chest rolls per hour.",
+          "Boss Keys can also show up in rotating Merchant stock, and late-game players can convert dungeon progress through Dungeon Shop routes after unlocking the relevant dungeon progression.",
         ],
         bullets: [
-          "Complete repeatable Quest NPC missions.",
-          "Open enemy chest drops while farming.",
-          "Check the Sailor Island Merchant when stock refreshes.",
-          "Use Dungeon Shop options after dungeon progression is unlocked.",
+          "Run repeatable Quest NPC missions in a bracket you clear quickly.",
+          "Open every chest drop from enemies, especially rare or legendary chests.",
+          "Check the Sailor Island Merchant whenever stock refreshes.",
+          "Use Dungeon Shop options after Dungeon Island progression is unlocked.",
         ],
         links: [
           { href: "/leveling", label: "Level efficiently first" },
@@ -303,11 +313,28 @@ export const WIKI_GUIDES = {
         ],
       },
       {
+        id: "fast-loop",
+        title: "Fastest Boss Key Farming Loop",
+        paragraphs: [
+          "The best practical loop is not one single source. Start with the highest repeatable quest route you can clear without downtime, kill every enemy on the route, open chest drops, then check Merchant stock when you return to Sailor Island.",
+          "If your damage is low, improve your farming build before chasing keys for hours. If your chest drops feel weak, add luck through race, runes, clan levels, titles or other support before judging the route.",
+        ],
+        bullets: [
+          "Low level: use quests because they progress EXP and key chances together.",
+          "Mid game: add luck support and keep farming dense enemy routes.",
+          "Late game: convert dungeon progress through the Dungeon Shop when the route is unlocked.",
+        ],
+        links: [
+          { href: "/runes", label: "Use luck runes" },
+          { href: "/bosses", label: "Plan boss routes" },
+        ],
+      },
+      {
         id: "spending",
         title: "How to Spend Boss Keys",
         paragraphs: [
-          "Use Boss Keys at the Boss Summoner route for specific bosses such as Saber, Qin Shi and Ichigo. Start with the cheaper fight if you are still testing your damage, because expensive summons punish failed clears.",
-          "Before spending keys, make sure your fruit or sword can keep damage uptime, your movement can avoid boss attacks, and your account can qualify for rewards.",
+          "Use Boss Keys at the Boss Summoner route for specific bosses such as Saber, Qin Shi and Ichigo. Start with Saber if you are still testing your damage, then move to Qin Shi and Ichigo when your clear speed is stable.",
+          "Before spending keys, make sure your fruit or sword can keep damage uptime, your movement can avoid boss attacks, and your account can qualify for rewards. Published cash and gem requirements can change by update, so check the in-game summon UI before spending a large stockpile.",
         ],
         links: [
           { href: "/bosses", label: "Pick the right boss" },
@@ -323,14 +350,42 @@ export const WIKI_GUIDES = {
         ],
       },
     ],
+    tables: [
+      {
+        id: "key-sources",
+        title: "Boss Key Sources Compared",
+        intro:
+          "Use this table to choose the right source for your current progression instead of farming a slow route just because it can drop keys.",
+        headers: ["Source", "Best for", "Requirement", "Reliability"],
+        rows: [
+          ["Quest NPC rewards", "Leveling while farming keys", "Repeatable quest bracket you can clear quickly", "Steady over time, but not guaranteed every completion"],
+          ["Enemy chest drops", "Any farming route with dense mobs", "Kill enemies and open chest drops", "Better with higher luck and faster clear speed"],
+          ["Sailor Island Merchant", "Buying keys when RNG stock appears", "Check rotating Merchant stock", "Great backup, but stock is not always available"],
+          ["Dungeon Shop", "Late-game direct conversion", "Dungeon Island route and Dungeon Tokens", "Strong once unlocked, not a beginner source"],
+        ],
+      },
+      {
+        id: "spend-order",
+        title: "Best Boss Key Spending Order",
+        intro:
+          "Treat these as planning costs and priority notes. Always verify the current in-game summon UI before spending keys, cash and gems after a major update.",
+        headers: ["Boss", "Planning cost", "Why farm it", "Spend keys when"],
+        rows: [
+          ["Saber", "1 Boss Key plus cash and gems", "Early Boss Island test, Boss Tickets, Dungeon Key chance, Saber Armor and Excalibur route", "You can clear the fight without wasting the summon"],
+          ["Qin Shi", "3 Boss Keys plus cash and gems", "Qin Shi Blindfold, Jade Tablet, Imperial Seal and title route", "Saber clears feel stable and your damage uptime is reliable"],
+          ["Ichigo", "5 Boss Keys plus cash and gems", "Hollow Mask, Soul Fragment, Spiritual Core and Soul Reaper route", "Your build can handle longer, harder Boss Island fights"],
+        ],
+      },
+    ],
     howTo: {
       name: "How to farm and spend Sailor Piece Boss Keys",
       steps: [
         "Run repeatable quests in the highest bracket you can clear quickly.",
-        "Open enemy chests and improve luck or kill speed when possible.",
-        "Check Merchant stock when you return to Sailor Island.",
-        "Save keys until your build can clear the target summoned boss.",
-        "Spend keys on the lowest-cost useful boss before expensive summons.",
+        "Open enemy chests during the route and improve luck or kill speed when drops feel slow.",
+        "Check Merchant stock whenever you return to Sailor Island.",
+        "Use Dungeon Shop conversion after Dungeon Island progression is unlocked.",
+        "Save keys until your build can clear the target summoned boss and qualify for drops.",
+        "Spend keys on Saber first if you are testing damage, then move to Qin Shi and Ichigo.",
       ],
     },
     itemList: {
@@ -355,6 +410,14 @@ export const WIKI_GUIDES = {
         q: "Should I spend Boss Keys right away?",
         a: "Usually no. Save keys until your build can clear the target boss reliably and qualify for rewards.",
       },
+      {
+        q: "What is the fastest way to farm Boss Keys?",
+        a: "Use repeatable quests plus chest farming together. This route gives quest reward chances, enemy chest chances and EXP at the same time.",
+      },
+      {
+        q: "Are Boss Keys affected by luck?",
+        a: "Luck helps chest farming because better chest quality and more useful drops matter over long sessions. It does not replace kill speed, so balance both.",
+      },
     ],
     nextSteps: [
       { href: "/bosses", label: "Choose boss targets" },
@@ -364,30 +427,30 @@ export const WIKI_GUIDES = {
   },
   runes: {
     path: "/runes",
-    metaTitle: "Sailor Piece Runes Guide - Best Runes, Sources & Farming",
+    metaTitle: "Sailor Piece Runes Guide - Best Runes, Rune Dungeon & Tower",
     metaDescription:
-      "Sailor Piece runes guide covering Rune Dungeon, Infinite Tower secret runes, luck and damage builds, rune leveling and farming priorities.",
+      "Sailor Piece runes guide covering Rune Dungeon, Infinite Tower secret runes, Radiant Rune, Primordial Rune, rune leveling, luck builds and farming priorities.",
     title: "Sailor Piece Runes Guide",
     badge: "Rune system",
     intro:
-      "Runes are one of the strongest late-game passive systems because they can raise damage, survivability or luck without replacing your core fruit, sword, race or clan.",
+      "Runes are one of the strongest late-game passive systems because they can raise damage, survivability or luck without replacing your core fruit, sword, race or clan. Use this guide to decide which rune to equip, where to farm it, and when Infinite Tower is worth the time.",
     quickAnswer:
-      "Use damage runes for boss and raid clears, luck runes while farming drops, and secret runes only as a long-term chase. Current community tracking points to Rune Dungeon as the main source and Infinite Tower as the secret-rune route.",
+      "Use damage runes for boss and raid clears, luck runes while farming drops, and defensive runes only when survival is the bottleneck. Rune Dungeon is the normal rune route, while Radiant Rune and Primordial Rune are long-term Infinite Tower chase drops.",
     facts: [
       {
-        label: "Main source",
-        value: "Rune Dungeon",
-        note: "Most non-secret runes are tracked through Rune Dungeon farming.",
+        label: "Current pool",
+        value: "11 runes",
+        note: "Current public rune lists track nine normal runes plus Radiant and Primordial secret runes.",
       },
       {
-        label: "Secret source",
-        value: "Infinite Tower",
-        note: "Secret rune routes are tied to deeper tower progression.",
+        label: "Rune level cap",
+        value: "Level 60",
+        note: "Rune level is tracked as shared rune progress, not only one duplicate-fed item.",
       },
       {
-        label: "Best use",
-        value: "Swap by goal",
-        note: "Damage for clears, luck for drops, defense for hard bosses.",
+        label: "Secret pity",
+        value: "6,000 / 7,500",
+        note: "Radiant and Primordial pity routes are tracked through Infinite Tower floors.",
       },
     ],
     sections: [
@@ -396,12 +459,12 @@ export const WIKI_GUIDES = {
         title: "How Runes Work",
         paragraphs: [
           "Runes are passive equipment pieces that modify your account power after your main build is already functional. The best rune is not always the rarest one; it is the rune that supports what you are farming right now.",
-          "Damage runes speed up bosses, luck runes improve long farming sessions, and defensive runes help when you are pushing fights that would otherwise kill you.",
+          "Damage runes speed up bosses, luck runes improve long farming sessions, and defensive runes help when you are pushing fights that would otherwise kill you. Most normal runes come from Rune Dungeon, while the two secret chase runes are tied to Infinite Tower.",
         ],
         bullets: [
-          "Use damage runes when the boss dies too slowly.",
-          "Use luck runes when you are farming keys, stones or rare drops.",
-          "Use defensive runes when survival is the limiting factor.",
+          "Use Havoc, Wrath or another damage rune when the boss dies too slowly.",
+          "Use Fortune or Radiant when you are farming keys, stones or rare drops.",
+          "Use Guardian, Suppression or similar defensive runes when survival is the limiting factor.",
         ],
         links: [
           { href: "/bosses", label: "Plan boss farming" },
@@ -409,23 +472,80 @@ export const WIKI_GUIDES = {
         ],
       },
       {
+        id: "unlock",
+        title: "How to Unlock Rune Dungeon",
+        paragraphs: [
+          "Current public guides track Rune Dungeon as a Dungeon Island route that opens after dungeon progression, including Dungeon Key farming and the Dungeon Master quest line. Use this as a late-game system instead of a day-one beginner target.",
+          "Before you spend a long session in Rune Dungeon, make sure your build clears the waves consistently. Later waves and harder difficulties are usually the better route because they create stronger rune drop chances than early easy waves.",
+        ],
+        bullets: [
+          "Farm Dungeon Keys through boss routes first.",
+          "Unlock the Dungeon Island and Dungeon Master route before planning rune sessions.",
+          "Push harder difficulty only when your build clears waves without frequent failures.",
+        ],
+        links: [
+          { href: "/bosses", label: "Farm Dungeon Keys" },
+          { href: "/leveling", label: "Prepare your level route" },
+        ],
+      },
+      {
         id: "farming",
         title: "Rune Farming Priority",
         paragraphs: [
-          "The practical path is to farm Rune Dungeon until you have a usable rune for your goal, then level that rune instead of swapping constantly. A mid-tier rune that supports your route can outperform a rare rune that does nothing for your current activity.",
-          "Secret runes are long-term goals. Do not delay normal progression just because a secret rune is best in slot on paper.",
+          "The practical path is to farm Rune Dungeon until you have a usable rune for your goal, then keep farming to raise shared rune progress instead of swapping constantly. A mid-tier rune that supports your route can outperform a rare rune that does nothing for your current activity.",
+          "Havoc is the strongest normal damage target in current public rankings, Fortune is the normal luck target, and Radiant or Primordial are secret endgame chases from Infinite Tower. Do not delay normal progression just because a secret rune is best in slot on paper.",
         ],
       },
       {
         id: "leveling",
         title: "Rune Leveling",
         paragraphs: [
-          "Rune value increases with repeated farming and leveling. Treat rune upgrades like accessory enchants: improve the best piece you actually use, then chase the next upgrade after your current setup is stable.",
-          "If your rune progress feels stuck, verify the current upgrade rule in game before spending more time. Recent community posts show players still asking about rune XP behavior after update changes.",
+          "Rune value increases with repeated rune drops. Current community tracking treats Rune Level as shared progress up to Level 60, with each obtained rune adding progress toward stronger effects.",
+          "Treat rune upgrades like accessory enchants: improve the best effect you actually use, then chase the next upgrade after your current setup is stable. If your rune progress feels stuck, verify the current upgrade rule in game before spending more time because rune XP behavior has confused players after update changes.",
         ],
         links: [
           { href: "/accessories", label: "Compare accessory upgrades" },
           { href: "/traits", label: "Check passive traits" },
+        ],
+      },
+      {
+        id: "infinite-tower",
+        title: "Infinite Tower Secret Runes",
+        paragraphs: [
+          "Radiant Rune and Primordial Rune are the main secret rune goals. Radiant is the luck chase for drop farming, while Primordial is the pure damage chase for boss DPS and endgame clears.",
+          "Infinite Tower is a long-session route with better odds deeper in the tower and a pity-style floor tracker in current public guides. Treat secret runes as long-term progression, not something every account should farm before its normal build is stable.",
+        ],
+        links: [
+          { href: "/accessories", label: "Prepare endgame gear" },
+          { href: "/bloodlines", label: "Improve late-game power" },
+        ],
+      },
+    ],
+    tables: [
+      {
+        id: "rune-priority",
+        title: "Best Sailor Piece Runes by Goal",
+        intro:
+          "The right rune depends on what you are doing. Damage is usually best for clears, luck is best after clears are already fast, and defense is only best when survival blocks progress.",
+        headers: ["Goal", "Best targets", "Source route", "Use when"],
+        rows: [
+          ["Max damage", "Primordial Rune, Havoc Rune, Wrath Rune", "Infinite Tower for Primordial; Rune Dungeon for Havoc and Wrath", "Bosses, raids, tower pushes and any route where clear speed is the limit"],
+          ["Luck farming", "Radiant Rune, Fortune Rune", "Infinite Tower for Radiant; Rune Dungeon for Fortune", "Boss Keys, Bloodline Stones, accessories and long rare-drop sessions"],
+          ["Survival", "Guardian Rune, Suppression Rune", "Rune Dungeon", "You die before damage or luck has time to matter"],
+          ["Bridge setup", "Destruction Rune or any strong current damage rune", "Rune Dungeon", "You do not have Havoc, Wrath, Radiant or Primordial yet"],
+        ],
+      },
+      {
+        id: "rune-sources",
+        title: "Rune Sources and Progress",
+        intro:
+          "Use normal rune farming for stable account progress, then move into secret-rune farming when your late-game build can handle the route.",
+        headers: ["System", "What it gives", "Important note", "Priority"],
+        rows: [
+          ["Rune Dungeon", "Most normal runes and shared rune progress", "Harder difficulties and later waves are the better target once your build can clear them", "Primary route for most players"],
+          ["Infinite Tower", "Radiant Rune and Primordial Rune secret chase drops", "Higher floors and long pity-style progress matter more than short low-floor resets", "Endgame route"],
+          ["Rune Level", "Stronger rune effects up to Level 60", "Current guides treat progress as shared across rune drops", "Keep farming after your first usable rune"],
+          ["Luck support", "Better rare-drop sessions", "Use luck only after clear speed is already stable", "Switch by activity"],
         ],
       },
     ],
@@ -433,10 +553,11 @@ export const WIKI_GUIDES = {
       name: "How to choose a Sailor Piece rune",
       steps: [
         "Decide whether your current goal is damage, luck or survival.",
-        "Farm Rune Dungeon for a usable rune before chasing secret drops.",
+        "Unlock Dungeon Island and farm Rune Dungeon for a usable normal rune before chasing secret drops.",
         "Equip the rune that improves your current activity.",
-        "Level the rune you actually use instead of swapping constantly.",
+        "Keep farming runes to raise shared Rune Level instead of swapping constantly.",
         "Move to Infinite Tower secret rune goals after your build is stable.",
+        "Use Radiant for luck farming or Primordial for max damage if you eventually get a secret rune.",
       ],
     },
     itemList: {
@@ -461,6 +582,14 @@ export const WIKI_GUIDES = {
         q: "Should I use damage or luck runes?",
         a: "Use damage when clear speed is the problem. Use luck when you already clear quickly and are farming rare drops.",
       },
+      {
+        q: "What is the best damage rune in Sailor Piece?",
+        a: "Primordial Rune is the current secret damage chase, while Havoc Rune is the strongest normal Rune Dungeon damage target in current public rankings.",
+      },
+      {
+        q: "How do I level up runes?",
+        a: "Current public guides treat Rune Level as shared progress from obtaining runes, with Level 60 as the tracked cap.",
+      },
     ],
     nextSteps: [
       { href: "/bosses", label: "Farm bosses faster" },
@@ -472,13 +601,13 @@ export const WIKI_GUIDES = {
     path: "/accessories",
     metaTitle: "Sailor Piece Accessories Guide - Best Accessories & Enchants",
     metaDescription:
-      "Sailor Piece accessories guide covering boss drops, one-slot accessory builds, enchanting, damage and defense priorities, and farming routes.",
+      "Sailor Piece accessories guide covering boss drops, best accessories, E0-E10 enchanting, damage, defense, damage reduction, luck farming and upgrade routes.",
     title: "Sailor Piece Accessories Guide",
     badge: "Accessory builds",
     intro:
-      "Accessories are flexible power pieces because you can swap them by activity. The right accessory can make a boss route safer, a PvP setup stronger, or a farm loop faster.",
+      "Accessories are flexible power pieces because you can swap them by activity. The right accessory can make a boss route safer, a PvP setup stronger, or a farm loop faster, especially after enchant upgrades.",
     quickAnswer:
-      "Farm accessories from bosses, equip the best one for your current goal, then enchant it before chasing a tiny drop-rate upgrade. A fully upgraded useful accessory can beat an unenchanted rare one for day-to-day farming.",
+      "Farm accessories from bosses, equip the best one for your current goal, then enchant it before chasing a tiny drop-rate upgrade. Current public lists track one active accessory slot, E0-E10 enchanting, and top endgame targets such as Ice Queen Outfit, Moon Outfit, Atomic Outfit, Abyssal Outfit and Manipulator Outfit.",
     facts: [
       {
         label: "Equip rule",
@@ -492,8 +621,8 @@ export const WIKI_GUIDES = {
       },
       {
         label: "Upgrade route",
-        value: "Enchant",
-        note: "Enchanting raises the value of the accessory you already use.",
+        value: "E0-E10",
+        note: "Current accessory guides track enchanting up to E10.",
       },
     ],
     sections: [
@@ -502,7 +631,7 @@ export const WIKI_GUIDES = {
         title: "How to Choose Accessories",
         paragraphs: [
           "Pick the accessory that solves your current bottleneck. If you die during bosses, defense and damage reduction matter more than raw damage. If bosses are safe but slow, damage becomes the priority.",
-          "Do not judge accessories only by rarity. Drop source, enchant level, and your build goal matter just as much as the item name.",
+          "Do not judge accessories only by rarity. Drop source, enchant level, and your build goal matter just as much as the item name. A damage accessory is not automatically better than a defensive one if you lose the fight before your damage can matter.",
         ],
         bullets: [
           "Boss farming: prioritize defense, damage and consistent uptime.",
@@ -518,8 +647,13 @@ export const WIKI_GUIDES = {
         id: "enchanting",
         title: "Accessory Enchanting",
         paragraphs: [
-          "Current accessory guides track an enchant system that can raise accessory stats beyond base values. That makes enchant planning important because an upgraded mid-tier accessory may outperform a rare item you have not improved yet.",
-          "The simple rule is to enchant your current best usable piece before spending a full session chasing a low-rate upgrade.",
+          "Current accessory guides track an enchant system that can raise accessory stats beyond base values, commonly from E0 to E10. That makes enchant planning important because an upgraded mid-tier accessory may outperform a rare item you have not improved yet.",
+          "The simple rule is to enchant your current best usable piece before spending a full session chasing a low-rate upgrade. Later enchants can require extra material planning, so avoid spreading materials across accessories you rarely equip.",
+        ],
+        bullets: [
+          "Enchant the accessory you use every session first.",
+          "Avoid upgrading multiple sidegrade accessories at the same time.",
+          "Recheck the current Enchanter NPC cost before pushing high enchant levels.",
         ],
       },
       {
@@ -527,11 +661,66 @@ export const WIKI_GUIDES = {
         title: "Farming Route",
         paragraphs: [
           "Start with bosses you can clear quickly for early accessories, then move into harder boss routes when your damage and survival improve. If a target drop has a low rate, increase your clear speed first.",
-          "Use codes, runes, traits and boss keys to improve the farming loop before committing to a long accessory grind.",
+          "Use codes, runes, traits and boss keys to improve the farming loop before committing to a long accessory grind. If the accessory is tied to a key boss, save enough keys for repeated attempts instead of spending your last key on one low-odds roll.",
         ],
         links: [
           { href: "/leveling", label: "Level first" },
           { href: "/boss-keys", label: "Spend keys well" },
+        ],
+      },
+      {
+        id: "top-targets",
+        title: "Top Accessory Targets",
+        paragraphs: [
+          "Current public accessory lists repeatedly place the highest-stat outfits near the top: Ice Queen Outfit, Moon Outfit, Atomic Outfit, Abyssal Outfit, Manipulator Outfit, Maiden Outfit and other late-game boss or tower drops.",
+          "These are not beginner goals. If your account cannot clear the route quickly, use an easier boss accessory, enchant it, and return when your runes, bloodline, sword or fruit are stronger.",
+        ],
+        links: [
+          { href: "/runes", label: "Boost damage or luck" },
+          { href: "/bloodlines", label: "Plan late-game rolls" },
+        ],
+      },
+    ],
+    tables: [
+      {
+        id: "accessory-goals",
+        title: "Best Accessory Stats by Activity",
+        intro:
+          "Choose accessories by activity first. The same item is not best for every route because farming, bossing and PvP reward different stat mixes.",
+        headers: ["Activity", "Stat priority", "Good targets", "Avoid"],
+        rows: [
+          ["Boss farming", "Defense, damage reduction, then damage", "Stable boss-drop outfits you can enchant", "Glass-cannon swaps that make clears fail"],
+          ["Fast clears", "Damage, then enough defense to stay alive", "High-damage outfits from harder bosses or tower routes", "Low-damage defensive pieces when the boss is already safe"],
+          ["Rare-drop farming", "Luck support across the full build plus enough damage", "Accessory plus Radiant/Fortune rune and title support", "Using luck so early that clear speed collapses"],
+          ["PvP and hard endgame", "All-around stats and damage reduction", "Top Mythical outfits with strong enchants", "Unenchanted rare names with weaker real stats"],
+        ],
+      },
+      {
+        id: "top-accessories",
+        title: "High-Value Accessory Targets",
+        intro:
+          "These are current public-list targets to recognize when planning routes. Exact rankings can move after updates, so prioritize the route you can clear repeatedly.",
+        headers: ["Accessory", "Common route", "Why players chase it", "Planning note"],
+        rows: [
+          ["Ice Queen Outfit", "Ice Queen Boss", "Very high defense, damage and damage reduction profile", "Late-game target; do not chase before clear speed is stable"],
+          ["Moon Outfit", "Moon Slayer Boss", "High all-around stats for hard boss routes", "Works best after you can farm the boss repeatedly"],
+          ["Atomic Outfit", "Atomic Boss", "Strong damage-focused endgame outfit", "Good when clear speed is the bottleneck"],
+          ["Abyssal Outfit", "Infinite Tower", "Tower-linked endgame accessory", "Pairs naturally with secret-rune progression"],
+          ["Manipulator Outfit", "True Aizen Boss", "High-value late-game boss drop", "Treat as a long grind unless your route is already optimized"],
+          ["Hollow Mask", "Ichigo Boss", "Boss Island accessory tied to key spending", "Save enough Boss Keys for repeated attempts"],
+        ],
+      },
+      {
+        id: "enchant-plan",
+        title: "Accessory Enchant Plan",
+        intro:
+          "Enchanting makes accessories stronger over time. Use this as a simple upgrade rule when you are deciding whether to farm a new drop or improve the piece you already use.",
+        headers: ["Stage", "What to do", "Why it matters", "Next step"],
+        rows: [
+          ["Fresh drop", "Equip it only if it helps your current activity", "A rare name is not useful if the stats do not solve your bottleneck", "Compare against your current enchanted accessory"],
+          ["Early enchants", "Upgrade your most-used accessory first", "Small upgrades apply every session", "Stop if the cost blocks a bigger route unlock"],
+          ["High enchants", "Push only accessories you expect to keep", "Later upgrade planning can consume more materials", "Farm duplicates or materials only for real keepers"],
+          ["Replacement", "Swap when the new item beats your upgraded old item", "Unenchanted rare drops can underperform upgraded mid-tier gear", "Rebuild around your new stat profile"],
         ],
       },
     ],
@@ -540,9 +729,10 @@ export const WIKI_GUIDES = {
       steps: [
         "Pick the boss route that drops an accessory matching your goal.",
         "Farm a usable accessory before chasing best-in-slot drops.",
-        "Enchant the accessory you use most often.",
+        "Enchant the accessory you use most often before upgrading sidegrades.",
         "Recheck your build goal before swapping to a new accessory.",
         "Only chase low-rate drops after your clear speed is stable.",
+        "Save Boss Keys or route materials before farming key-gated accessory bosses.",
       ],
     },
     itemList: {
@@ -566,6 +756,18 @@ export const WIKI_GUIDES = {
       {
         q: "What stats matter most on accessories?",
         a: "Damage, defense and damage reduction are the core stats. The right priority depends on whether you are farming, bossing or fighting players.",
+      },
+      {
+        q: "What are the best accessories in Sailor Piece?",
+        a: "Current public lists place late-game outfits such as Ice Queen Outfit, Moon Outfit, Atomic Outfit, Abyssal Outfit and Manipulator Outfit near the top, but the best choice depends on what boss or route you can farm reliably.",
+      },
+      {
+        q: "How far can accessories be enchanted?",
+        a: "Current accessory guides track enchants from E0 to E10. Verify the in-game Enchanter NPC before spending high-level materials after an update.",
+      },
+      {
+        q: "Should I farm accessories or runes first?",
+        a: "Farm whichever fixes your bottleneck. Use runes when you need broad damage, luck or survival support; farm accessories when a specific boss drop would directly improve your route.",
       },
     ],
     nextSteps: [
