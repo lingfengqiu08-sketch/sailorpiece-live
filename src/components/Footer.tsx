@@ -29,7 +29,11 @@ export function Footer() {
             <li><Link href="/traits">Traits</Link></li>
             <li><Link href="/leveling">Leveling</Link></li>
             <li><Link href="/bosses">Bosses</Link></li>
+            <li><Link href="/boss-keys">Boss Keys</Link></li>
             <li><Link href="/runes">Runes</Link></li>
+            <li><Link href="/accessories">Accessories</Link></li>
+            <li><Link href="/specs">Specs</Link></li>
+            <li><Link href="/bloodlines">Bloodlines</Link></li>
             <li><Link href="/guide">Guide</Link></li>
           </ul>
         </div>
