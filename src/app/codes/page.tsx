@@ -122,11 +122,13 @@ export default function CodesPage() {
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">Where to Find More Sailor Piece Codes</h2>
         <p className="text-[var(--color-text-muted)] mb-4 leading-relaxed">
-          The fastest sources for new Sailor Piece codes are the official channels:
+          The fastest sources for new Sailor Piece codes are the official channels. Use our{" "}
+          <Link href="/official-links">Sailor Piece official links page</Link> if you need the
+          current Trello, Discord or Roblox game link.
         </p>
         <ul className="space-y-2 text-sm text-[var(--color-text-muted)] list-disc list-inside">
-          <li>The official <strong className="text-[var(--color-text)]">Sailor Piece Discord</strong> — codes drop minutes after they're created.</li>
-          <li>The official <strong className="text-[var(--color-text)]">Sailor Piece Trello</strong> — useful for patch notes, systems, and progression info, but its codes section can lag behind Discord.</li>
+          <li>The official <Link href="/official-links">Sailor Piece Discord</Link> — codes drop minutes after they're created.</li>
+          <li>The official <Link href="/official-links">Sailor Piece Trello</Link> — useful for patch notes, systems, and progression info, but its codes section can lag behind Discord.</li>
           <li>The <strong className="text-[var(--color-text)]">Roblox game page</strong> — milestone codes during livestreams.</li>
         </ul>
         <p className="mt-4 text-sm">

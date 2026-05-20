@@ -66,6 +66,7 @@ export default function Home() {
         <div className="mt-6 flex flex-wrap gap-3 justify-center sm:justify-start">
           <Link href="/codes" className="btn-primary">View all Sailor Piece codes →</Link>
           <Link href="/tier-list" className="btn-ghost">Open tier list</Link>
+          <Link href="/official-links" className="btn-ghost">Official links</Link>
         </div>
       </section>
 
@@ -173,7 +174,14 @@ export default function Home() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-2xl font-bold mb-4">Official Links</h2>
+        <div className="flex items-end justify-between mb-4">
+          <h2 className="text-2xl font-bold">Official Sailor Piece Links</h2>
+          <Link href="/official-links" className="text-sm">Open links guide →</Link>
+        </div>
+        <p className="text-[var(--color-text-muted)] mb-4 leading-relaxed">
+          Use the links guide to open the official Trello, Discord and Roblox game page safely,
+          with notes on which source is best for codes, updates and system details.
+        </p>
         <OfficialLinks />
       </section>
 

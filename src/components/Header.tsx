@@ -4,6 +4,7 @@ import Link from "next/link";
 const NAV = [
   { href: "/codes", label: "Codes" },
   { href: "/tier-list", label: "Tier List" },
+  { href: "/official-links", label: "Links" },
   { href: "/races", label: "Races" },
   { href: "/guides", label: "Guides" },
 ];
