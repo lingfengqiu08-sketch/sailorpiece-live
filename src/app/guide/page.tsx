@@ -8,11 +8,85 @@ import { codes } from "@/lib/codes";
 import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
-  title: "Sailor Piece Wiki Guide — Islands, Fruits, Haki & Sea 2",
+  title: "Sailor Piece Wiki Guide - Codes, Trello, Leveling & Builds",
   description:
-    "A practical Sailor Piece wiki guide for May 2026: devil fruits, islands, level cap, haki, runes, bosses, Sea 2 progression and official Trello / Discord links.",
+    "A practical Sailor Piece wiki guide for May 2026: active codes, official Trello and Discord links, leveling, fruits, haki, bosses, runes, builds and Sea 2.",
   path: "/guide",
 });
+
+const GUIDE_SHORTCUTS = [
+  { href: "/codes", label: "Codes", text: "Claim rewards with level eligibility filtering" },
+  { href: "/official-links", label: "Trello & Links", text: "Official Roblox, Discord and Trello sources" },
+  { href: "/leveling", label: "Leveling", text: "Fast quest, boss and Sea 2 route" },
+  { href: "/bosses", label: "Bosses", text: "Boss types, farming order and drops" },
+  { href: "/runes", label: "Runes", text: "Damage, luck and secret-rune goals" },
+  { href: "/tier-list", label: "Tier List", text: "Races, fruits, swords, clans, haki and traits" },
+  { href: "/guides", label: "All Guides", text: "Every guide page in one index" },
+  { href: "/traits", label: "Traits", text: "Passive rolls for boss farming and PvP" },
+];
+
+const START_ROUTE = [
+  {
+    step: "1",
+    title: "Claim current codes",
+    text: "Use the level filter first so you only copy codes your account can actually redeem.",
+    href: "/codes",
+    link: "Open codes",
+  },
+  {
+    step: "2",
+    title: "Verify official sources",
+    text: "Use official Roblox, Discord and Trello links before trusting a code, patch note or mechanic change.",
+    href: "/official-links",
+    link: "Check official links",
+  },
+  {
+    step: "3",
+    title: "Follow the leveling route",
+    text: "Quest until mob grinding slows down, then rotate bosses, keys and dungeon routes for better account progress.",
+    href: "/leveling",
+    link: "Read leveling route",
+  },
+  {
+    step: "4",
+    title: "Lock one stable build",
+    text: "Choose one usable fruit, sword, race, clan and trait before spending rerolls on narrow PvP or secret-drop goals.",
+    href: "/tier-list",
+    link: "Compare builds",
+  },
+];
+
+const BUILD_CHECKLIST = [
+  ["Early game", "Codes, fruit, race, basic sword", "Get mobility and damage before chasing rare rerolls.", "/codes"],
+  ["Mid game", "Leveling, bosses, haki, boss keys", "Move from quest grinding into repeatable boss routes.", "/bosses"],
+  ["Late game", "Runes, accessories, specs, bloodlines", "Improve damage, luck and survival before long drop farms.", "/runes"],
+  ["Endgame", "Sea 2, raids, world bosses, secret runes", "Only chase rare systems after your clear speed is stable.", "/guides"],
+];
+
+const GUIDE_HOW_TO = {
+  name: "How to start Sailor Piece progression",
+  steps: [
+    "Check active Sailor Piece codes and redeem every code eligible for your current level.",
+    "Use official Roblox, Discord and Trello links to verify current game systems and code sources.",
+    "Follow the leveling route until your current quest bracket slows down.",
+    "Upgrade one stable fruit, sword, race, clan and trait setup before spending rerolls casually.",
+    "Move into boss farming, boss keys, runes and accessories once normal mob grinding becomes inefficient.",
+    "Use the guide hub and tier lists to decide the next build upgrade instead of rerolling every system at once.",
+  ],
+};
+
+const GUIDE_ITEM_LIST = {
+  name: "Sailor Piece Wiki Topics",
+  items: [
+    "Active Sailor Piece codes",
+    "Official Sailor Piece Trello and Discord links",
+    "Leveling and Sea 2 progression",
+    "Devil fruits and fruit tier list",
+    "Bosses, boss keys and rare drops",
+    "Runes, accessories, specs and bloodlines",
+    "Races, swords, clans, haki and traits",
+  ],
+};
 
 const FAQS = [
   {
@@ -35,6 +109,18 @@ const FAQS = [
     q: "How do I get haki in Sailor Piece?",
     a: "Armament Haki unlocks via the first major boss after Sea 1's mid-game. Observation Haki unlocks through the Observation trainer NPC. Conqueror Haki is rare — it activates on certain races / clans after specific quest milestones.",
   },
+  {
+    q: "Where is the official Sailor Piece Trello?",
+    a: "Use the official links page on this site to open the verified Sailor Piece Roblox, Discord and Trello sources. This avoids fake code pages and outdated community mirrors.",
+  },
+  {
+    q: "What should beginners do first in Sailor Piece?",
+    a: "Start with active codes, then secure one usable fruit or sword, follow the leveling route, and only spend rerolls after your current build can clear bosses consistently.",
+  },
+  {
+    q: "Should I follow the tier list or the wiki guide first?",
+    a: "Use this wiki guide first to understand progression, then use the tier list when choosing a specific race, fruit, sword, clan, haki or trait.",
+  },
 ];
 
 export default function GuidePage() {
@@ -50,23 +136,20 @@ export default function GuidePage() {
           { name: "Guide", url: "/guide" },
         ]}
         faq={FAQS}
+        howto={GUIDE_HOW_TO}
+        itemList={GUIDE_ITEM_LIST}
       />
 
       <header className="mb-8">
         <p className="inline-block badge badge-fresh mb-3">Updated {lastChecked}</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Sailor Piece Wiki Guide</h1>
         <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
-          Everything new players need to know about Sailor Piece — devil fruits, islands, leveling, haki, bosses, and the Sea 2 expansion.
+          The practical starting point for Sailor Piece: claim active codes, verify official Trello and Discord links, follow the leveling route, then choose the next build upgrade without wasting rerolls.
         </p>
       </header>
 
       <nav className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-12" aria-label="Sailor Piece guide shortcuts">
-        {[
-          { href: "/leveling", label: "Leveling", text: "Fast quest, boss and Sea 2 route" },
-          { href: "/bosses", label: "Bosses", text: "Boss types, farming order and drops" },
-          { href: "/runes", label: "Runes", text: "Damage, luck and secret-rune goals" },
-          { href: "/guides", label: "All Guides", text: "Every guide page in one index" },
-        ].map((item) => (
+        {GUIDE_SHORTCUTS.map((item) => (
           <Link
             key={item.href}
             href={item.href}
@@ -78,6 +161,53 @@ export default function GuidePage() {
         ))}
       </nav>
 
+      <section id="quick-start" className="mb-12 scroll-mt-20">
+        <h2 className="text-2xl font-bold mb-3">Quick Start Route</h2>
+        <div className="grid lg:grid-cols-4 gap-3">
+          {START_ROUTE.map((item) => (
+            <article key={item.step} className="surface p-5">
+              <p className="text-xs uppercase text-[var(--color-text-muted)]">Step {item.step}</p>
+              <h3 className="mt-2 font-semibold">{item.title}</h3>
+              <p className="mt-2 text-sm text-[var(--color-text-muted)] leading-relaxed">{item.text}</p>
+              <Link href={item.href} className="btn-ghost text-sm mt-4 inline-flex">
+                {item.link}
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="progression-checklist" className="mb-12 scroll-mt-20">
+        <h2 className="text-2xl font-bold mb-3">Progression Checklist</h2>
+        <p className="text-[var(--color-text-muted)] mb-4 leading-relaxed">
+          Use this order before rerolling. Sailor Piece rewards stable progression more than constantly chasing one rare system.
+        </p>
+        <div className="surface overflow-x-auto">
+          <table className="w-full min-w-[720px] text-sm">
+            <thead className="bg-[var(--color-surface-2)] text-left text-xs uppercase tracking-wide text-[var(--color-text-muted)]">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Stage</th>
+                <th className="px-4 py-3 font-semibold">Focus</th>
+                <th className="px-4 py-3 font-semibold">Why it matters</th>
+                <th className="px-4 py-3 font-semibold">Next page</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--color-border)]">
+              {BUILD_CHECKLIST.map(([stage, focus, reason, href]) => (
+                <tr key={stage} className="align-top">
+                  <td className="px-4 py-3 font-semibold">{stage}</td>
+                  <td className="px-4 py-3 text-[var(--color-text-muted)]">{focus}</td>
+                  <td className="px-4 py-3 text-[var(--color-text-muted)] leading-relaxed">{reason}</td>
+                  <td className="px-4 py-3">
+                    <Link href={href}>Open guide</Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* What is Sailor Piece */}
       <section id="what-is" className="mb-12 surface p-6 scroll-mt-20">
         <h2 className="text-2xl font-bold mb-3">What Is Sailor Piece?</h2>
@@ -87,6 +217,9 @@ export default function GuidePage() {
         </p>
         <p className="text-[var(--color-text-muted)] leading-relaxed mt-3">
           The game is structured around two seas, with Sea 2 carrying the late-game path toward level 20,000 and introducing four new combat specs, World Bosses, Raids, Bloodlines and the Anti-Magic system.
+        </p>
+        <p className="text-[var(--color-text-muted)] leading-relaxed mt-3">
+          If you came here from a code or Trello search, use this page as the broad route and then open the specific page you need: <Link href="/codes">codes</Link>, <Link href="/official-links">official links</Link>, <Link href="/leveling">leveling</Link>, <Link href="/bosses">bosses</Link> or <Link href="/tier-list">tier list</Link>.
         </p>
       </section>
 
