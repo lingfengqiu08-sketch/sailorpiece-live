@@ -359,13 +359,13 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
   },
   traits: {
-    metaTitle: "Sailor Piece Traits Guide — Best Traits & Tier List",
+    metaTitle: "Sailor Piece Traits Guide - Best Traits, Tier List & Rerolls",
     metaDescription:
-      "Best Sailor Piece traits ranked for damage, survivability, PvP, burst windows and endgame scaling, including Infinity, Transcendent and Malevolent.",
+      "Best Sailor Piece traits ranked for damage, survivability, PvP, boss farming and reroll planning, including Infinity, Transcendent, Malevolent and Overlord.",
     title: "Sailor Piece Traits Guide",
     badge: "Trait guide",
     intro:
-      "Traits are passive power. The best traits improve damage, survival or burst windows without forcing you into one narrow race, fruit or sword setup.",
+      "Traits are passive power. The best traits improve damage, survival, burst windows or PvP pressure without forcing you into one narrow race, fruit, sword or clan setup.",
     chooseTitle: "How to choose a trait",
     chooseTips: [
       "Prioritize all-around multipliers if you change builds often.",
@@ -378,12 +378,75 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       "Overlord, Celestial, Cataclysm, Singularity and Emperor are also strong endgame options.",
       "Basic traits like Tough, Strong, Agile and Balanced are temporary and should be upgraded.",
     ],
+    sections: [
+      {
+        id: "reroll-strategy",
+        title: "Trait Reroll Strategy",
+        paragraphs: [
+          "Trait rerolls are easy to waste because traits look simple but affect every build. Do not chase a perfect S-tier trait before your race, clan and sword route are stable enough to use it.",
+          "The safest rule is to keep any strong all-around or damage trait while you are still changing builds. Only reroll aggressively when you know whether the account needs boss damage, PvP survival, magic scaling or burst-window pressure.",
+        ],
+        bullets: [
+          "Keep Infinity, Transcendent or Malevolent unless a major patch changes their role.",
+          "Keep strong A-tier traits if your build is not finished yet.",
+          "Reroll starter traits like Tough, Strong, Agile, Steady and Balanced after you have enough resources from codes and farming.",
+        ],
+      },
+      {
+        id: "synergy",
+        title: "Best Trait Synergies",
+        paragraphs: [
+          "Traits should support the part of the build that actually carries fights. A damage sword build wants a different trait than a control-heavy PvP setup, and a magic-focused build should not blindly copy a boss-melt trait list.",
+          "Use traits as the final passive layer after race, clan and weapon direction are clear. This makes rerolls more efficient and prevents replacing a useful trait with a name that does not match your route.",
+        ],
+        bullets: [
+          "Sword damage: Infinity, Transcendent, Malevolent, Cataclysm.",
+          "PvP survival: Overlord, Emperor, Dominator, Unstoppable.",
+          "Magic or hybrid builds: Celestial, Genesis, Singularity.",
+          "Boss farming: Malevolent, Sovereign, Transcendent, Infinity.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        id: "best-traits-by-goal",
+        title: "Best Sailor Piece Traits by Goal",
+        intro:
+          "Use this table before spending passive shards or rerolls. The best all-around trait is not always the best trait for PvP, boss farming or magic scaling.",
+        headers: ["Goal", "Best traits", "Why", "Reroll advice"],
+        rows: [
+          ["All-around progression", "Infinity, Transcendent", "Strong across many builds, so they stay useful while your race, clan or sword changes.", "Keep immediately unless a patch clearly nerfs them."],
+          ["Pure damage", "Malevolent, Cataclysm, Singularity", "These help burst windows, stacking damage or aggressive boss routes.", "Chase only after your damage build is already planned."],
+          ["PvP pressure", "Overlord, Emperor, Dominator", "Defensive bonuses, pressure and control matter more than raw farming damage.", "Keep if you play PvP or hard endgame fights."],
+          ["Boss farming", "Infinity, Transcendent, Malevolent, Sovereign", "Boss routes reward uptime, damage and reliable scaling.", "Use damage runes and stable swords before judging trait value."],
+          ["Bridge setup", "Genesis, Unstoppable, Godspeed, Driven", "Good enough to progress while saving rerolls for S-tier targets.", "Do not reroll too early if the trait solves your current bottleneck."],
+        ],
+      },
+      {
+        id: "top-traits-compared",
+        title: "Top Traits Compared",
+        intro:
+          "These notes explain what each top trait is best for, so you can avoid rerolling a strong trait just because another name ranks higher in a different mode.",
+        headers: ["Trait", "Main role", "Best pairing", "Keep or reroll"],
+        rows: [
+          ["Infinity", "Best all-around scaling", "Any strong race, clan, sword or fruit setup", "Keep. This is the safest trait for changing builds."],
+          ["Transcendent", "Late-game scaling", "Endgame boss, raid and hybrid builds", "Keep if your account is entering late-game routes."],
+          ["Malevolent", "Pure damage", "Boss melt, raid damage and aggressive sword builds", "Keep when damage is your bottleneck."],
+          ["Overlord", "PvP defense and pressure", "PvP clans, control swords and survival builds", "Keep for PvP; less mandatory for simple farming."],
+          ["Celestial", "Magic and hybrid scaling", "Magic swords, fruit builds and hybrid routes", "Keep if the rest of your setup supports magic scaling."],
+          ["Cataclysm", "Burst windows", "Burst swords, boss melt and aggressive traits", "Keep if your build can survive between burst cycles."],
+          ["Singularity", "Stacking endgame damage", "Long fights, raids and scaling builds", "Keep for long endgame encounters."],
+          ["Emperor", "PvP utility and damage", "PvP routes and control-heavy setups", "Keep if you need pressure plus utility."],
+        ],
+      },
+    ],
     howTo: {
       name: "How to pick a Sailor Piece trait",
       steps: [
         "Decide whether your build needs damage, speed, defense or PvP control.",
-        "Compare S and A tier traits before spending passive shards.",
+        "Compare S and A tier traits against your race, clan, sword and rune setup before spending passive shards.",
         "Keep strong all-around traits if your build is still changing.",
+        "Use codes and farming routes to build a reroll buffer before chasing a perfect S-tier trait.",
         "Reroll low-tier starter traits once you have enough resources from codes and farming.",
       ],
     },
@@ -399,6 +462,18 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       {
         q: "When should I reroll traits?",
         a: "Reroll once your core build is stable and you have spare passive shards or rerolls from codes.",
+      },
+      {
+        q: "What trait is best for boss farming?",
+        a: "Infinity and Transcendent are the safest all-around answers, while Malevolent and Sovereign are stronger when your main problem is damage.",
+      },
+      {
+        q: "What trait is best for PvP?",
+        a: "Overlord, Emperor and Dominator are better PvP picks when you need pressure, defense or control instead of simple farming damage.",
+      },
+      {
+        q: "Should I reroll a good A-tier trait?",
+        a: "Usually no. Keep a useful A-tier trait until you have enough rerolls and a clear S-tier target that matches your build.",
       },
     ],
   },
