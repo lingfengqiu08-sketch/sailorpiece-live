@@ -427,15 +427,15 @@ export const WIKI_GUIDES = {
   },
   runes: {
     path: "/runes",
-    metaTitle: "Sailor Piece Runes Guide - Best Runes, Rune Dungeon & Tower",
+    metaTitle: "Sailor Piece Runes Guide - Best Runes, Rune Dungeon & Secret Runes",
     metaDescription:
-      "Sailor Piece runes guide covering Rune Dungeon, Infinite Tower secret runes, Radiant Rune, Primordial Rune, rune leveling, luck builds and farming priorities.",
+      "Best Sailor Piece runes for damage, luck and survival, with Rune Dungeon farming, Infinite Tower secret runes, Radiant Rune, Primordial Rune and rune leveling.",
     title: "Sailor Piece Runes Guide",
     badge: "Rune system",
     intro:
-      "Runes are one of the strongest late-game passive systems because they can raise damage, survivability or luck without replacing your core fruit, sword, race or clan. Use this guide to decide which rune to equip, where to farm it, and when Infinite Tower is worth the time.",
+      "Runes are one of the strongest late-game passive systems because they can raise damage, survivability or luck without replacing your core fruit, sword, race or clan. Use this guide to decide which rune to equip, where to farm it, when to switch between damage and luck, and when Infinite Tower is worth the time.",
     quickAnswer:
-      "Use damage runes for boss and raid clears, luck runes while farming drops, and defensive runes only when survival is the bottleneck. Rune Dungeon is the normal rune route, while Radiant Rune and Primordial Rune are long-term Infinite Tower chase drops.",
+      "Use damage runes for boss and raid clears, luck runes only after clears are already fast, and defensive runes when survival is the bottleneck. Rune Dungeon is the normal rune route. Radiant Rune and Primordial Rune are long-term Infinite Tower chase drops, not early progression requirements.",
     facts: [
       {
         label: "Current pool",
@@ -451,6 +451,11 @@ export const WIKI_GUIDES = {
         label: "Secret pity",
         value: "6,000 / 7,500",
         note: "Radiant and Primordial pity routes are tracked through Infinite Tower floors.",
+      },
+      {
+        label: "Tower access",
+        value: "Level 8,500+",
+        note: "Treat Infinite Tower rune farming as endgame content after your normal build can clear reliably.",
       },
     ],
     sections: [
@@ -495,6 +500,33 @@ export const WIKI_GUIDES = {
           "The practical path is to farm Rune Dungeon until you have a usable rune for your goal, then keep farming to raise shared rune progress instead of swapping constantly. A mid-tier rune that supports your route can outperform a rare rune that does nothing for your current activity.",
           "Havoc is the strongest normal damage target in current public rankings, Fortune is the normal luck target, and Radiant or Primordial are secret endgame chases from Infinite Tower. Do not delay normal progression just because a secret rune is best in slot on paper.",
         ],
+        bullets: [
+          "First goal: get any useful damage rune so bosses and dungeon waves die faster.",
+          "Second goal: farm enough duplicate rune progress to make the rune bonus meaningful.",
+          "Third goal: add a luck rune only when clear speed is already stable.",
+          "Final goal: chase Radiant or Primordial after your account can handle long tower sessions.",
+        ],
+        links: [
+          { href: "/traits", label: "Match passive traits" },
+          { href: "/swords", label: "Improve clear speed" },
+        ],
+      },
+      {
+        id: "damage-vs-luck",
+        title: "Damage Rune or Luck Rune?",
+        paragraphs: [
+          "Most players should not start a farm session with luck if it makes each clear much slower. Rare-drop farming is a volume problem: more fast clears usually beat fewer slow clears with slightly higher luck.",
+          "Switch to Fortune or Radiant when you already clear bosses, Rune Dungeon waves or tower floors quickly. If the route still feels slow, use Havoc, Wrath, Primordial or another damage rune until the loop becomes consistent.",
+        ],
+        bullets: [
+          "Use damage for bosses, raids, Rune Dungeon pushes and early Infinite Tower attempts.",
+          "Use luck for boss keys, accessories, bloodline stones and repeated rare-drop sessions.",
+          "Use survival only when dying is the reason the route fails.",
+        ],
+        links: [
+          { href: "/boss-keys", label: "Plan key farming" },
+          { href: "/accessories", label: "Farm rare drops" },
+        ],
       },
       {
         id: "leveling",
@@ -518,6 +550,23 @@ export const WIKI_GUIDES = {
         links: [
           { href: "/accessories", label: "Prepare endgame gear" },
           { href: "/bloodlines", label: "Improve late-game power" },
+        ],
+      },
+      {
+        id: "normal-vs-secret",
+        title: "Normal Runes vs Secret Runes",
+        paragraphs: [
+          "Normal runes matter because they are the route most players can repeat. A leveled normal rune that fits your current route can produce more real progress than waiting for a secret rune drop you cannot farm consistently.",
+          "Secret runes are the ceiling. Radiant is the long-term luck target, and Primordial is the long-term damage target. Use them when you get them, but build your account around reliable Rune Dungeon progress first.",
+        ],
+        bullets: [
+          "Normal damage rune first if your boss clears are slow.",
+          "Fortune before Radiant if you need a realistic luck setup now.",
+          "Havoc or Wrath before Primordial if Infinite Tower is still inconsistent.",
+        ],
+        links: [
+          { href: "/codes", label: "Claim current codes" },
+          { href: "/tier-list/traits", label: "Compare trait support" },
         ],
       },
     ],
@@ -548,15 +597,30 @@ export const WIKI_GUIDES = {
           ["Luck support", "Better rare-drop sessions", "Use luck only after clear speed is already stable", "Switch by activity"],
         ],
       },
+      {
+        id: "rune-swap-plan",
+        title: "Rune Swap Plan by Activity",
+        intro:
+          "Use this as the practical loadout rule before a long farm session. The right rune is the one that improves the route you are actually running.",
+        headers: ["Activity", "Equip first", "Switch when", "Avoid"],
+        rows: [
+          ["Boss farming", "Primordial, Havoc or Wrath", "Switch to Radiant or Fortune only after boss clears are fast", "Starting with luck if it doubles clear time"],
+          ["Rune Dungeon", "Damage or survival rune", "Use luck after waves are consistent on your chosen difficulty", "Pushing harder waves before your build is stable"],
+          ["Infinite Tower", "Damage plus enough survival support", "Use Radiant for long rare-drop sessions if clear speed stays strong", "Short low-floor resets as the only plan"],
+          ["Accessory farming", "Damage for slow bosses, luck for fast loops", "Swap by boss difficulty and drop target", "Keeping one rune equipped for every activity"],
+          ["Leveling and progression", "Any useful damage rune", "Move to specialist runes after your core route is stable", "Ignoring fruits, swords, clans and traits"],
+        ],
+      },
     ],
     howTo: {
       name: "How to choose a Sailor Piece rune",
       steps: [
-        "Decide whether your current goal is damage, luck or survival.",
+        "Decide whether your current route is blocked by damage, luck or survival.",
+        "Redeem active codes and stabilize your fruit, sword, clan and trait before long rune sessions.",
         "Unlock Dungeon Island and farm Rune Dungeon for a usable normal rune before chasing secret drops.",
-        "Equip the rune that improves your current activity.",
-        "Keep farming runes to raise shared Rune Level instead of swapping constantly.",
-        "Move to Infinite Tower secret rune goals after your build is stable.",
+        "Equip damage for slow clears, luck for fast rare-drop loops or defense when deaths are the bottleneck.",
+        "Keep farming runes to raise shared Rune Level instead of swapping randomly after every drop.",
+        "Move to Infinite Tower secret rune goals after your build can handle long sessions consistently.",
         "Use Radiant for luck farming or Primordial for max damage if you eventually get a secret rune.",
       ],
     },
@@ -566,6 +630,7 @@ export const WIKI_GUIDES = {
         "Damage rune for boss clears",
         "Luck rune for rare drops",
         "Defense rune for hard fights",
+        "Normal rune progress from Rune Dungeon",
         "Secret rune for long-term endgame",
       ],
     },
@@ -590,10 +655,23 @@ export const WIKI_GUIDES = {
         q: "How do I level up runes?",
         a: "Current public guides treat Rune Level as shared progress from obtaining runes, with Level 60 as the tracked cap.",
       },
+      {
+        q: "What rune should I use for boss farming?",
+        a: "Use Primordial if you have it. Otherwise use Havoc, Wrath or another damage rune until boss clears are fast enough to justify swapping into a luck rune.",
+      },
+      {
+        q: "Is Radiant Rune better than Fortune Rune?",
+        a: "Radiant is the stronger long-term luck target, but Fortune is the practical normal luck rune while you are still building toward Infinite Tower secret drops.",
+      },
+      {
+        q: "When should I farm Infinite Tower for runes?",
+        a: "Farm Infinite Tower after your account can clear long sessions reliably. If you still struggle with normal dungeon waves or bosses, build damage, survival and rune levels first.",
+      },
     ],
     nextSteps: [
       { href: "/bosses", label: "Farm bosses faster" },
       { href: "/accessories", label: "Upgrade accessories" },
+      { href: "/traits", label: "Tune passive traits" },
       { href: "/codes", label: "Claim current rewards" },
     ],
   },
