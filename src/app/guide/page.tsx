@@ -16,7 +16,7 @@ export const metadata = buildMetadata({
 
 const GUIDE_SHORTCUTS = [
   { href: "/codes", label: "Codes", text: "Claim rewards with level eligibility filtering" },
-  { href: "/official-links", label: "Trello & Links", text: "Official Roblox, Discord and Trello sources" },
+  { href: "/trello", label: "Trello", text: "Official Trello, Discord and source notes" },
   { href: "/leveling", label: "Leveling", text: "Fast quest, boss and Sea 2 route" },
   { href: "/bosses", label: "Bosses", text: "Boss types, farming order and drops" },
   { href: "/runes", label: "Runes", text: "Damage, luck and secret-rune goals" },
@@ -37,8 +37,8 @@ const START_ROUTE = [
     step: "2",
     title: "Verify official sources",
     text: "Use official Roblox, Discord and Trello links before trusting a code, patch note or mechanic change.",
-    href: "/official-links",
-    link: "Check official links",
+    href: "/trello",
+    link: "Open Trello guide",
   },
   {
     step: "3",

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "/", changeFrequency: "weekly", priority: 1.0 },
     { path: "/codes", changeFrequency: "daily", priority: 0.95 },
+    { path: "/trello", changeFrequency: "weekly", priority: 0.94 },
     { path: "/official-links", changeFrequency: "weekly", priority: 0.93 },
     { path: "/guides", changeFrequency: "weekly", priority: 0.92 },
     { path: "/tier-list", changeFrequency: "weekly", priority: 0.9 },

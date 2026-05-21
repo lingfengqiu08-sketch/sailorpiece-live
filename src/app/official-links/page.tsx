@@ -95,7 +95,8 @@ export default function OfficialLinksPage() {
           For new Sailor Piece codes, open Discord first. For mechanics, progression and update
           notes, use Trello. For playing the game or checking official Roblox details, use the
           Roblox game page. For source-checked working codes with copy buttons, use our{" "}
-          <Link href="/codes">Sailor Piece codes page</Link>.
+          <Link href="/codes">Sailor Piece codes page</Link>. If your main question is Trello,
+          open the focused <Link href="/trello">Sailor Piece Trello guide</Link>.
         </p>
       </section>
 
@@ -144,10 +145,10 @@ export default function OfficialLinksPage() {
         <h2 className="text-2xl font-bold mb-4">Related Sailor Piece Pages</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
+            { href: "/trello", label: "Trello", text: "Official Trello link, Discord comparison and safety notes." },
             { href: "/codes", label: "Codes", text: "Working codes, expired codes and level filter." },
             { href: "/guides", label: "Guides", text: "All wiki, build and farming guides." },
             { href: "/tier-list", label: "Tier List", text: "Races, fruits, swords, clans, haki and traits." },
-            { href: "/guide", label: "Wiki Guide", text: "Starter guide with islands, fruits, haki and Sea 2." },
           ].map((item) => (
             <Link
               key={item.href}

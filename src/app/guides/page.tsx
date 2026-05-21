@@ -17,6 +17,11 @@ const CORE_GUIDES = [
     text: "Active codes with level filter, copy-all button and real source timestamps.",
   },
   {
+    href: "/trello",
+    title: "Trello",
+    text: "Official Sailor Piece Trello link with Discord, Roblox and code-source notes.",
+  },
+  {
     href: "/official-links",
     title: "Official Links",
     text: "Official Sailor Piece Trello, Discord and Roblox links with safety notes.",
