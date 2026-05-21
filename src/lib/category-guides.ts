@@ -12,6 +12,19 @@ export interface CategoryGuide {
   chooseTips: string[];
   farmingTitle: string;
   farmingTips: string[];
+  sections?: {
+    id: string;
+    title: string;
+    paragraphs: string[];
+    bullets?: string[];
+  }[];
+  tables?: {
+    id: string;
+    title: string;
+    intro?: string;
+    headers: string[];
+    rows: string[][];
+  }[];
   howTo: {
     name: string;
     steps: string[];
@@ -109,13 +122,13 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
   },
   clans: {
-    metaTitle: "Sailor Piece Clans Guide — Best Clans & Tier List",
+    metaTitle: "Sailor Piece Clans Guide - Best Clans, Tier List & Rerolls",
     metaDescription:
-      "Best Sailor Piece clans ranked for PvP, raid damage, boss melt and current meta synergy, including Upper, Eminence, Espada and Voldigoat.",
+      "Best Sailor Piece clans ranked for PvP, raids, boss melt, sword builds and reroll planning, including Upper, Eminence, Espada, Voldigoat, Alter and Devil.",
     title: "Sailor Piece Clans Guide",
     badge: "Clan guide",
     intro:
-      "Clans are build multipliers. A strong clan can push a good fruit, sword or race into an endgame-ready setup, especially after the Huge Update.",
+      "Clans are build multipliers. A strong clan can push a good fruit, sword, race or trait into an endgame-ready setup, but the best clan depends on whether you are farming bosses, pushing raids, playing PvP or building around a specific sword.",
     chooseTitle: "How to choose a clan",
     chooseTips: [
       "Pick damage-scaling clans if your main goal is raids and bosses.",
@@ -128,12 +141,74 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       "Eminence is the best raw damage option for aggressive builds.",
       "Espada, Voldigoat, Alter, Frostbane Clan and Devil all have strong specialist uses.",
     ],
+    sections: [
+      {
+        id: "reroll-strategy",
+        title: "Clan Reroll Strategy",
+        paragraphs: [
+          "The biggest mistake is rerolling a useful A-tier clan before your race, sword, fruit and trait are stable. Clans multiply a build, so the same clan can feel weak on a bad setup and excellent after your weapon or race catches up.",
+          "Use codes and daily farming to build a reroll buffer first. If you only have a few attempts, keep strong A-tier clans such as Mugetsu, Yamato or Monarch until you know exactly which S-tier clan your build needs.",
+        ],
+        bullets: [
+          "Keep S-tier clans unless a patch clearly changes their role.",
+          "Keep A-tier clans while leveling, farming or preparing Sea 2 resources.",
+          "Only chase a named S-tier clan when your target build is already planned.",
+        ],
+      },
+      {
+        id: "synergy",
+        title: "Best Clan Synergies",
+        paragraphs: [
+          "Clans should be selected around the activity that currently blocks progress. Eminence and Voldigoat help when damage is the bottleneck, Espada and Frostbane Clan help when control matters, and Devil works best when the rest of your build already supports dark or Shadowborn-style damage.",
+          "For sword-heavy routes, Monarch and Frostbane Clan are easier to justify because their value rises when paired with Shadow Monarch, Ice Queen or other control-heavy weapons. For general progression, Upper is safer because it does not force one narrow playstyle.",
+        ],
+        bullets: [
+          "Damage routes: Upper, Eminence, Voldigoat, Devil.",
+          "PvP routes: Upper, Espada, Frostbane Clan, Alter.",
+          "Sword routes: Monarch, Frostbane Clan, Devil when the weapon plan matches.",
+          "Beginner routes: keep strong A-tier clans until codes and farming give more rerolls.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        id: "best-clans-by-goal",
+        title: "Best Sailor Piece Clans by Goal",
+        intro:
+          "Use this table before spending rerolls. The strongest clan for PvP is not always the best clan for boss farming or leveling.",
+        headers: ["Goal", "Best clans", "Why", "Reroll advice"],
+        rows: [
+          ["General endgame", "Upper, Alter", "Strong across raids, PvP and boss routes without forcing one narrow build.", "Worth chasing after your core build is stable."],
+          ["Raw damage", "Eminence, Voldigoat, Devil", "These clans push burst or single-target damage when clear speed is the problem.", "Chase only if you already have a damage-focused fruit, sword or trait."],
+          ["PvP and control", "Espada, Frostbane Clan, Alter", "Control, survivability and crowd control matter more than pure paper DPS.", "Keep if PvP is your main mode; do not reroll casually."],
+          ["Sword synergy", "Monarch, Frostbane Clan, Devil", "These become stronger when paired with Shadow Monarch, Ice Queen or dark/sword routes.", "Keep if your weapon plan matches, even if the clan is not top general rank."],
+          ["Progression safety", "Mugetsu, Yamato, Monarch", "Strong enough to carry leveling and resource farming before full endgame rerolls.", "Do not reroll until you have a clear S-tier target and enough attempts."],
+        ],
+      },
+      {
+        id: "top-clans-compared",
+        title: "Top Clans Compared",
+        intro:
+          "These notes explain why the current S-tier clans are useful, not just where they rank.",
+        headers: ["Clan", "Main role", "Best pairing", "Keep or reroll"],
+        rows: [
+          ["Upper", "All-around endgame power", "Any high-tier race, sword or fruit setup", "Keep. This is the safest general S-tier clan."],
+          ["Eminence", "Raw damage scaling", "Burst damage builds and boss melt routes", "Keep if you care about raids or damage checks."],
+          ["Espada", "PvP control and survival", "PvP traits, control swords and mobile races", "Keep for PvP; less mandatory for pure farming."],
+          ["Voldigoat", "Single-target boss melt", "Boss routes, raid damage and high uptime weapons", "Keep if boss farming is your main goal."],
+          ["Alter", "Flexible late-game setup", "Hybrid PvE/PvP builds", "Keep unless a future patch clearly weakens it."],
+          ["Frostbane Clan", "Control and freeze synergy", "Ice Queen sword or other control-heavy builds", "Keep if you use freeze/control routes."],
+          ["Devil", "Dark damage synergy", "Shadowborn race, dark builds and aggressive routes", "Keep when the rest of the build supports it."],
+        ],
+      },
+    ],
     howTo: {
       name: "How to pick a Sailor Piece clan",
       steps: [
         "Decide whether your build is focused on PvP, raids, farming or boss damage.",
-        "Check the clan tier list before spending rerolls.",
+        "Check the clan tier list and the goal table before spending rerolls.",
         "Pair your clan with a matching sword, race and trait.",
+        "Keep strong A-tier clans until you have enough rerolls for a real S-tier chase.",
         "Keep S-tier clans unless a major balance patch changes the meta.",
       ],
     },
@@ -149,6 +224,18 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       {
         q: "Should I reroll an A-tier clan?",
         a: "Usually no. Keep A-tier clans until you have enough rerolls and a clear target build.",
+      },
+      {
+        q: "What clan should I use for boss farming?",
+        a: "Upper is the safest all-around answer, while Eminence and Voldigoat are better when your main problem is single-target damage.",
+      },
+      {
+        q: "What clan is best for PvP?",
+        a: "Upper is still the safest general pick, but Espada, Frostbane Clan and Alter are stronger when you need control, survival or PvP-specific pressure.",
+      },
+      {
+        q: "Which clan works best with sword builds?",
+        a: "Monarch, Frostbane Clan and Devil are the easiest clans to justify for sword-focused routes when the weapon plan matches their strengths.",
       },
     ],
   },

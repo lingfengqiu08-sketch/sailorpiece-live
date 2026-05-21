@@ -86,6 +86,71 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
         </div>
       </section>
 
+      {guide.sections && (
+        <div className="space-y-10 mb-10">
+          {guide.sections.map((section) => (
+            <section key={section.id} id={section.id} className="scroll-mt-20">
+              <h2 className="text-2xl font-bold mb-3">{section.title}</h2>
+              <div className="surface p-6">
+                <div className="space-y-3 text-[var(--color-text-muted)] leading-relaxed">
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+                {section.bullets && (
+                  <ul className="mt-5 space-y-2 text-sm text-[var(--color-text-muted)] list-disc list-inside">
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+
+      {guide.tables && (
+        <div className="space-y-10 mb-10">
+          {guide.tables.map((table) => (
+            <section key={table.id} id={table.id} className="scroll-mt-20">
+              <h2 className="text-2xl font-bold mb-3">{table.title}</h2>
+              {table.intro && (
+                <p className="mb-4 text-[var(--color-text-muted)] leading-relaxed">{table.intro}</p>
+              )}
+              <div className="surface overflow-x-auto">
+                <table className="w-full min-w-[760px] text-sm">
+                  <thead className="bg-[var(--color-surface-2)] text-left text-xs uppercase tracking-wide text-[var(--color-text-muted)]">
+                    <tr>
+                      {table.headers.map((header) => (
+                        <th key={header} className="px-4 py-3 font-semibold">{header}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-[var(--color-border)]">
+                    {table.rows.map((row) => (
+                      <tr key={row.join("|")} className="align-top">
+                        {row.map((cell, index) => (
+                          <td
+                            key={`${row.join("|")}-${index}`}
+                            className={
+                              "px-4 py-3 leading-relaxed " +
+                              (index === 0 ? "font-semibold text-[var(--color-text)]" : "text-[var(--color-text-muted)]")
+                            }
+                          >
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+
       <section className="mb-10">
         <div className="flex items-end justify-between gap-3 mb-4">
           <h2 className="text-2xl font-bold">{TAB_LABELS[category]} Tier List</h2>
