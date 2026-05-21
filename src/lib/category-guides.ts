@@ -78,13 +78,13 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
   },
   swords: {
-    metaTitle: "Sailor Piece Swords Guide — Best Swords & Tier List",
+    metaTitle: "Sailor Piece Swords Guide - Best Swords, Tier List & Builds",
     metaDescription:
-      "Best Sailor Piece swords ranked for raids, PvP, boss damage and progression, including Shadow Monarch, Rimuru, True Manipulator and Yamato.",
+      "Best Sailor Piece swords ranked for raids, PvP, boss damage, farming and progression, including Shadow Monarch, Rimuru, True Manipulator, Yamato and Ice Queen.",
     title: "Sailor Piece Swords Guide",
     badge: "Sword guide",
     intro:
-      "Swords decide a large part of your raid damage and PvP pressure. The strongest picks combine high damage, control, iframes or strong synergy with races and clans.",
+      "Swords decide a large part of your raid damage, boss clear speed and PvP pressure. The strongest picks combine high damage, control, iframes or strong synergy with races, clans and traits.",
     chooseTitle: "How to choose a sword",
     chooseTips: [
       "Use S-tier swords for raids and late Sea 2 bosses when possible.",
@@ -97,12 +97,75 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       "True Manipulator, Yamato and Sin of Pride are strong when you need control or burst.",
       "Starter swords like Katana, Dark Blade and Saber should be replaced quickly.",
     ],
+    sections: [
+      {
+        id: "upgrade-route",
+        title: "Sword Upgrade Route",
+        paragraphs: [
+          "Do not chase the rarest sword before your account can farm its route repeatedly. A stable A-tier sword that lets you clear bosses, keys and dungeon routes is more valuable than a rare sword target you cannot reach yet.",
+          "The practical path is starter sword, reliable mid-game damage, then S-tier swords once your race, clan, trait and rune setup can support the route. This keeps your progression moving while you save codes, boss keys and farming resources for real upgrades.",
+        ],
+        bullets: [
+          "Early game: replace Katana, Dark Blade and Saber as soon as a stronger route is available.",
+          "Mid game: use Ragna, Shadow, Ichigo or Aizen if they fit your current build.",
+          "Endgame: chase Shadow Monarch, Rimuru, True Manipulator, Yamato or other S-tier swords after your build is stable.",
+        ],
+      },
+      {
+        id: "synergy",
+        title: "Best Sword Synergies",
+        paragraphs: [
+          "Sword value changes with your race and clan. SwordBlessed makes sword mains easier to justify, Shadowborn supports Shadow and dark-style routes, and clans such as Monarch, Frostbane Clan and Devil become stronger when your weapon plan matches their role.",
+          "For boss farming, prioritize uptime and single-target damage. For PvP, prioritize control, iframes and mobility. For raids, use AoE and consistent damage instead of a narrow duel-only weapon.",
+        ],
+        bullets: [
+          "Boss melt: Shadow Monarch, Rimuru, Sin of Pride, Dragon Goddess.",
+          "PvP control: True Manipulator, Abyssal Empress, Ice Queen, Anti Magic.",
+          "Raid and AoE: Shadow Monarch, Atomic, Rimuru, Quake-style hybrid setups.",
+          "Sword-main builds: pair SwordBlessed with Monarch, Frostbane Clan or Devil when the route matches.",
+        ],
+      },
+    ],
+    tables: [
+      {
+        id: "best-swords-by-goal",
+        title: "Best Sailor Piece Swords by Goal",
+        intro:
+          "Use this table before farming or rerolling for a sword. A PvP sword is not always the best boss sword, and a boss sword is not always the fastest leveling tool.",
+        headers: ["Goal", "Best swords", "Why", "Build note"],
+        rows: [
+          ["Endgame DPS", "Shadow Monarch, Rimuru, Dragon Goddess", "High damage and strong uptime make these safer for hard bosses and raids.", "Pair with damage clans, strong traits and runes before judging clear speed."],
+          ["PvP control", "True Manipulator, Abyssal Empress, Ice Queen, Anti Magic", "Control, iframes and counterplay matter more than raw damage in player fights.", "Use with PvP clans such as Espada, Frostbane Clan or Alter."],
+          ["Boss melt", "Rimuru, Sin of Pride, Voldigoat-style damage builds", "Single-target damage and uptime matter most when farming repeated bosses.", "Use damage runes and avoid luck swaps until clears are fast."],
+          ["AoE farming", "Shadow Monarch, Atomic, Great Mage", "Wide attacks and fast clears help with dense routes and raid-style waves.", "Use mobility support if travel time is the bottleneck."],
+          ["Mid-game bridge", "Ragna, Shadow, Ichigo, Aizen", "Good enough to progress while saving resources for S-tier targets.", "Do not overinvest if an S-tier route is close."],
+        ],
+      },
+      {
+        id: "top-swords-compared",
+        title: "Top Swords Compared",
+        intro:
+          "These notes explain why the top swords rank highly and what kind of player should keep each one.",
+        headers: ["Sword", "Main role", "Best pairing", "Keep or replace"],
+        rows: [
+          ["Shadow Monarch", "Endgame DPS and AoE", "SwordBlessed, Monarch clan, damage traits", "Keep. This is one of the safest all-around endgame swords."],
+          ["Rimuru", "Boss melt and sustained DPS", "Damage clans, boss farming routes, raid builds", "Keep if bosses or raids are your main goal."],
+          ["True Manipulator", "PvP control", "Espada, Alter, control-focused traits", "Keep for PvP; less mandatory for pure farming."],
+          ["Yamato", "Versatile damage", "Hybrid fruit and sword builds", "Keep as a flexible S-tier option."],
+          ["Sin of Pride", "Heavy single-target burst", "Boss melt and burst-window traits", "Keep if your build can survive between burst windows."],
+          ["Atomic", "AoE burst", "Raid waves and dense farming routes", "Keep when area clear matters more than dueling."],
+          ["Ice Queen", "Slow and control", "Frostbane Clan or control PvP routes", "Keep if your route values freeze/control utility."],
+          ["Anti Magic", "Counter pick", "Anti-mage PvP and magic-heavy matchups", "Keep as a specialist weapon, not always as the main farm sword."],
+        ],
+      },
+    ],
     howTo: {
       name: "How to pick a Sailor Piece sword",
       steps: [
         "Check whether your build is PvE, raid, boss melt or PvP focused.",
-        "Compare S and A tier swords against your current race and clan.",
+        "Compare S and A tier swords against your current race, clan, trait and rune setup.",
         "Use codes to gather rerolls and resources before chasing endgame swords.",
+        "Use a mid-game bridge sword until your account can farm an S-tier route repeatedly.",
         "Replace starter swords once you have a stable farming route.",
       ],
     },
@@ -118,6 +181,18 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       {
         q: "Which race is best for sword builds?",
         a: "SwordBlessed is the most direct race pairing for sword mains, while Shadowborn and Shinigami can work for specific builds.",
+      },
+      {
+        q: "What sword should I use for boss farming?",
+        a: "Rimuru and Shadow Monarch are the safest boss-farming answers, while Sin of Pride and Dragon Goddess are strong when your build supports burst or raw damage.",
+      },
+      {
+        q: "What is the best PvP sword in Sailor Piece?",
+        a: "True Manipulator is the clearest PvP control pick, with Abyssal Empress, Ice Queen and Anti Magic also useful in specific matchups.",
+      },
+      {
+        q: "Should I replace an A-tier sword right away?",
+        a: "Not always. Keep a reliable A-tier sword while you farm codes, keys and resources for a real S-tier target.",
       },
     ],
   },
