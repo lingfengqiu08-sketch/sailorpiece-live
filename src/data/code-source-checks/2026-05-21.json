@@ -1,0 +1,164 @@
+{
+  "checked_at": "2026-05-21T20:33:20+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Prefer official Roblox/Discord/Trello evidence when accessible; otherwise require at least two credible current sources or one current source explicitly citing the official Discord.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "The page title remains [Ghoul Update] Sailor Piece and the description points players to the community server for news, updates, and exclusive reward codes. It does not publish current code strings."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/Aa6zXfmF9H",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Local curl after clearing proxy variables failed DNS for discord.com in this sandbox. The public invite does not expose code-channel messages through the available web search result, so it was not used as direct code evidence."
+    },
+    {
+      "name": "Official Trello board",
+      "url": "https://trello.com/b/9eUJqMrN/sailor-piece",
+      "type": "official_trello",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Local curl to the Trello JSON export after clearing proxy variables failed DNS for trello.com. The prior May 19 API check showed the public codes card lagging behind current Ghoul Update codes, so Trello was not used as direct proof today."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Search result dated May 20, 2026 lists 8 active codes: SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG as inactive and says new codes are posted in the official Discord game-announcements channel."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Updated May 19, 2026. Lists the stored 9 Ghoul Update active codes and provides the exact reward bundles used for the SORRYFORRESTARTGUYSTPBUG variants, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It also still lists the older 10-code set as active, creating a conflict for those expired codes."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Updated May 19, 2026. Lists the same 9 active codes kept in codes.json and marks the three SORRYFORRESTARTGUYSTPBUG variants as new-servers rewards. It lists the older 10-code set as expired."
+    },
+    {
+      "name": "Dexerto Sailor Piece codes",
+      "url": "https://www.dexerto.com/roblox/sailor-piece-codes-3334041/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Updated May 19, 2026. Says it added eight new codes after the Ghoul Update and lists all 9 active codes currently kept in codes.json. It also lists the older 10-code set as active, and its MASTERY reward bundle conflicts with Beebom's bundle."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-21T20:33:20+08:00",
+      "notes": "Updated May 20, 2026. Lists 8 active codes and per-code level requirements: level 12,500 for SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, and SMALLDELAYCODESORRY; level 7,500 for GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG as expired with a level 12,500 requirement."
+    }
+  ],
+  "codes_reviewed": [
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_changed_level",
+      "method": "source_snapshot",
+      "reason": "Destructoid, Beebom, and Dexerto list it active/current; Pro Game Guides and GamesRadar list it inactive/expired. It was kept active because the expiry signal is not stronger than active-source evidence and direct official evidence was unavailable. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. Beebom and Dexerto match the stored reward bundle. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. Beebom and Dexerto match the stored reward bundle. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. Beebom and Dexerto match the stored reward bundle. GamesRadar publishes a level 12,500 requirement, so min_level was updated from null to 12500."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. Beebom and Dexerto match the stored reward bundle. GamesRadar publishes a level 7,500 requirement, so min_level was updated from null to 7500."
+    },
+    {
+      "code": "MASTERY",
+      "action": "kept_active_conflicting_rewards_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. Beebom supports the stored reward bundle; Dexerto's MASTERY bundle conflicts and the other checked current sources do not publish exact rewards. GamesRadar publishes a level 7,500 requirement, so min_level was updated from null to 7500."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active_changed_level",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, Beebom, Destructoid, Dexerto, and GamesRadar all list it active/current. GamesRadar publishes a level 7,500 requirement, so min_level was updated from null to 7500."
+    },
+    {
+      "code": "new_codes",
+      "action": "none_added",
+      "method": "source_snapshot",
+      "reason": "Current searches and checked sources did not show a new active code with official evidence, two credible current sources, or one current source explicitly citing official Discord for that new code."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "No additional active code had strong enough expiry evidence to move today. The main expiry conflict for SORRYFORRESTARTGUYSTPBUG is now two sources expired/inactive versus three sources active/current."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "kept_as": "active",
+      "conflict": "Pro Game Guides and GamesRadar list it inactive/expired, while Destructoid, Beebom, and Dexerto list it active/current.",
+      "next_step": "Move to expired only if official Discord/Trello confirms expiry or one more strong current source joins Pro Game Guides and GamesRadar."
+    },
+    {
+      "code": "MASTERY",
+      "kept_as": "active",
+      "conflict": "Beebom lists the stored mastery bundle with 25 Bloodline Stone and no Raid Key; Dexerto lists a bundle with 10 Bloodline Stones and 5 Raid Keys. Pro Game Guides, Destructoid, and GamesRadar do not publish exact rewards.",
+      "next_step": "Keep Beebom's exact bundle until official evidence or another exact current source confirms a different reward."
+    },
+    {
+      "code": "older_ghoul_predecessor_codes",
+      "kept_as": "expired",
+      "conflict": "700KFAVSTY, FREECODEHERE1, HUGEUPDATEWWW, DELAYCODENR1, DELAYCODENR2, 1B100MVISITS, 1B200MVISITS, 1B300MVISITS, 1M100KLIKESTYYY, and TYSMFOR400KFOLLOWONEVENT remain split: Pro Game Guides and Destructoid list them inactive/expired, while Beebom and Dexerto still list them active. GamesRadar does not list them as active.",
+      "next_step": "Do not restore unless official evidence appears or active-source agreement becomes stronger than the stale-listing pattern."
+    }
+  ],
+  "redeem_tests": []
+}
