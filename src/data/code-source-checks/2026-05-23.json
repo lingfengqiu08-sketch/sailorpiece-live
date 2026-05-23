@@ -1,0 +1,184 @@
+{
+  "checked_at": "2026-05-23T20:32:05+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Prefer official Roblox/Discord/Trello evidence when accessible; otherwise require at least two credible current sources or one current source explicitly citing the official Discord.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Web access showed the official game description still points players to the community server for news, updates, and exclusive reward codes, and lists Sailor Piece Max Level as 20000. It does not publish current code strings. Local curl after clearing proxy variables failed DNS for www.roblox.com in this sandbox."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/Aa6zXfmF9H",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Resolved from Pro Game Guides official Discord link. Public web access only returned the Discord JavaScript app shell, so code-channel messages were not accessible and Discord was not used as direct code evidence today."
+    },
+    {
+      "name": "Official Trello board",
+      "url": "https://trello.com/b/9eUJqMrN/sailor-piece",
+      "type": "official_trello",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Web access returned Trello's JavaScript/resources blocked page. Local curl to the Trello JSON export after clearing proxy variables failed DNS for trello.com. The prior May 19 API check showed the public codes card lagging behind current Ghoul Update codes, so Trello was not used as direct proof today."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Updated May 20, 2026. Lists 8 active codes: SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG and the older Ghoul predecessor set as inactive. Its how-to-get-more-codes section links the official Discord and says new codes are posted in game-announcements."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Last updated May 20, 2026 and crawled yesterday. Lists the same 8 active codes as Pro Game Guides and publishes level requirements: level 12,500 for SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, and SMALLDELAYCODESORRY; level 7,500 for GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG and the older Ghoul predecessor set as expired."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Current page lists all 9 active codes currently kept in codes.json, including SORRYFORRESTARTGUYSTPBUG. It marks the three restart-bug variants as new-servers rewards and lists the older Ghoul predecessor set as expired."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Updated May 19, 2026 and crawled today. Lists the stored 9 Ghoul Update active codes and provides exact reward bundles used for the SORRYFORRESTARTGUYSTPBUG variants, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It also still lists the older 10-code set as active, creating a stale-listing conflict."
+    },
+    {
+      "name": "Dexerto Sailor Piece codes",
+      "url": "https://www.dexerto.com/roblox/sailor-piece-codes-3334041/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Updated May 19, 2026. Lists all 9 active codes currently kept in codes.json and points users to the official Discord for new codes. It also lists the older 10-code set as active, and its MASTERY reward bundle conflicts with Beebom's bundle."
+    },
+    {
+      "name": "U7BUY Sailor Piece codes",
+      "url": "https://www.u7buy.com/blog/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_discord_claim",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Published May 19, 2026 and crawled today. Says it compiled newest codes from official Discord announcements and lists the same 9 Ghoul Update codes kept active in codes.json, plus the older predecessor set as active. It claims manual verification, but no in-game redeem test was performed by this automation."
+    },
+    {
+      "name": "Game.guide Sailor Piece codes",
+      "url": "https://www.game.guide/roblox-codes/sailor-piece",
+      "type": "third_party_current_conflict",
+      "accessed_at": "2026-05-23T20:32:05+08:00",
+      "notes": "Published/crawled today. Lists 7 active codes: BIGCONTENTUPDATESOON, SMALLDELAYCODESORRY, MASTERY, GHOULUPDATE, FREECODEFORYALL, SORRYFORRESTARTGUYSTPBUG2, and SORRYFORRESTARTGUYSTPBUG3. It omits RAIDS and SORRYFORRESTARTGUYSTPBUG, creating a new omission conflict but not strong expiry evidence by itself."
+    }
+  ],
+  "codes_reviewed": [
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Destructoid, Beebom, Dexerto, and U7BUY list it active/current, while Pro Game Guides and GamesRadar list it inactive/expired and Game.guide omits it. It was kept active because active evidence still outnumbers expiry/omission evidence and direct official evidence was unavailable. GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. Beebom and Dexerto match the stored reward bundle, and GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. Beebom and Dexerto match the stored reward bundle, and GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. Beebom and Dexerto match the stored reward bundle, and GamesRadar still supports the stored level 12,500 requirement."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. Beebom and Dexerto match the stored reward bundle, and GamesRadar still supports the stored level 7,500 requirement."
+    },
+    {
+      "code": "MASTERY",
+      "action": "kept_active_conflicting_rewards_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Beebom, Dexerto, U7BUY, and Game.guide list it active/current. Beebom supports the stored reward bundle; Dexerto conflicts and the other checked current sources do not publish exact rewards. GamesRadar still supports the stored level 7,500 requirement."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active_conflicting_omission_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Beebom, Dexerto, and U7BUY list it active/current after the Ghoul Update wave. Game.guide omits it from a 7-code active list, but that omission is not strong expiry evidence. GamesRadar still supports the stored level 7,500 requirement."
+    },
+    {
+      "code": "new_codes",
+      "action": "none_added",
+      "method": "source_snapshot",
+      "reason": "Current searches and checked sources did not show a new active code with official evidence, two credible current sources, or one current source explicitly citing official Discord for that new code."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "No additional active code had strong enough expiry evidence to move today. The main expiry conflict for SORRYFORRESTARTGUYSTPBUG remains split, and RAIDS has one omission conflict rather than direct expiry evidence."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "kept_as": "active",
+      "conflict": "Pro Game Guides and GamesRadar list it inactive/expired, Game.guide omits it, while Destructoid, Beebom, Dexerto, and U7BUY list it active/current.",
+      "next_step": "Move to expired only if official Discord/Trello confirms expiry or another strong current source joins Pro Game Guides and GamesRadar with explicit expired evidence."
+    },
+    {
+      "code": "RAIDS",
+      "kept_as": "active",
+      "conflict": "Game.guide omits RAIDS from its current 7-code active list, while Pro Game Guides, GamesRadar, Beebom, Dexerto, and U7BUY list it active/current.",
+      "next_step": "Keep active unless direct expiry evidence appears or multiple current sources explicitly move it to expired."
+    },
+    {
+      "code": "MASTERY",
+      "kept_as": "active",
+      "conflict": "Beebom lists the stored mastery bundle with 25 Bloodline Stone and no Raid Key; Dexerto lists a bundle with 10 Bloodline Stones and 5 Raid Keys. Pro Game Guides, Destructoid, GamesRadar, U7BUY, and Game.guide do not publish exact rewards.",
+      "next_step": "Keep Beebom's exact bundle until official evidence or another exact current source confirms a different reward."
+    },
+    {
+      "code": "older_ghoul_predecessor_codes",
+      "kept_as": "expired",
+      "conflict": "700KFAVSTY, FREECODEHERE1, HUGEUPDATEWWW, DELAYCODENR1, DELAYCODENR2, 1B100MVISITS, 1B200MVISITS, 1B300MVISITS, 1M100KLIKESTYYY, and TYSMFOR400KFOLLOWONEVENT remain split: Pro Game Guides, GamesRadar, and Destructoid list them inactive/expired, while Beebom, Dexerto, and U7BUY still list some or all as active.",
+      "next_step": "Do not restore unless official evidence appears or active-source agreement becomes stronger than the stale-listing pattern."
+    }
+  ],
+  "redeem_tests": []
+}
