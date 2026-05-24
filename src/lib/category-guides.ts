@@ -99,6 +99,20 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
     sections: [
       {
+        id: "current-best-sword",
+        title: "Current Best Sword",
+        paragraphs: [
+          "Shadow Monarch is the safest current best sword overall because it combines S-tier damage, AoE coverage and iframe value. It is not only a damage pick; it also helps keep uptime in dangerous boss, raid and PvP situations.",
+          "Rimuru is the best alternative when your main goal is boss melt and sustained DPS. True Manipulator is stronger when PvP control matters more than pure farming speed.",
+        ],
+        bullets: [
+          "Best overall: Shadow Monarch.",
+          "Best boss melt: Rimuru or Shadow Monarch.",
+          "Best PvP control: True Manipulator.",
+          "Best raw damage target: Dragon Goddess when your build supports it.",
+        ],
+      },
+      {
         id: "upgrade-route",
         title: "Sword Upgrade Route",
         paragraphs: [
@@ -109,6 +123,19 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
           "Early game: replace Katana, Dark Blade and Saber as soon as a stronger route is available.",
           "Mid game: use Ragna, Shadow, Ichigo or Aizen if they fit your current build.",
           "Endgame: chase Shadow Monarch, Rimuru, True Manipulator, Yamato or other S-tier swords after your build is stable.",
+        ],
+      },
+      {
+        id: "iframes",
+        title: "What Iframes Mean for Swords",
+        paragraphs: [
+          "Iframes are short invulnerability windows during a move or animation. In Sailor Piece, iframe value matters because a sword that keeps you alive can outperform a higher-paper-DPS sword in bosses, PvP and raids.",
+          "When a tier list mentions iframes, it is usually talking about safety and uptime. A sword with good iframes lets you keep attacking through dangerous moments instead of backing away, dying or losing damage windows.",
+        ],
+        bullets: [
+          "Use iframe-heavy swords for hard bosses and PvP burst windows.",
+          "Do not judge a sword only by base damage if it cannot survive the route.",
+          "Pair iframe swords with damage runes or traits once survival is stable.",
         ],
       },
       {
@@ -172,7 +199,7 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     faq: [
       {
         q: "What is the best sword in Sailor Piece?",
-        a: "Shadow Monarch and Rimuru currently lead the sword tier list for endgame DPS and raids.",
+        a: "Shadow Monarch is the safest current best sword overall because it combines S-tier damage, AoE and iframe value. Rimuru is the best boss-melt alternative.",
       },
       {
         q: "Are swords better than fruits in Sailor Piece?",
@@ -185,6 +212,10 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
       {
         q: "What sword should I use for boss farming?",
         a: "Rimuru and Shadow Monarch are the safest boss-farming answers, while Sin of Pride and Dragon Goddess are strong when your build supports burst or raw damage.",
+      },
+      {
+        q: "What are iframes in Sailor Piece swords?",
+        a: "Iframes are short invulnerability windows during a move or animation. They matter because they help a sword survive boss hits, PvP burst and raid damage while keeping uptime.",
       },
       {
         q: "What is the best PvP sword in Sailor Piece?",
