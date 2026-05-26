@@ -46,6 +46,23 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
         </p>
       </header>
 
+      {guide.quickAnswer && (
+        <section className="surface p-6 mb-10">
+          <h2 className="text-xl font-bold mb-3">Quick Answer</h2>
+          <p className="text-[var(--color-text-muted)] leading-relaxed">
+            {guide.quickAnswer}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href={TIER_PAGE_PATHS[category]} className="btn-primary text-sm">
+              Open {TAB_LABELS[category].toLowerCase()} tier list
+            </Link>
+            <Link href="/codes" className="btn-ghost text-sm">
+              Get reroll codes
+            </Link>
+          </div>
+        </section>
+      )}
+
       <section className="surface p-6 mb-10">
         <h2 className="text-xl font-bold mb-4">Best Sailor Piece {TAB_LABELS[category]}</h2>
         <div className="grid sm:grid-cols-2 gap-3">

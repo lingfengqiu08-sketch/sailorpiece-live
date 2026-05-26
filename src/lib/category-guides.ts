@@ -8,6 +8,7 @@ export interface CategoryGuide {
   title: string;
   badge: string;
   intro: string;
+  quickAnswer?: string;
   chooseTitle: string;
   chooseTips: string[];
   farmingTitle: string;
@@ -78,13 +79,15 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
   },
   swords: {
-    metaTitle: "Sailor Piece Swords Guide - Best Swords, Tier List & Builds",
+    metaTitle: "Best Swords in Sailor Piece - Tier List, Iframes & Builds",
     metaDescription:
-      "Best Sailor Piece swords ranked for raids, PvP, boss damage, farming and progression, including Shadow Monarch, Rimuru, True Manipulator, Yamato and Ice Queen.",
-    title: "Sailor Piece Swords Guide",
+      "Best swords in Sailor Piece ranked by current best sword, iframes, boss damage, PvP control, raids and tier list value, including Shadow Monarch and Rimuru.",
+    title: "Best Swords in Sailor Piece",
     badge: "Sword guide",
     intro:
-      "Swords decide a large part of your raid damage, boss clear speed and PvP pressure. The strongest picks combine high damage, control, iframes or strong synergy with races, clans and traits.",
+      "Swords decide a large part of your raid damage, boss clear speed and PvP pressure. Use this guide to answer the current best sword question, compare top swords, understand iframes and move into the full sword tier list.",
+    quickAnswer:
+      "Shadow Monarch is the safest current best sword in Sailor Piece because it combines S-tier damage, AoE coverage and iframe value. Rimuru is the best boss-melt alternative, while True Manipulator is the clearest PvP control pick.",
     chooseTitle: "How to choose a sword",
     chooseTips: [
       "Use S-tier swords for raids and late Sea 2 bosses when possible.",

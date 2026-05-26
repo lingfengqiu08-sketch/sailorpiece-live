@@ -55,6 +55,8 @@ const SOURCE_ROWS = [
   ["Official Discord", "New codes, maintenance and announcements", "Use first during updates or code drops", "Fastest source, but messages can move quickly"],
   ["Roblox Game", "Playing the game and checking official description", "Use when verifying the live game page or max-level notes", "Only trust the real Roblox game page"],
   ["sailorpiece.live Codes", "Source-checked active and expired codes", "Use when redeeming codes or copying eligible rewards", "Community guide, not an official source"],
+  ["Swords Tier List", "Best swords, iframes and PvP or boss picks", "Use after checking Trello systems and before spending rerolls", "Community ranking page with reviewed tier notes"],
+  ["Races Tier List", "Race reroll planning and build direction", "Use before spending race rerolls from codes or events", "Community ranking page for build planning"],
 ];
 
 export default function TrelloPage() {
@@ -142,6 +144,27 @@ export default function TrelloPage() {
       </section>
 
       <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Best Next Pages After Trello</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {[
+            { href: "/codes", label: "Codes", text: "Check today's working rewards before spending rerolls." },
+            { href: "/official-links", label: "Official Links", text: "Open the verified Roblox, Discord and Trello links." },
+            { href: "/tier-list/swords", label: "Swords Tier List", text: "Compare best swords, iframes, boss damage and PvP control." },
+            { href: "/tier-list/races", label: "Races Tier List", text: "Plan race rerolls around farming, raids and PvP builds." },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]"
+            >
+              <h3 className="font-semibold">{item.label}</h3>
+              <p className="text-xs text-[var(--color-text-muted)] mt-1 leading-relaxed">{item.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">What to Check on Trello</h2>
         <ul className="surface p-5 space-y-2 text-sm text-[var(--color-text-muted)] list-disc list-inside">
           <li><strong className="text-[var(--color-text)]">Systems:</strong> use Trello to understand game mechanics before spending rerolls or rare resources.</li>
@@ -157,8 +180,8 @@ export default function TrelloPage() {
           {[
             { href: "/codes", label: "Codes", text: "Active rewards with source checks and copy buttons." },
             { href: "/official-links", label: "Official Links", text: "Roblox, Discord and Trello in one page." },
-            { href: "/guide", label: "Wiki Guide", text: "Progression route for new and returning players." },
-            { href: "/guides", label: "All Guides", text: "Every build, farming and wiki guide." },
+            { href: "/tier-list/swords", label: "Swords Tier List", text: "Best swords, current picks and iframe notes." },
+            { href: "/tier-list/races", label: "Races Tier List", text: "Race reroll planning for builds and progression." },
           ].map((item) => (
             <Link
               key={item.href}
