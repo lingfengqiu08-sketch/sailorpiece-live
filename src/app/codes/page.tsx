@@ -2,6 +2,7 @@ import Link from "next/link";
 import { activeCodes, expiredCodes, codes as codesData } from "@/lib/codes";
 import { CodeTable } from "@/components/CodeTable";
 import { FAQ } from "@/components/FAQ";
+import { FreshnessBanner } from "@/components/FreshnessBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata } from "@/lib/seo";
 import { formatDate } from "@/lib/date";
@@ -75,13 +76,17 @@ export default function CodesPage() {
       />
 
       <header className="mb-6">
-        <p className="inline-block badge badge-fresh mb-3">Checked {formatDate(codesData.last_checked_at)}</p>
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
           Sailor Piece Codes May 2026 - {active.length} Working Codes
         </h1>
-        <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
-          Copy working Sailor Piece codes for spins, boosts, currency, and update rewards. This list has {active.length} active and {expired.length} expired codes. Last source check on{" "}
-          <strong className="text-[var(--color-text)]">{formatDate(codesData.last_checked_at)}</strong>.
+        <FreshnessBanner
+          lastCheckedAt={codesData.last_checked_at}
+          checkFrequencyHours={codesData.check_frequency_hours}
+          activeCount={active.length}
+          expiredCount={expired.length}
+        />
+        <p className="text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
+          Copy working Sailor Piece codes for spins, boosts, currency, and update rewards.
           Source links are shown for each active code, and we only mark a code as Redeem tested after a real in-game redemption.
           Type your in-game level to filter only the codes you can redeem right now.
         </p>
