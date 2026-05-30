@@ -2,7 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { JsonLd } from "@/components/JsonLd";
+import { SwordComparator } from "@/components/SwordComparator";
 import { TierRows } from "@/components/TierRows";
+import {
+  FEATURED_COMPARISONS,
+  compareSwords,
+} from "@/lib/sword-stats";
 import { buildMetadata } from "@/lib/seo";
 import {
   TAB_LABELS,
@@ -144,6 +149,18 @@ export default async function TierCategoryPage({ params }: Props) {
             q: "Which Sailor Piece sword is best for PvP?",
             a: "True Manipulator is the clearest PvP control pick, with Abyssal Empress and Ice Queen also strong when you need control, slows or disruption.",
           },
+          ...FEATURED_COMPARISONS.map(([aName, bName]) => {
+            const cmp = compareSwords(aName, bName);
+            const winner = cmp && cmp.overall === "a" ? aName : cmp && cmp.overall === "b" ? bName : null;
+            return {
+              q: `Is ${aName} better than ${bName} in Sailor Piece?`,
+              a: cmp
+                ? winner
+                  ? `${winner} scores higher overall (${Math.max(cmp.aTotal, cmp.bTotal)} vs ${Math.min(cmp.aTotal, cmp.bTotal)}) across damage, AoE, PvP, iframes, mobility and boss farming. Use the sword comparison tool on this page to see the full breakdown.`
+                  : `${aName} and ${bName} tie on total score. Pick based on whether you need raw damage or control — see the comparison tool on this page.`
+                : `Compare ${aName} and ${bName} with the sword comparison tool on this page.`,
+            };
+          }),
         ]
       : []),
   ];
@@ -247,6 +264,56 @@ export default async function TierCategoryPage({ params }: Props) {
                   <p className="mt-3 text-xs text-[var(--color-text-muted)] leading-relaxed">{note}</p>
                 </article>
               ))}
+            </div>
+          </section>
+
+          <section className="mt-12" id="compare">
+            <h2 className="text-2xl font-bold mb-3">Sailor Piece Sword Comparison Tool</h2>
+            <p className="mb-4 text-[var(--color-text-muted)] leading-relaxed">
+              Not sure which sword is better? Pick any two swords to compare their damage, AoE,
+              PvP control, iframe safety, mobility and boss-farming scores side by side. Scores
+              are directional ratings from current public source consensus, not exact in-game DPS.
+            </p>
+            <SwordComparator defaultA="Sin of Pride" defaultB="Ice Queen" />
+          </section>
+
+          <section className="mt-12" id="popular-comparisons">
+            <h2 className="text-2xl font-bold mb-3">Popular Sailor Piece Sword Comparisons</h2>
+            <p className="mb-4 text-[var(--color-text-muted)] leading-relaxed">
+              The most-asked &quot;is X better than Y&quot; questions, answered with the same
+              scoring used in the tool above.
+            </p>
+            <div className="space-y-4">
+              {FEATURED_COMPARISONS.map(([aName, bName]) => {
+                const cmp = compareSwords(aName, bName);
+                if (!cmp) return null;
+                const winner = cmp.overall === "a" ? aName : cmp.overall === "b" ? bName : null;
+                const winnerSword = cmp.overall === "a" ? cmp.a : cmp.b;
+                return (
+                  <article key={`${aName}-${bName}`} className="surface p-5">
+                    <h3 className="font-semibold">
+                      Is {aName} better than {bName} in Sailor Piece?
+                    </h3>
+                    <p className="mt-2 text-sm text-[var(--color-text-muted)] leading-relaxed">
+                      {winner ? (
+                        <>
+                          <strong className="text-[var(--color-accent)]">{winner}</strong> scores higher
+                          overall ({Math.max(cmp.aTotal, cmp.bTotal)} vs {Math.min(cmp.aTotal, cmp.bTotal)}).{" "}
+                          {winnerSword.verdict}
+                        </>
+                      ) : (
+                        <>
+                          {aName} and {bName} tie on total score ({cmp.aTotal} each) — choose based on
+                          whether you need {cmp.a.verdict}
+                        </>
+                      )}
+                    </p>
+                    <p className="mt-2 text-xs text-[var(--color-text-muted)]">
+                      {aName}: {cmp.a.tier} tier · {bName}: {cmp.b.tier} tier
+                    </p>
+                  </article>
+                );
+              })}
             </div>
           </section>
 

@@ -1,0 +1,109 @@
+{
+  "last_reviewed_at": "2026-05-28",
+  "scale_note": "Scores are 1-10 relative ratings based on public source consensus (sailorpiece.org, Beebom, ProGameGuides, PocketGamer) plus update recency. They are directional, not exact in-game DPS numbers. Higher is better.",
+  "stat_labels": {
+    "damage": "Raw Damage",
+    "aoe": "AoE / Wave Clear",
+    "pvp": "PvP Control",
+    "iframes": "Iframe Safety",
+    "mobility": "Mobility",
+    "boss": "Boss Farming"
+  },
+  "swords": {
+    "Shadow Monarch": {
+      "tier": "S", "damage": 9, "aoe": 9, "pvp": 8, "iframes": 9, "mobility": 7, "boss": 9,
+      "source": "Shadow Monarch boss / endgame route",
+      "verdict": "The safest all-around best sword: top-tier damage, wide AoE and strong iframes make it forgiving in every mode."
+    },
+    "Rimuru": {
+      "tier": "S", "damage": 10, "aoe": 8, "pvp": 7, "iframes": 7, "mobility": 7, "boss": 10,
+      "source": "Rimuru boss",
+      "verdict": "Highest sustained DPS in the game — the boss-melt king. Slightly less PvP utility than Shadow Monarch."
+    },
+    "True Manipulator": {
+      "tier": "S", "damage": 8, "aoe": 7, "pvp": 10, "iframes": 9, "mobility": 7, "boss": 8,
+      "source": "True Aizen boss",
+      "verdict": "The clearest PvP control pick: crowd control, iframes and disruption beat raw damage in duels."
+    },
+    "Yamato": {
+      "tier": "S", "damage": 8, "aoe": 8, "pvp": 7, "iframes": 8, "mobility": 8, "boss": 8,
+      "source": "Yamato boss / clan route",
+      "verdict": "Versatile damage with good mobility — a strong do-everything S-tier without a glaring weakness."
+    },
+    "Sin of Pride": {
+      "tier": "S", "damage": 10, "aoe": 6, "pvp": 7, "iframes": 7, "mobility": 6, "boss": 9,
+      "source": "Pride clan / boss route",
+      "verdict": "Top-3 single-target damage. Pick it for heavy boss fights where AoE matters less than burst."
+    },
+    "Atomic": {
+      "tier": "S", "damage": 9, "aoe": 10, "pvp": 6, "iframes": 6, "mobility": 6, "boss": 8,
+      "source": "Atomic boss",
+      "verdict": "Devastating AoE with short cooldowns — best for raids and dense wave clearing."
+    },
+    "Abyssal Empress": {
+      "tier": "S", "damage": 8, "aoe": 7, "pvp": 9, "iframes": 8, "mobility": 7, "boss": 7,
+      "source": "Infinite Tower / Abyssal route",
+      "verdict": "A PvP hybrid: control plus damage, strong when you need disruption with decent damage uptime."
+    },
+    "Dragon Goddess": {
+      "tier": "S", "damage": 10, "aoe": 7, "pvp": 6, "iframes": 6, "mobility": 6, "boss": 9,
+      "source": "Dragon Goddess boss",
+      "verdict": "Highest base damage in the game, scales further with the Dragon Queen title — but needs build support."
+    },
+    "Great Mage": {
+      "tier": "S", "damage": 9, "aoe": 8, "pvp": 7, "iframes": 7, "mobility": 7, "boss": 8,
+      "source": "Great Mage boss",
+      "verdict": "The top magic-scaling sword — excellent for magic builds and balanced across modes."
+    },
+    "Ice Queen": {
+      "tier": "S", "damage": 8, "aoe": 7, "pvp": 9, "iframes": 8, "mobility": 6, "boss": 7,
+      "source": "Ice Queen boss",
+      "verdict": "Freeze and slow control — best when you need to lock down mobile bosses or PvP targets."
+    },
+    "Anti Magic": {
+      "tier": "S", "damage": 8, "aoe": 7, "pvp": 9, "iframes": 7, "mobility": 7, "boss": 7,
+      "source": "Anti-Magic update route",
+      "verdict": "A hard counter to magic builds in PvP. Situational but devastating against the right opponent."
+    },
+    "Ragna": {
+      "tier": "A", "damage": 7, "aoe": 7, "pvp": 6, "iframes": 6, "mobility": 6, "boss": 7,
+      "source": "Ragna boss",
+      "verdict": "A solid mid-game sword that progresses you while you save resources for an S-tier upgrade."
+    },
+    "Shadow": {
+      "tier": "A", "damage": 7, "aoe": 6, "pvp": 7, "iframes": 6, "mobility": 7, "boss": 6,
+      "source": "Shadow boss",
+      "verdict": "Strong synergy with the Shadowborn race for stealth-damage builds."
+    },
+    "Ichigo": {
+      "tier": "A", "damage": 7, "aoe": 7, "pvp": 6, "iframes": 6, "mobility": 6, "boss": 7,
+      "source": "Ichigo boss (5 Boss Keys)",
+      "verdict": "Reliable sustained DPS — a dependable mid-game pick that holds up well into late game."
+    },
+    "Aizen": {
+      "tier": "A", "damage": 7, "aoe": 7, "pvp": 7, "iframes": 6, "mobility": 6, "boss": 6,
+      "source": "Aizen boss",
+      "verdict": "A versatile magic-plus-sword hybrid. High community search demand and good flexibility."
+    },
+    "Jinwoo": {
+      "tier": "B", "damage": 6, "aoe": 6, "pvp": 5, "iframes": 5, "mobility": 6, "boss": 6,
+      "source": "Jinwoo boss",
+      "verdict": "Acceptable damage for Solo Leveling fans, but outshone by A and S tier in raids."
+    },
+    "Katana": {
+      "tier": "C", "damage": 4, "aoe": 4, "pvp": 3, "iframes": 3, "mobility": 5, "boss": 4,
+      "source": "Starter / shop",
+      "verdict": "An entry-level starter sword — replace it as soon as you can clear a boss for a better blade."
+    },
+    "Dark Blade": {
+      "tier": "C", "damage": 4, "aoe": 4, "pvp": 3, "iframes": 3, "mobility": 4, "boss": 4,
+      "source": "Early shop / drop",
+      "verdict": "Outdated early-game kit. Fine for the first islands, weak everywhere after."
+    },
+    "Saber": {
+      "tier": "C", "damage": 4, "aoe": 4, "pvp": 4, "iframes": 4, "mobility": 5, "boss": 4,
+      "source": "Saber boss (1 Boss Key)",
+      "verdict": "A beginner-friendly Boss Island sword — a stepping stone toward Qin Shi and Ichigo routes."
+    }
+  }
+}
