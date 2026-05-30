@@ -6,7 +6,7 @@ const NAV = [
   { href: "/tier-list", label: "Tier List" },
   { href: "/official-links", label: "Links" },
   { href: "/races", label: "Races" },
-  { href: "/guides", label: "Guides" },
+  { href: "/guide", label: "Guides" },
 ];
 
 export function Header() {

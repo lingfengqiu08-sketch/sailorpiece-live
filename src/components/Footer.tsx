@@ -21,7 +21,7 @@ export function Footer() {
             <li><Link href="/codes">Codes</Link></li>
             <li><Link href="/trello">Trello</Link></li>
             <li><Link href="/official-links">Official Links</Link></li>
-            <li><Link href="/guides">Guides</Link></li>
+            <li><Link href="/guide">Guides</Link></li>
             <li><Link href="/tier-list">Tier List</Link></li>
             <li><Link href="/races">Races</Link></li>
             <li><Link href="/fruits">Fruits</Link></li>

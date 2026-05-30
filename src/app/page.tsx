@@ -168,7 +168,7 @@ export default function Home() {
             <li>Active live-ops with weekly milestone codes</li>
           </ul>
           <p className="mt-4 text-sm">
-            New to the game? Start with the <Link href="/guides">guide hub</Link>, redeem fresh <Link href="/codes">codes</Link>, then follow the <Link href="/leveling">leveling route</Link>.
+            New to the game? Start with the <Link href="/guide">guide hub</Link>, redeem fresh <Link href="/codes">codes</Link>, then follow the <Link href="/leveling">leveling route</Link>.
           </p>
         </div>
       </section>

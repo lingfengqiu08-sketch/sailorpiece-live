@@ -8,9 +8,9 @@ import { codes } from "@/lib/codes";
 import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
-  title: "Sailor Piece Trello, Discord & Official Links",
+  title: "Sailor Piece Discord Link & Roblox Game (Verified Official)",
   description:
-    "Official Sailor Piece Trello, Discord and Roblox game links checked with notes on codes, updates, patch notes, safety and which link to use first.",
+    "Open the official Sailor Piece Discord server and Roblox game page. Safe verified links, plus notes on when to use Discord first for new codes and announcements.",
   path: "/official-links",
 });
 
@@ -79,13 +79,12 @@ export default function OfficialLinksPage() {
       <header className="mb-8">
         <p className="inline-block badge badge-fresh mb-3">Checked {lastChecked}</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-          Sailor Piece Trello, Discord &amp; Official Links
+          Sailor Piece Discord Link &amp; Roblox Game
         </h1>
         <p className="mt-3 text-[var(--color-text-muted)] max-w-3xl leading-relaxed">
-          Use these official Sailor Piece links to open the Roblox game, check the Discord for
-          new codes and announcements, and read Trello notes for updates, systems and progression.
-          This page is checked alongside our code source review so you do not need to trust random
-          invite links from comments.
+          Open the verified official Sailor Piece Discord server and Roblox game page. We check these
+          alongside our code source review so you can avoid fake invite links from comments. For
+          Trello specifically, use our focused <Link href="/trello">Trello guide</Link>.
         </p>
       </header>
 
@@ -147,7 +146,7 @@ export default function OfficialLinksPage() {
           {[
             { href: "/trello", label: "Trello", text: "Official Trello link, Discord comparison and safety notes." },
             { href: "/codes", label: "Codes", text: "Working codes, expired codes and level filter." },
-            { href: "/guides", label: "Guides", text: "All wiki, build and farming guides." },
+            { href: "/guide", label: "Guides", text: "All wiki, build and farming guides." },
             { href: "/tier-list", label: "Tier List", text: "Races, fruits, swords, clans, haki and traits." },
           ].map((item) => (
             <Link

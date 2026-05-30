@@ -21,7 +21,7 @@ const GUIDE_SHORTCUTS = [
   { href: "/bosses", label: "Bosses", text: "Boss types, farming order and drops" },
   { href: "/runes", label: "Runes", text: "Damage, luck and secret-rune goals" },
   { href: "/tier-list", label: "Tier List", text: "Races, fruits, swords, clans, haki and traits" },
-  { href: "/guides", label: "All Guides", text: "Every guide page in one index" },
+  { href: "/guide", label: "All Guides", text: "Every guide page in one index" },
   { href: "/traits", label: "Traits", text: "Passive rolls for boss farming and PvP" },
 ];
 
@@ -60,7 +60,7 @@ const BUILD_CHECKLIST = [
   ["Early game", "Codes, fruit, race, basic sword", "Get mobility and damage before chasing rare rerolls.", "/codes"],
   ["Mid game", "Leveling, bosses, haki, boss keys", "Move from quest grinding into repeatable boss routes.", "/bosses"],
   ["Late game", "Runes, accessories, specs, bloodlines", "Improve damage, luck and survival before long drop farms.", "/runes"],
-  ["Endgame", "Sea 2, raids, world bosses, secret runes", "Only chase rare systems after your clear speed is stable.", "/guides"],
+  ["Endgame", "Sea 2, raids, world bosses, secret runes", "Only chase rare systems after your clear speed is stable.", "/guide"],
 ];
 
 const GUIDE_HOW_TO = {
@@ -132,7 +132,7 @@ export default function GuidePage() {
         path="/guide"
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Guides", url: "/guides" },
+          { name: "Guides", url: "/guide" },
           { name: "Guide", url: "/guide" },
         ]}
         faq={FAQS}

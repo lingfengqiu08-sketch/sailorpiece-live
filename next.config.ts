@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
         destination: "https://sailorpiece.live/:path*",
         permanent: true,
       },
+      // Cannibalization fix: /guides hub duplicated /guide intent; Google
+      // indexed /guide and skipped /guides. Consolidate to /guide.
+      {
+        source: "/guides",
+        destination: "/guide",
+        permanent: true,
+      },
     ];
   },
 };
