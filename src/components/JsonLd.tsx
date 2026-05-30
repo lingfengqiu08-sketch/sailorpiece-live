@@ -1,3 +1,4 @@
+import { codes } from "@/lib/codes";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
 interface BreadcrumbItem {
@@ -17,6 +18,12 @@ export function JsonLd({
   faq,
   howto,
   itemList,
+  /**
+   * Override the dateModified used on the WebPage entity.
+   * Defaults to codes.last_checked_at — appropriate for codes/guides/tier
+   * list pages since the whole site is republished when codes refresh.
+   */
+  dateModified,
 }: {
   pageType?: "default" | "codes" | "tier-list";
   path?: string;
@@ -24,7 +31,12 @@ export function JsonLd({
   faq?: FAQPair[];
   howto?: { name: string; steps: string[] };
   itemList?: { name: string; items: string[] };
+  dateModified?: string;
 }) {
+  const lastModified = dateModified ?? codes.last_checked_at;
+  // Site went live on 2026-05-13 (verified in deploy logs).
+  const datePublished = "2026-05-13T00:00:00+08:00";
+
   const graph: object[] = [
     {
       "@type": "WebSite",
@@ -39,6 +51,8 @@ export function JsonLd({
       url: `${SITE_URL}${path}`,
       isPartOf: { "@id": `${SITE_URL}/#website` },
       inLanguage: "en",
+      datePublished,
+      dateModified: lastModified,
     },
   ];
 
