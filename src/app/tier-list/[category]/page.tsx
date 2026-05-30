@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { JsonLd } from "@/components/JsonLd";
 import { TierRows } from "@/components/TierRows";
 import { buildMetadata } from "@/lib/seo";
@@ -195,6 +196,8 @@ export default async function TierCategoryPage({ params }: Props) {
           </Link>
         ))}
       </nav>
+
+      <CodesInlineWidget context={`before rerolling ${copy.plural}`} />
 
       <TierRows tab={tab} />
 

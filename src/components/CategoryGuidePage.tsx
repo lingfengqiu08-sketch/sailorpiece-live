@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
 import { TierRows } from "@/components/TierRows";
@@ -62,6 +63,8 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
           </div>
         </section>
       )}
+
+      <CodesInlineWidget context={`before rerolling ${TAB_LABELS[category].toLowerCase()}`} />
 
       <section className="surface p-6 mb-10">
         <h2 className="text-xl font-bold mb-4">Best Sailor Piece {TAB_LABELS[category]}</h2>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
 import { codes } from "@/lib/codes";
@@ -34,6 +35,8 @@ export function WikiGuidePage({ guide }: { guide: WikiGuide }) {
         <h2 className="text-xl font-bold mb-3">Quick Answer</h2>
         <p className="text-[var(--color-text-muted)] leading-relaxed">{guide.quickAnswer}</p>
       </section>
+
+      <CodesInlineWidget context="before planning this guide" />
 
       <section className="grid sm:grid-cols-3 gap-3 mb-10">
         {guide.facts.map((fact) => (

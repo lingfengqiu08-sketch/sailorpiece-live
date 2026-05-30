@@ -1,5 +1,6 @@
 import Link from "next/link";
 import siteLinks from "@/data/site-links.json";
+import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
 import { OfficialLinks } from "@/components/OfficialLinks";
@@ -111,6 +112,8 @@ export default function TrelloPage() {
           </Link>
         </div>
       </section>
+
+      <CodesInlineWidget context="before opening Trello" />
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Official Sailor Piece Links</h2>
