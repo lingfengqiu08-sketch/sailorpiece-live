@@ -237,7 +237,7 @@ export default function GuidePage() {
             <li>Defeat raid bosses and world bosses for small chances at Legendary / Mythical drops.</li>
           </ul>
           <p className="mt-3 text-sm">
-            See the <Link href="/fruits">full fruit guide</Link> or the <Link href="/tier-list/fruits">fruit tier list</Link>.
+            See the <Link href="/fruits">full fruit guide</Link> or the <Link href="/fruits">fruit tier list</Link>.
           </p>
         </div>
       </section>

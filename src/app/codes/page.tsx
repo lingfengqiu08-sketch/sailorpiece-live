@@ -142,6 +142,33 @@ export default function CodesPage() {
       </section>
 
       <section className="mt-12">
+        <h2 className="text-2xl font-bold mb-4">Spend Your Code Rewards Wisely</h2>
+        <p className="text-[var(--color-text-muted)] mb-4 leading-relaxed">
+          Codes give you rerolls, gems and shards — but where you spend them decides your account power.
+          These progression guides cover the systems most worth investing in:
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {[
+            { href: "/leveling", label: "Leveling Route", text: "Fastest path through Sea 1 and Sea 2 to the level cap." },
+            { href: "/bosses", label: "Boss Guide", text: "Which bosses to farm for drops, rerolls and keys." },
+            { href: "/boss-keys", label: "Boss Keys", text: "How to farm Boss Keys and which summon to spend on." },
+            { href: "/runes", label: "Runes", text: "Best damage, luck and survival runes for your build." },
+            { href: "/accessories", label: "Accessories", text: "Boss-drop accessories and the E0–E10 enchant route." },
+            { href: "/specs", label: "Specs & Passives", text: "Fighting styles and the level 10,000 Spec Passive unlock." },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]"
+            >
+              <h3 className="font-semibold">{item.label}</h3>
+              <p className="text-xs text-[var(--color-text-muted)] mt-1 leading-relaxed">{item.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <FAQ items={FAQS} />
       </section>

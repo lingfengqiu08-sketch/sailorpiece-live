@@ -566,7 +566,7 @@ export const WIKI_GUIDES = {
         ],
         links: [
           { href: "/codes", label: "Claim current codes" },
-          { href: "/tier-list/traits", label: "Compare trait support" },
+          { href: "/traits", label: "Compare trait support" },
         ],
       },
     ],

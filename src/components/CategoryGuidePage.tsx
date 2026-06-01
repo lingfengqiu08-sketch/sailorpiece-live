@@ -2,12 +2,13 @@ import Link from "next/link";
 import { CodesInlineWidget } from "@/components/CodesInlineWidget";
 import { FAQ } from "@/components/FAQ";
 import { JsonLd } from "@/components/JsonLd";
+import { SwordsExtras } from "@/components/SwordsExtras";
 import { TierRows } from "@/components/TierRows";
 import { CATEGORY_GUIDES, type GuideCategory } from "@/lib/category-guides";
+import { FEATURED_COMPARISONS, compareSwords } from "@/lib/sword-stats";
 import {
   CATEGORY_PAGE_PATHS,
   TAB_LABELS,
-  TIER_PAGE_PATHS,
   flattenItems,
   getTab,
   tierList,
@@ -21,6 +22,26 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
   const flatItems = flattenItems(tab);
   const topItems = tab.S?.slice(0, 5) ?? [];
 
+  // For swords, append the "is X better than Y" comparison Q&As so the
+  // canonical /swords page carries the rich-result schema that previously
+  // lived on /swords (which now 301s here).
+  const comparisonFaqs =
+    category === "swords"
+      ? FEATURED_COMPARISONS.map(([aName, bName]) => {
+          const cmp = compareSwords(aName, bName);
+          const winner = cmp && cmp.overall === "a" ? aName : cmp && cmp.overall === "b" ? bName : null;
+          return {
+            q: `Is ${aName} better than ${bName} in Sailor Piece?`,
+            a: cmp
+              ? winner
+                ? `${winner} scores higher overall (${Math.max(cmp.aTotal, cmp.bTotal)} vs ${Math.min(cmp.aTotal, cmp.bTotal)}) across damage, AoE, PvP, iframes, mobility and boss farming. Use the sword comparison tool on this page to see the full breakdown.`
+                : `${aName} and ${bName} tie on total score. Pick based on whether you need raw damage or control — see the comparison tool on this page.`
+              : `Compare ${aName} and ${bName} with the sword comparison tool on this page.`,
+          };
+        })
+      : [];
+  const faqItems = [...guide.faq, ...comparisonFaqs];
+
   return (
     <>
       <JsonLd
@@ -30,7 +51,7 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
           { name: "Guides", url: "/guide" },
           { name: guide.title, url: CATEGORY_PAGE_PATHS[category] },
         ]}
-        faq={guide.faq}
+        faq={faqItems}
         howto={guide.howTo}
         itemList={{
           name: `${guide.title} Tier Highlights`,
@@ -54,9 +75,9 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
             {guide.quickAnswer}
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href={TIER_PAGE_PATHS[category]} className="btn-primary text-sm">
-              Open {TAB_LABELS[category].toLowerCase()} tier list
-            </Link>
+            <a href="#tier-list" className="btn-primary text-sm">
+              Jump to {TAB_LABELS[category].toLowerCase()} tier list
+            </a>
             <Link href="/codes" className="btn-ghost text-sm">
               Get reroll codes
             </Link>
@@ -82,8 +103,8 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
           ))}
         </div>
         <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-          Full rankings are also available on the{" "}
-          <Link href={TIER_PAGE_PATHS[category]}>{TAB_LABELS[category].toLowerCase()} tier list</Link>.
+          See the full S–D ranking in the{" "}
+          <a href="#tier-list">{TAB_LABELS[category].toLowerCase()} tier list below</a>.
         </p>
       </section>
 
@@ -171,19 +192,22 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
         </div>
       )}
 
-      <section className="mb-10">
-        <div className="flex items-end justify-between gap-3 mb-4">
-          <h2 className="text-2xl font-bold">{TAB_LABELS[category]} Tier List</h2>
-          <Link href={TIER_PAGE_PATHS[category]} className="text-sm">
-            Open full page →
-          </Link>
-        </div>
+      <section id="tier-list" className="mb-10 scroll-mt-20">
+        <h2 className="text-2xl font-bold mb-2">
+          Full Sailor Piece {TAB_LABELS[category]} Tier List (S–D Ranked)
+        </h2>
+        <p className="mb-4 text-sm text-[var(--color-text-muted)]">
+          Every {TAB_LABELS[category].toLowerCase().replace(/s$/, "")} ranked from S to D tier, last reviewed{" "}
+          {tierList.last_reviewed_at}.
+        </p>
         <TierRows tab={tab} />
       </section>
 
+      {category === "swords" && <SwordsExtras />}
+
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
-        <FAQ items={guide.faq} />
+        <FAQ items={faqItems} />
       </section>
 
       <section className="mt-12 surface p-6">
@@ -192,6 +216,12 @@ export function CategoryGuidePage({ category }: { category: GuideCategory }) {
           Redeem the latest <Link href="/codes">Sailor Piece codes</Link>, compare the full{" "}
           <Link href="/tier-list">tier list hub</Link>, then cross-check the broader{" "}
           <Link href="/guide">guide hub</Link> before spending rerolls.
+        </p>
+        <p className="mt-3 text-sm text-[var(--color-text-muted)]">
+          Build deeper with the <Link href="/leveling">leveling route</Link>,{" "}
+          <Link href="/bosses">boss farming guide</Link>, <Link href="/runes">runes guide</Link>,{" "}
+          <Link href="/accessories">accessories guide</Link> and{" "}
+          <Link href="/specs">specs &amp; passives guide</Link>.
         </p>
       </section>
     </>

@@ -152,8 +152,8 @@ export default function TrelloPage() {
           {[
             { href: "/codes", label: "Codes", text: "Check today's working rewards before spending rerolls." },
             { href: "/official-links", label: "Official Links", text: "Open the verified Roblox, Discord and Trello links." },
-            { href: "/tier-list/swords", label: "Swords Tier List", text: "Compare best swords, iframes, boss damage and PvP control." },
-            { href: "/tier-list/races", label: "Races Tier List", text: "Plan race rerolls around farming, raids and PvP builds." },
+            { href: "/swords", label: "Swords Tier List", text: "Compare best swords, iframes, boss damage and PvP control." },
+            { href: "/races", label: "Races Tier List", text: "Plan race rerolls around farming, raids and PvP builds." },
           ].map((item) => (
             <Link
               key={item.href}
@@ -183,8 +183,8 @@ export default function TrelloPage() {
           {[
             { href: "/codes", label: "Codes", text: "Active rewards with source checks and copy buttons." },
             { href: "/official-links", label: "Official Links", text: "Roblox, Discord and Trello in one page." },
-            { href: "/tier-list/swords", label: "Swords Tier List", text: "Best swords, current picks and iframe notes." },
-            { href: "/tier-list/races", label: "Races Tier List", text: "Race reroll planning for builds and progression." },
+            { href: "/swords", label: "Swords Tier List", text: "Best swords, current picks and iframe notes." },
+            { href: "/races", label: "Races Tier List", text: "Race reroll planning for builds and progression." },
           ].map((item) => (
             <Link
               key={item.href}

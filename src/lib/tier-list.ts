@@ -36,12 +36,12 @@ export const TAB_LABELS: Record<TabKey, string> = {
 };
 
 export const TIER_PAGE_PATHS: Record<TabKey, string> = {
-  races: "/tier-list/races",
-  fruits: "/tier-list/fruits",
-  swords: "/tier-list/swords",
-  clans: "/tier-list/clans",
-  haki: "/tier-list/haki",
-  traits: "/tier-list/traits",
+  races: "/races",
+  fruits: "/fruits",
+  swords: "/swords",
+  clans: "/clans",
+  haki: "/haki",
+  traits: "/traits",
 };
 
 export const CATEGORY_PAGE_PATHS: Record<TabKey, string> = {

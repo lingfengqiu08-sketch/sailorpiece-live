@@ -83,7 +83,7 @@ export default function RacesPage() {
       <section id="race-tier-list" className="surface p-5 mb-10">
         <h2 className="text-xl font-bold mb-3">Sailor Piece Race Tier List</h2>
         <p className="text-sm text-[var(--color-text-muted)] mb-5">
-          Last reviewed {tierList.last_reviewed_at}. Full breakdown on the <Link href="/tier-list/races">tier list page</Link>.
+          Last reviewed {tierList.last_reviewed_at}. Full breakdown on the <Link href="/races">tier list page</Link>.
         </p>
         <div className="space-y-3">
           {TIER_ORDER.map((tier) => {
@@ -145,7 +145,7 @@ export default function RacesPage() {
           <li><strong className="text-[var(--color-text)]">Keep or reroll.</strong> S tier races (Leviathan, Kitsune, Servant) have lower drop rates — stockpile rerolls before spending.</li>
         </ol>
         <p className="mt-4 text-sm text-[var(--color-text-muted)]">
-          Tip: pair your race with the best <Link href="/tier-list/swords">sword</Link> and <Link href="/tier-list/clans">clan</Link> for your build before reroll-locking.
+          Tip: pair your race with the best <Link href="/swords">sword</Link> and <Link href="/clans">clan</Link> for your build before reroll-locking.
         </p>
       </section>
 

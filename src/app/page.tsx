@@ -104,19 +104,19 @@ export default function Home() {
           <Link href="/tier-list" className="text-sm">Full tier list →</Link>
         </div>
         <div className="grid sm:grid-cols-3 gap-3">
-          <Link href="/tier-list/races" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
+          <Link href="/races" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
             <h3 className="font-semibold">Race Tier List</h3>
             <p className="text-xs text-[var(--color-text-muted)] mt-1">23 races ranked S → D</p>
             <p className="mt-3 text-sm text-[var(--color-accent)]">
               Top S: {races.slice(0, 3).map(r => r.name).join(" · ")}
             </p>
           </Link>
-          <Link href="/tier-list/fruits" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
+          <Link href="/fruits" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
             <h3 className="font-semibold">Fruit Tier List</h3>
             <p className="text-xs text-[var(--color-text-muted)] mt-1">All devil fruits ranked</p>
             <p className="mt-3 text-sm text-[var(--color-accent)]">Top S: Light · Quake</p>
           </Link>
-          <Link href="/tier-list/swords" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
+          <Link href="/swords" className="surface p-4 hover:border-[var(--color-accent)] transition-colors !no-underline !text-[var(--color-text)]">
             <h3 className="font-semibold">Sword Tier List</h3>
             <p className="text-xs text-[var(--color-text-muted)] mt-1">19 swords ranked</p>
             <p className="mt-3 text-sm text-[var(--color-accent)]">Top S: Shadow Monarch · Rimuru</p>
