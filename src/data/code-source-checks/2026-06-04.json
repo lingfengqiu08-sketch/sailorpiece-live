@@ -1,0 +1,250 @@
+{
+  "checked_at": "2026-06-04T20:36:03+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Prefer official Roblox/Discord/Trello evidence when accessible; otherwise require at least two credible current sources or one current source explicitly citing official Discord.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Fetched successfully after clearing local proxy variables. The public game page identifies Sailor Piece/Shadowrise Devs but does not expose current code strings in accessible HTML. Not used as direct code evidence today."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/Aa6zXfmF9H",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Fetched successfully after clearing local proxy variables. The invite is accessible, but public web access does not expose code-list or game-announcements messages. Not used as direct code evidence today."
+    },
+    {
+      "name": "Official Trello board and public board JSON",
+      "url": "https://trello.com/b/9eUJqMrN/sailor-piece",
+      "type": "official_trello",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Board and JSON were accessible. The Actives Codes card still lists stale early codes such as 30KCCU, UPD5, 7.5KFOLLOWTY, 10KFOLLOWTY, 12.5KFOLLOWTY, ROGUE, and SORRYFORISSUEANDRESTART, so Trello was not used as current active proof."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_level_context",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Last updated June 2, 2026. It says it checked for new codes and confirmed its list active. It lists 10 active codes: the two May 25 additions, SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and RAIDS. It lists level 12,500 for the two May 25 additions and restart/content codes, level 7,500 for GHOULUPDATE/MASTERY/RAIDS, and SORRYFORRESTARTGUYSTPBUG as expired."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Updated June 4, 2026 and says it looked for new codes. It lists 11 active codes: the two May 25 additions, all three restart-bug variants, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and RAIDS."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_official_discord_reference",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Article says it checked for new Sailor Piece codes on June 1, 2026. It lists the 11 retained active codes with exact rewards and says codes arrive in the official Discord code-list channel. It also still lists older predecessor codes as active, creating stale-listing conflict."
+    },
+    {
+      "name": "Dexerto Sailor Piece codes",
+      "url": "https://www.dexerto.com/roblox/sailor-piece-codes-3334041/",
+      "type": "third_party_current_codes_with_official_discord_reference",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Updated June 1, 2026 to confirm active codes. It lists 21 active codes, including all 11 codes retained here, and gives exact reward bundles for the two newest codes and many retained codes. It still lists older predecessor codes as active, so it was treated as reward support and active-state support but not strong expiry evidence. It points readers to the official Discord server for more codes."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_official_discord_reference",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Updated May 27, 2026 with May 25 Ghoul Update notes. It lists 10 active codes: the two May 25 additions, SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG inactive and says new codes are posted in the official Discord game-announcements channel."
+    },
+    {
+      "name": "Pocket Gamer Sailor Piece codes",
+      "url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_conflict",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Updated June 1, 2026 and says a new code was added. It lists the two May 25 additions plus SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS as active, but omits SORRYFORRESTARTGUYSTPBUG and still lists older predecessor codes as active."
+    },
+    {
+      "name": "PCGamesN Sailor Piece codes",
+      "url": "https://www.pcgamesn.com/sailor-piece/codes",
+      "type": "third_party_current_codes_conflict",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Updated June 1, 2026. It lists 7 latest codes: the two May 25 additions, all three restart-bug variants, BIGCONTENTUPDATESOON, and FREECODEFORYALL. It lists SMALLDELAYCODESORRY, GHOULUPDATE, and MASTERY as expired, omits RAIDS, and has reward conflicts for the two May 25 additions."
+    },
+    {
+      "name": "PC Gamer Sailor Piece codes",
+      "url": "https://www.pcgamer.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_conflict",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Last updated June 2, 2026. It says the last two updates are still alive and lists only 1BIL500MILVISITSTYSM and FREECODEFORYALLL2 as active, with exact rewards matching the stored bundles. Treated as strong support for the two May 25 additions and omission conflict for other retained active codes, not official expiry proof."
+    },
+    {
+      "name": "Game.guide Sailor Piece codes",
+      "url": "https://www.game.guide/roblox-codes/sailor-piece",
+      "type": "third_party_current_codes_conflict",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 403,
+      "notes": "Local curl received HTTP 403, while rendered web access showed the page was last updated June 4, 2026 and claims 2 active codes for June 2026. Its accessible static text places several retained active codes in the expired table, while the active code names were not clearly exposed in the rendered text. Treated as conflict evidence only, not enough by itself to expire codes without official proof."
+    },
+    {
+      "name": "SailorPieceWiki codes overview",
+      "url": "https://sailorpiecewiki.com/entries/codes-overview/",
+      "type": "third_party_snapshot_codes",
+      "accessed_at": "2026-06-04T20:36:03+08:00",
+      "http_status": 200,
+      "notes": "Snapshot page says checked 2026-05-24 and lists 10 active codes: the two May 25 additions, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and all three restart-bug variants. It supports the newest reward bundles but is older than the current daily check."
+    }
+  ],
+  "codes_reviewed": [
+    "1BIL500MILVISITSTYSM",
+    "FREECODEFORYALLL2",
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "1BIL500MILVISITSTYSM",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar June 2, PC Gamer June 2, Beebom, Dexerto, Pro Game Guides, Pocket Gamer, PCGamesN, and snapshot sources support it as current/recent. Stored reward bundle remains supported by Beebom, Dexerto, PC Gamer, and Game.guide; level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "FREECODEFORYALLL2",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar June 2, PC Gamer June 2, Beebom, Dexerto, Pro Game Guides, Pocket Gamer, PCGamesN, and snapshot sources support it as current/recent. Stored reward bundle remains supported by Beebom, Dexerto, PC Gamer, and Game.guide; level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, Pocket Gamer, and PCGamesN list/include it active/current. PC Gamer omission and Game.guide conflict are not direct expiry proof. Level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, Pocket Gamer, and PCGamesN list/include it active/current. PC Gamer omission and Game.guide conflict are not direct expiry proof. Level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active with conflict. Destructoid June 4, Beebom, Dexerto, and PCGamesN list it active/current. Pro Game Guides lists it inactive, GamesRadar lists it expired, Pocket Gamer omits it, PC Gamer only lists the two May 25 additions, and Game.guide exposes conflicting status/count evidence. No official expiry proof was accessible."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, Pocket Gamer, and PCGamesN list it active/current. PC Gamer and Game.guide conflict by omission/status, but not enough to expire it without official proof. Level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, Pocket Gamer, and PCGamesN list it active/current. PC Gamer and Game.guide conflict by omission/status, but not enough to expire it without official proof. Level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active with conflict. Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer list it active/current, while PCGamesN lists it expired and PC Gamer/Game.guide conflict by omission/status. Active evidence still outweighs expiry/omission evidence without official proof. Level 12500 remains based on GamesRadar."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active with conflict. Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer list it active/current, while PCGamesN lists it expired and PC Gamer/Game.guide conflict by omission/status. Active evidence still outweighs expiry/omission evidence without official proof. Level 7500 remains based on GamesRadar."
+    },
+    {
+      "code": "MASTERY",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active with conflict. Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer list it active/current, while PCGamesN lists it expired and PC Gamer/Game.guide conflict by omission/status. Beebom supports the stored reward bundle; Dexerto conflicts with a raid-key bundle. Level 7500 remains based on GamesRadar."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Destructoid June 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer list it active/current. PCGamesN/PC Gamer omit it and Game.guide conflicts by status/count, but none supplied direct official expiry proof. Level 7500 remains based on GamesRadar."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "No active code had strong enough official or cross-source expiry evidence to move today. Conflicts remain for SORRYFORRESTARTGUYSTPBUG, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS, but active-source evidence still exists and official code-channel evidence was not accessible."
+    },
+    {
+      "code": "new_codes",
+      "action": "none_added_today",
+      "method": "source_snapshot",
+      "reason": "No source surfaced a new code beyond the May 25 additions already present in codes.json. Destructoid June 4 says it looked for new codes and still lists the same retained active set."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "kept_as": "active",
+      "conflict": "Destructoid June 4, Beebom, Dexerto, and PCGamesN list it active/current. Pro Game Guides lists it inactive, GamesRadar lists it expired, Pocket Gamer omits it, PC Gamer only lists the two May 25 additions, and Game.guide exposes conflicting status/count evidence.",
+      "next_step": "Move to expired only if official Discord/Trello confirms expiry or another strong current source joins explicit expired evidence."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY_GHOULUPDATE_MASTERY",
+      "kept_as": "active",
+      "conflict": "PCGamesN updated Jun 1 lists these as expired, PC Gamer lists only the two May 25 additions, and Game.guide exposes conflicting status/count evidence. Destructoid Jun 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer still list these codes active/current.",
+      "next_step": "Keep active until official evidence or stronger current-source expiry agreement appears."
+    },
+    {
+      "code": "RAIDS",
+      "kept_as": "active",
+      "conflict": "PCGamesN and PC Gamer omit RAIDS, and Game.guide exposes conflicting status/count evidence. Destructoid Jun 4, GamesRadar, Pro Game Guides, Beebom, Dexerto, and Pocket Gamer still list it active/current.",
+      "next_step": "Keep active until official evidence or explicit current expiry evidence appears."
+    },
+    {
+      "code": "older_ghoul_predecessor_codes",
+      "kept_as": "expired",
+      "conflict": "700KFAVSTY, FREECODEHERE1, HUGEUPDATEWWW, DELAYCODENR1, DELAYCODENR2, 1B100MVISITS, 1B200MVISITS, 1B300MVISITS, 1M100KLIKESTYYY, and TYSMFOR400KFOLLOWONEVENT remain split. Destructoid, Pro Game Guides, PCGamesN, PC Gamer, GamesRadar, and Game.guide support expiry/omission more strongly than Beebom, Dexerto, and Pocket Gamer stale active listings.",
+      "next_step": "Do not restore unless official evidence appears or active-source agreement becomes stronger than the stale-listing pattern."
+    },
+    {
+      "code": "MASTERY",
+      "kept_as": "active",
+      "conflict": "Beebom supports the stored no-raid-key bundle, while Dexerto lists a raid-key bundle with fewer bloodline stones. Current Destructoid, Pro Game Guides, GamesRadar, and Pocket Gamer only say free rewards or provide no exact bundle.",
+      "next_step": "Keep the stored exact bundle until official evidence or stronger exact-source agreement confirms a different reward."
+    },
+    {
+      "code": "1BIL500MILVISITSTYSM_FREECODEFORYALLL2",
+      "kept_as": "active",
+      "conflict": "Beebom, Dexerto, PC Gamer, and Game.guide support the stored newer-code bundles, while PCGamesN swaps or reduces the two May 25 reward bundles.",
+      "next_step": "Keep stored bundles because more exact sources support them."
+    },
+    {
+      "code": "level_context",
+      "kept_as": "per_code_gamesradar_levels",
+      "conflict": "GamesRadar June 2 still gives explicit per-code requirements: 12,500 for the two May 25 additions and restart/content codes, and 7,500 for GHOULUPDATE, MASTERY, and RAIDS. No newer official level-gate source was accessible.",
+      "next_step": "Use explicit per-code level rows unless official evidence or a newer source provides more specific requirements."
+    }
+  ],
+  "redeem_tests": []
+}
