@@ -29,3 +29,14 @@ export function formatDate(iso: string): string {
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }
+
+/**
+ * "June 2026" style label. Used in page titles so the month stays current
+ * automatically whenever the codes data is refreshed (which triggers a
+ * rebuild). Pass codes.last_checked_at as the source of truth.
+ */
+export function formatMonthYear(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "long" });
+}

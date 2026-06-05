@@ -9,9 +9,9 @@ import { codes } from "@/lib/codes";
 import { formatDate } from "@/lib/date";
 
 export const metadata = buildMetadata({
-  title: "Sailor Piece Trello - Official Link, Discord & Codes",
+  title: "Sailor Piece Trello Link (Official) - Discord, Codes & Map",
   description:
-    "Official Sailor Piece Trello link with notes on Discord, Roblox, codes, patch notes, update tracking, safe links and which source to check first.",
+    "The official Sailor Piece Trello link, verified and safe. Plus the official Discord, Roblox game page, latest codes and which source to check first for updates.",
   path: "/trello",
 });
 

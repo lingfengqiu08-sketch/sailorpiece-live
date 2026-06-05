@@ -5,15 +5,15 @@ import { FAQ } from "@/components/FAQ";
 import { FreshnessBanner } from "@/components/FreshnessBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata } from "@/lib/seo";
-import { formatDate } from "@/lib/date";
+import { formatDate, formatMonthYear } from "@/lib/date";
 
 const ACTIVE_COUNT = activeCodes().length;
-const FEATURED_CODES = activeCodes().slice(0, 6).map((code) => code.code);
+const CODES_MONTH = formatMonthYear(codesData.last_checked_at);
 
 export const metadata = buildMetadata({
-  title: `Sailor Piece Codes May 2026 - ${ACTIVE_COUNT} Working Codes Checked Daily`,
+  title: `Sailor Piece Codes (${CODES_MONTH}) - All Working Codes & Rewards`,
   description:
-    `Copy ${ACTIVE_COUNT} working Sailor Piece codes for May 2026, including ${FEATURED_CODES.slice(0, 4).join(", ")}. Checked daily with source links, level filters, rewards and expired codes.`,
+    `All ${ACTIVE_COUNT} working Sailor Piece codes for ${CODES_MONTH}, updated daily. Copy each code, filter by your level, see full rewards, and check expired codes — verified against official sources.`,
   path: "/codes",
 });
 
@@ -77,7 +77,7 @@ export default function CodesPage() {
 
       <header className="mb-6">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-          Sailor Piece Codes May 2026 - {active.length} Working Codes
+          Sailor Piece Codes ({CODES_MONTH}) - {active.length} Working Codes
         </h1>
         <FreshnessBanner
           lastCheckedAt={codesData.last_checked_at}

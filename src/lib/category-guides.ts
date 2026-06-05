@@ -79,9 +79,9 @@ export const CATEGORY_GUIDES: Record<GuideCategory, CategoryGuide> = {
     ],
   },
   swords: {
-    metaTitle: "Best Swords in Sailor Piece - Tier List, Iframes & Builds",
+    metaTitle: "Sailor Piece Sword Tier List - Compare Every Sword & Iframes",
     metaDescription:
-      "Best swords in Sailor Piece ranked by current best sword, iframes, boss damage, PvP control, raids and tier list value, including Shadow Monarch and Rimuru.",
+      "Compare every Sailor Piece sword side by side: damage, AoE, PvP, iframes and boss farming. Full S–D tier list plus the best sword for each goal, including Shadow Monarch and Rimuru.",
     title: "Best Swords in Sailor Piece",
     badge: "Sword guide",
     intro:
