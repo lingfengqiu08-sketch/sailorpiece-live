@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.82,
     })),
+    // Focused mechanic page — already ranks pos 5-9 for "iframe sailor piece".
+    { path: "/iframes", changeFrequency: "weekly", priority: 0.83 },
     { path: "/guide", changeFrequency: "weekly", priority: 0.8 },
   ] as const;
 

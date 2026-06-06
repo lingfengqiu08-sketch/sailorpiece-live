@@ -11,12 +11,6 @@ const SWORD_GOAL_ROWS = [
   ["Mid-game bridge", "Ragna, Shadow, Ichigo, Aizen", "Strong enough to progress while you save resources for S tier.", "Do not reroll a stable A-tier sword too early."],
 ];
 
-const SWORD_IFRAME_ROWS = [
-  ["Iframes", "Short invulnerability windows during a move or animation.", "They let a sword survive boss hits, PvP burst or dangerous raid moments."],
-  ["Why they matter", "A sword with iframes can feel stronger than a higher-damage sword in hard content.", "This is why Shadow Monarch and True Manipulator stay valuable outside pure DPS tests."],
-  ["How to judge them", "Do not judge only by damage numbers.", "Test whether the sword lets you keep attacking without dying or losing uptime."],
-];
-
 /**
  * Sword-specific deep-dive content: best-by-goal table, iframes explainer,
  * interactive comparator, and pre-rendered popular comparisons.
@@ -59,20 +53,18 @@ export function SwordsExtras() {
       </section>
 
       <section className="mt-12" id="iframes">
-        <h2 className="text-2xl font-bold mb-3">What Are Iframes in Sailor Piece?</h2>
-        <p className="mb-4 text-[var(--color-text-muted)] leading-relaxed">
-          Some searches ask about iframes because the strongest swords are not judged only by
-          damage. Iframes can make a sword safer for bosses, PvP and raids.
+        <h2 className="text-2xl font-bold mb-3">Iframes Matter as Much as Damage</h2>
+        <p className="text-[var(--color-text-muted)] leading-relaxed">
+          The strongest swords are not judged on damage alone. Iframes — short invincibility
+          windows during a move — let a sword survive boss hits, PvP burst and raid damage, which
+          is why Shadow Monarch and True Manipulator stay valuable beyond pure DPS. The iframe
+          score is built into every sword&apos;s rating in the tier list above.
         </p>
-        <div className="grid md:grid-cols-3 gap-3">
-          {SWORD_IFRAME_ROWS.map(([title, text, note]) => (
-            <article key={title} className="surface p-5">
-              <h3 className="font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-[var(--color-text-muted)] leading-relaxed">{text}</p>
-              <p className="mt-3 text-xs text-[var(--color-text-muted)] leading-relaxed">{note}</p>
-            </article>
-          ))}
-        </div>
+        <p className="mt-3 text-sm text-[var(--color-text-muted)]">
+          New to the mechanic? Read the full{" "}
+          <Link href="/iframes">what are iframes in Sailor Piece</Link> guide for the meaning,
+          timing tips and the best iframe swords ranked.
+        </p>
       </section>
 
       <section className="mt-12" id="compare">
