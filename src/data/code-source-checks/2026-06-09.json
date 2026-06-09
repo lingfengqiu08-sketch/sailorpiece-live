@@ -1,0 +1,231 @@
+{
+  "checked_at": "2026-06-09T20:33:50+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use source_snapshot when current public sources agree on active or expired state. Prefer official Roblox/Discord/Trello evidence when accessible; otherwise require at least two credible current sources or one current source explicitly citing official Discord.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Public HTML identifies Sailor Piece by Shadowrise Devs, dateModified 06/08/2026, max level 20000, and says the community server carries exclusive reward codes. It does not expose current code strings in accessible HTML."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/Aa6zXfmF9H",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Invite resolves/canonicalizes to discord.com/invite/sailorpiece and identifies the Official Discord Server of Shadowrise Devs Sailor Piece with about 1,437,371 members. Public HTML does not expose code-list or game-announcements messages, so it is not direct code evidence today."
+    },
+    {
+      "name": "Official Trello board JSON",
+      "url": "https://trello.com/b/9eUJqMrN.json",
+      "type": "official_trello",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Board last activity is 2026-04-26; Actives Codes card was last active 2026-02-28 and still lists stale early codes. It does not contain the current June active set and was not used as current active proof."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_codes_and_level_context",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page shows a June 9, 2026 update and lists 13 active codes, including new codes 1MIL200KLIKESWOWW, FREECODEFORYALLL3, and BIGDELAYSSORRYCODE. It gives explicit level requirements: 12,500 for the new/top reward-family codes and 7,500 for GHOULUPDATE, MASTERY, and RAIDS. It lists SORRYFORRESTARTGUYSTPBUG expired."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_official_discord_reference",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page says codes were checked on June 9, 2026 and lists the three new codes with exact rewards. It says new codes are posted in the official Discord code-list channel. It places RAIDS in expired, creating a conflict with GamesRadar and Destructoid."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Article dated/updated June 9, 2026 says it added three new codes and lists the new codes 1MIL200KLIKESWOWW, FREECODEFORYALLL3, and BIGDELAYSSORRYCODE plus the retained active set, including RAIDS and SORRYFORRESTARTGUYSTPBUG."
+    },
+    {
+      "name": "Pocket Gamer Sailor Piece codes",
+      "url": "https://www.pocketgamer.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_conflict",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page was reachable with HTTP 200. It has historically kept broader active lists and is treated as conflict/support context only unless its current page provides stronger exact evidence than the June 9 sources above."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_codes_context",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page was reachable with HTTP 200. It remains useful for Discord-channel sourcing context, but was not stronger than the June 9 GamesRadar/Beebom/Destructoid agreement for today's new codes."
+    },
+    {
+      "name": "PCGamesN Sailor Piece codes",
+      "url": "https://www.pcgamesn.com/sailor-piece/codes",
+      "type": "third_party_codes_conflict",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page was reachable with HTTP 200. Prior evidence conflicted on some active/expired states and rewards, so it is retained as conflict context rather than decisive current proof."
+    },
+    {
+      "name": "PC Gamer Sailor Piece codes",
+      "url": "https://www.pcgamer.com/roblox/sailor-piece-codes/",
+      "type": "third_party_codes_conflict",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page was reachable with HTTP 200. Prior evidence listed only the latest codes and omitted many retained active rows; omission is not treated as expiry proof."
+    },
+    {
+      "name": "Dexerto Sailor Piece codes",
+      "url": "https://www.dexerto.com/roblox/sailor-piece-codes-3334041/",
+      "type": "third_party_codes_context",
+      "accessed_at": "2026-06-09T20:33:50+08:00",
+      "http_status": 200,
+      "notes": "Page was reachable with HTTP 200. Used as supporting context from prior runs for reward/source conflicts, not as decisive evidence for today's three additions."
+    }
+  ],
+  "codes_reviewed": [
+    "1MIL200KLIKESWOWW",
+    "FREECODEFORYALLL3",
+    "BIGDELAYSSORRYCODE",
+    "1BIL500MILVISITSTYSM",
+    "FREECODEFORYALLL2",
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "1MIL200KLIKESWOWW",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Added because GamesRadar, Beebom, and Destructoid all list it as a current active code on June 9, 2026. Beebom provides the exact reward bundle and official Discord code-list context; GamesRadar provides level 12500."
+    },
+    {
+      "code": "FREECODEFORYALLL3",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Added because GamesRadar, Beebom, and Destructoid all list it as a current active code on June 9, 2026. Beebom provides the exact reward bundle and official Discord code-list context; GamesRadar provides level 12500."
+    },
+    {
+      "code": "BIGDELAYSSORRYCODE",
+      "action": "added_active",
+      "method": "source_snapshot",
+      "reason": "Added because GamesRadar, Beebom, and Destructoid all list it as a current active code on June 9, 2026. Beebom provides the exact reward bundle and official Discord code-list context; GamesRadar provides level 12500."
+    },
+    {
+      "code": "1BIL500MILVISITSTYSM",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "FREECODEFORYALLL2",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG2",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because Beebom and Destructoid list it active/current while GamesRadar lists it expired. No official expiry proof was accessible."
+    },
+    {
+      "code": "BIGCONTENTUPDATESOON",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "FREECODEFORYALL",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "GHOULUPDATE",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "MASTERY",
+      "action": "kept_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because current public sources continue to support it and no official expiry proof was accessible."
+    },
+    {
+      "code": "RAIDS",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Kept active because GamesRadar and Destructoid list it active/current while Beebom lists it expired. No official expiry proof was accessible."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "No active code had official or strong enough cross-source expiry evidence to move today. Conflicts were retained in notes and source_conflicts."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "kept_as": "active",
+      "conflict": "Beebom and Destructoid list it active/current; GamesRadar lists it expired.",
+      "next_step": "Move to expired only if official Discord/Trello confirms expiry or stronger current sources join explicit expired evidence."
+    },
+    {
+      "code": "RAIDS",
+      "kept_as": "active",
+      "conflict": "GamesRadar and Destructoid list it active/current; Beebom lists it expired.",
+      "next_step": "Keep active until official evidence or stronger current-source expiry agreement appears."
+    },
+    {
+      "code": "older_predecessor_codes",
+      "kept_as": "expired",
+      "conflict": "Some third-party pages have historically kept older predecessor codes active while more current/source-specific pages omit or expire them. Official Trello is stale and not useful for current state.",
+      "next_step": "Do not restore unless official evidence appears or current active-source agreement becomes stronger than stale-listing patterns."
+    },
+    {
+      "code": "MASTERY",
+      "kept_as": "active",
+      "conflict": "Stored reward bundle follows Beebom/no-raid-key evidence; older Dexerto evidence conflicted with a raid-key bundle.",
+      "next_step": "Keep stored reward until official evidence or stronger exact-source agreement confirms a different reward."
+    }
+  ],
+  "redeem_tests": []
+}
