@@ -1,166 +1,166 @@
 {
-  "last_checked_at": "2026-06-15T20:35:50+08:00",
+  "last_checked_at": "2026-06-16T20:36:07+08:00",
   "check_frequency_hours": 24,
   "active": [
     {
       "code": "KINGUPDATEHASARRIVED",
       "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
       "added_at": "2026-06-15T20:35:50+08:00",
-      "notes": "Added June 15, 2026. Official Roblox game description lists this under NEW CODES. Rewards are cross-checked by Beebom, Pro Game Guides, Pocket Tactics, and Destructoid. Min level 12,500 follows the current power-shard/secret-chest/aura-crate reward-family gate from GamesRadar/Pocket Tactics; no accessible official per-code level was found. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Official Roblox game description dateModified 06/16/2026 still lists this under NEW CODES. Rewards remain cross-checked by Beebom, Pro Game Guides, Pocket Tactics, and Destructoid. GamesRadar explicitly lists the level requirement as 12,500, matching the stored gate. No in-game redeem test was performed."
     },
     {
       "code": "RAIDUPDATENOW",
       "rewards": "$150,000 + 300 Gems + 3 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
-      "min_level": 7500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "min_level": 9000,
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
       "added_at": "2026-06-15T20:35:50+08:00",
-      "notes": "Added June 15, 2026. Official Roblox game description lists this under NEW CODES. Rewards are cross-checked by Beebom, Pro Game Guides, Pocket Tactics, and Destructoid. Min level 7,500 follows the current raid-key/cash/reroll reward-family gate used for RAIDS by GamesRadar/Pocket Tactics; no accessible official per-code level was found. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Official Roblox game description dateModified 06/16/2026 still lists this under NEW CODES. Rewards remain cross-checked by Beebom, Pro Game Guides, Pocket Tactics, and Destructoid. Updated min level from inferred 7,500 to GamesRadar's explicit current requirement of 9,000. No in-game redeem test was performed."
     },
     {
       "code": "1MIL200KLIKESWOWW",
       "rewards": "50 Power Shard + 75 Passive Shard + 14 Secret Chest + 125 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict after the King update. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Pocket Tactics, PCGamesN, and Beebom still list this code active/current, while Pro Game Guides and Destructoid list some June 9 codes inactive/expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict after the King update. Pocket Tactics, PCGamesN, Beebom, and U7BUY still list this code active/current, while Pro Game Guides, GamesRadar, and Destructoid list it inactive/expired. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALLL3",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict after the King update. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Pocket Tactics, PCGamesN, and Beebom still list this code active/current, while Pro Game Guides and Destructoid list some June 9 codes inactive/expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict after the King update. Pocket Tactics, PCGamesN, Beebom, and U7BUY still list this code active/current, while Pro Game Guides, GamesRadar, and Destructoid list it inactive/expired. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "BIGDELAYSSORRYCODE",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict after the King update. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Pocket Tactics, PCGamesN, and Beebom still list this code active/current, while Pro Game Guides and Destructoid list some June 9 codes inactive/expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict after the King update. Pocket Tactics, PCGamesN, Beebom, and U7BUY still list this code active/current, while Pro Game Guides, GamesRadar, and Destructoid list it inactive/expired. Official Roblox lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW as NEW CODES but does not say older codes expired. Kept active because expiry evidence is not official or strong enough. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "1BIL500MILVISITSTYSM",
       "rewards": "50 Power Shard + 75 Passive Shard + 14 Secret Chest + 125 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-25T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict after the King update. Pocket Tactics and PCGamesN still list this code active/current, while Beebom, Pro Game Guides, and Destructoid now list it expired/inactive. Official Roblox does not provide expiry proof for older codes. Kept active with source conflict recorded. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pocket Tactics, PCGamesN, and U7BUY still list this code active/current, while Beebom, Pro Game Guides, GamesRadar, and Destructoid list it expired/inactive. Official Roblox does not provide expiry proof for older codes. Kept active with source conflict recorded. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALLL2",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-25T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict after the King update. Pocket Tactics and PCGamesN still list this code active/current, while Beebom, Pro Game Guides, and Destructoid now list it expired/inactive. Official Roblox does not provide expiry proof for older codes. Kept active with source conflict recorded. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pocket Tactics, PCGamesN, and U7BUY still list this code active/current, while Beebom, Pro Game Guides, GamesRadar, and Destructoid list it expired/inactive. Official Roblox does not provide expiry proof for older codes. Kept active with source conflict recorded. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG3",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Pro Game Guides, GamesRadar, Destructoid, PCGamesN, Pocket Tactics, and U7BUY still list this retained code active/current; Beebom lists it expired, creating a limited conflict. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG2",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Pro Game Guides, GamesRadar, Destructoid, PCGamesN, Pocket Tactics, and U7BUY still list this retained code active/current; Beebom lists it expired, creating a limited conflict. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pcgamesn.com/sailor-piece/codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. PCGamesN and Destructoid list it active/current, while Pocket Tactics, GamesRadar, and Pro Game Guides list it expired/inactive. Official Roblox does not provide expiry proof for this older code. Kept active because current active evidence remains and no accessible official expiry proof was found. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. PCGamesN, Destructoid, and U7BUY list it active/current, while Pocket Tactics, GamesRadar, Pro Game Guides, and Beebom list it expired/inactive. Official Roblox does not provide expiry proof for this older code. Kept active because current active evidence remains and no accessible official expiry proof was found. No in-game redeem test was performed."
     },
     {
       "code": "BIGCONTENTUPDATESOON",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Pro Game Guides, GamesRadar, Destructoid, PCGamesN, Pocket Tactics, and U7BUY still list this retained code active/current; Beebom lists it expired, creating a limited conflict. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALL",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026. Pro Game Guides, GamesRadar, Destructoid, PCGamesN, Pocket Tactics, and U7BUY still list this retained code active/current; Beebom lists it expired, creating a limited conflict. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "SMALLDELAYCODESORRY",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY still list this code active/current, while Beebom and PCGamesN list it expired. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "GHOULUPDATE",
       "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY still list this code active/current, while Beebom and PCGamesN list it expired. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "MASTERY",
       "rewards": "$250,000 + 400 Gems + 25 Bloodline Stone + 35 Passive Shard + 50 Clan Reroll + 75 Trait Reroll + 100 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, Pro Game Guides, Destructoid, GamesRadar, and prior U7BUY context still support this retained code as active/current, while Beebom or PCGamesN conflict for parts of the older active set. Kept active because no accessible official expiry proof was found. Stored rewards and level requirements remain unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY still list this code active/current, while Beebom and PCGamesN list it expired. Kept active because current active evidence remains stronger and no accessible official expiry proof was found. Stored rewards and level requirement remain unchanged. No in-game redeem test was performed."
     },
     {
       "code": "RAIDS",
       "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 5 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-06-15T20:35:50+08:00",
+      "verified_at": "2026-06-16T20:36:07+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.pockettactics.com/sailor-piece-codes",
       "added_at": "2026-05-09T00:00:00+08:00",
-      "notes": "Revalidated June 15, 2026 with active-state conflict. Pocket Tactics, GamesRadar, Pro Game Guides, Destructoid, U7BUY, Pocket Gamer, and G2A context list RAIDS active/current, while Beebom lists it expired and PCGamesN omits it from active. Kept active because expiry evidence is not official and active evidence remains current. No in-game redeem test was performed."
+      "notes": "Revalidated June 16, 2026 with active-state conflict. Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY still list RAIDS active/current, while Beebom lists it expired and PCGamesN omits it from active/places it in expired context. Kept active because expiry evidence is not official and active evidence remains current. No in-game redeem test was performed."
     }
   ],
   "expired": [
