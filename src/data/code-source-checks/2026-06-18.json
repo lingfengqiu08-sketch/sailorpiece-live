@@ -1,0 +1,209 @@
+{
+  "checked_at": "2026-06-18T20:35:31+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use official Roblox/Discord/Trello evidence first; otherwise require at least two credible current sources or one current source explicitly citing official Discord. Move codes to expired only when expiry evidence is strong.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page_with_new_codes",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Public HTML identifies Sailor Piece by Shadowrise Devs, dateModified 06/18/2026, max level 20000, and directly lists NEW CODES: KINGUPDATEHASARRIVED and RAIDUPDATENOW. It does not expose rewards, per-code level requirements, or expiry proof for older codes."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/sailorpiece",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Public HTML loads the Discord invite but does not expose channel messages or current code-list posts, so it is not direct code evidence today."
+    },
+    {
+      "name": "Official Trello board JSON",
+      "url": "https://trello.com/b/EVZ6nToB.json",
+      "type": "official_trello",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Fetched after clearing local proxy variables. Board name is Sailor Piece and dateLastActivity is 2026-06-12T02:16:43.308Z, but the Actives Codes card was last active 2026-04-08 and still contains old FREECODE/500MVISITS/ICEQUEEN/MINIUPDATE entries. Not used as decisive current code proof."
+    },
+    {
+      "name": "Pocket Tactics Sailor Piece codes",
+      "url": "https://www.pockettactics.com/sailor-piece-codes",
+      "type": "third_party_current_codes_with_rewards_and_conflicts",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Updated Jun 15, 2026 in accessible markup. Lists KINGUPDATEHASARRIVED and RAIDUPDATENOW plus the retained June/May reward-family codes active, but places SORRYFORRESTARTGUYSTPBUG in expired context, creating a conflict."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_and_official_discord_context",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Updated June 15, 2026. Active list has 10 codes: RAIDUPDATENOW, KINGUPDATEHASARRIVED, SORRYFORRESTARTGUYSTPBUG3/2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It marks 1MIL200KLIKESWOWW, FREECODEFORYALLL3, BIGDELAYSSORRYCODE, 1BIL500MILVISITSTYSM, FREECODEFORYALLL2, and SORRYFORRESTARTGUYSTPBUG inactive."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_rewards_and_discord_context",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Accessible current June page lists KINGUPDATEHASARRIVED, RAIDUPDATENOW, 1MIL200KLIKESWOWW, FREECODEFORYALLL3, and BIGDELAYSSORRYCODE active with exact rewards. It lists 1BIL/FREECODEFORYALLL2 and many older retained codes expired, so it is direct support for the newer codes and conflict context for older retained codes."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_current_level_context_and_conflicts",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Accessible structured content still says checked June 15, 2026. Lists KINGUPDATEHASARRIVED level 12,500 and RAIDUPDATENOW level 9,000, then SORRYFORRESTARTGUYSTPBUG3/2, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and RAIDS active. It lists the June 9 codes, 1BIL/FREECODEFORYALLL2, and SORRYFORRESTARTGUYSTPBUG expired."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_rewards_and_conflicts",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Published/updated June 15, 2026 in accessible markup. Lists KINGUPDATEHASARRIVED and RAIDUPDATENOW active with rewards, and keeps SORRYFORRESTARTGUYSTPBUG, SORRYFORRESTARTGUYSTPBUG2/3, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and RAIDS active. It lists the June 9 additions and 1BIL/FREECODEFORYALLL2 expired, creating conflicts."
+    },
+    {
+      "name": "PCGamesN Sailor Piece codes",
+      "url": "https://www.pcgamesn.com/sailor-piece/codes",
+      "type": "third_party_current_codes_with_reward_conflicts",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "Updated Jun 15, 2026 in accessible markup. Lists KINGUPDATEHASARRIVED, RAIDUPDATENOW, the June 9 codes, 1BIL/FREECODEFORYALLL2, SORRYFORRESTARTGUYSTPBUG3/2, SORRYFORRESTARTGUYSTPBUG, BIGCONTENTUPDATESOON, and FREECODEFORYALL as latest codes. Its new-code reward text conflicts with Beebom, Pro Game Guides, Pocket Tactics, and Destructoid. It lists SMALLDELAYCODESORRY, GHOULUPDATE, and MASTERY expired, and omits RAIDS from the latest-code list while placing it in expired context."
+    },
+    {
+      "name": "U7BUY Sailor Piece codes",
+      "url": "https://www.u7buy.com/blog/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_official_discord_claim_and_conflicts",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 200,
+      "notes": "June 15, 2026 page says the newest codes were compiled from official Discord announcements and manually verified. It lists all 16 retained active codes plus several old/new-server-only codes that remain expired in our data because they conflict with stronger established expired context and no direct official message was accessible."
+    },
+    {
+      "name": "G2A Sailor Piece codes",
+      "url": "https://www.g2a.com/news/features/sailor-piece-codes/",
+      "type": "third_party_inaccessible_today",
+      "accessed_at": "2026-06-18T20:33:35+08:00",
+      "http_status": 403,
+      "notes": "Direct curl returned 403 after clearing local proxy variables, so it was not used as decisive June 18 proof."
+    }
+  ],
+  "codes_reviewed": [
+    "KINGUPDATEHASARRIVED",
+    "RAIDUPDATENOW",
+    "1MIL200KLIKESWOWW",
+    "FREECODEFORYALLL3",
+    "BIGDELAYSSORRYCODE",
+    "1BIL500MILVISITSTYSM",
+    "FREECODEFORYALLL2",
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "new_codes_official_current",
+      "action": "kept_2_active_revalidated",
+      "method": "source_snapshot",
+      "reason": "Official Roblox game page dateModified 06/18/2026 still directly lists KINGUPDATEHASARRIVED and RAIDUPDATENOW under NEW CODES. Multiple current third-party sources also list them active."
+    },
+    {
+      "code": "KINGUPDATEHASARRIVED",
+      "action": "kept_active_level_12500_rewards_unchanged",
+      "method": "source_snapshot",
+      "reason": "Official Roblox lists it under NEW CODES and GamesRadar still lists its level requirement as 12,500. Rewards remain supported by Pocket Tactics, Pro Game Guides, Beebom, and Destructoid; PCGamesN reward conflict was not enough to change the stored bundle."
+    },
+    {
+      "code": "RAIDUPDATENOW",
+      "action": "kept_active_level_9000_rewards_unchanged",
+      "method": "source_snapshot",
+      "reason": "Official Roblox lists it under NEW CODES and GamesRadar still explicitly lists its level requirement as 9,000. Rewards remain supported by Pocket Tactics, Pro Game Guides, Beebom, and Destructoid; PCGamesN reward conflict was not enough to change the stored bundle."
+    },
+    {
+      "code": "1MIL200KLIKESWOWW_FREECODEFORYALLL3_BIGDELAYSSORRYCODE",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pocket Tactics, PCGamesN, Beebom, and U7BUY still list these active/current, while Pro Game Guides, GamesRadar, and Destructoid list them inactive/expired. No official expiry proof was accessible."
+    },
+    {
+      "code": "1BIL500MILVISITSTYSM_FREECODEFORYALLL2",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pocket Tactics, PCGamesN, and U7BUY still list these active/current, while Beebom, Pro Game Guides, GamesRadar, and Destructoid list them expired/inactive. No official expiry proof was accessible."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "PCGamesN, Destructoid, and U7BUY list it active/current, while Pocket Tactics, GamesRadar, Pro Game Guides, and Beebom list it expired/inactive. Kept active because current active evidence remains and no accessible official expiry proof was found."
+    },
+    {
+      "code": "retained_may_codes_except_sorry_base",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY still support much of this set as active/current, while Beebom or PCGamesN conflict for parts of it. No accessible official expiry proof was found."
+    },
+    {
+      "code": "old_expired_codes_from_u7buy_active_claims",
+      "action": "kept_expired",
+      "method": "source_snapshot",
+      "reason": "U7BUY lists several previously expired codes as active/new-server-only, but this conflicts with multiple established current pages and no direct official Discord message was accessible. Did not reactivate without stronger proof."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "No active code had official or strong enough cross-source expiry evidence to move today. Existing conflicts were retained in notes and source_conflicts."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "new_code_rewards",
+      "kept_as": "active_with_rewards_from_majority_sources",
+      "conflict": "PCGamesN reward text for KINGUPDATEHASARRIVED and RAIDUPDATENOW conflicts with Pocket Tactics, Pro Game Guides, Beebom, and Destructoid. The majority reward bundle was retained.",
+      "next_step": "Update rewards only if official Discord/Trello/in-game proof or stronger current-source agreement contradicts the majority bundle."
+    },
+    {
+      "code": "1MIL200KLIKESWOWW_FREECODEFORYALLL3_BIGDELAYSSORRYCODE",
+      "kept_as": "active",
+      "conflict": "Pocket Tactics, PCGamesN, Beebom, and U7BUY list these active/current; Pro Game Guides, GamesRadar, and Destructoid list them inactive/expired.",
+      "next_step": "Move to expired only if official evidence appears or current-source expiry agreement becomes stronger than active evidence."
+    },
+    {
+      "code": "1BIL500MILVISITSTYSM_FREECODEFORYALLL2",
+      "kept_as": "active",
+      "conflict": "Pocket Tactics, PCGamesN, and U7BUY list these active/current; Beebom, Pro Game Guides, GamesRadar, and Destructoid list them expired/inactive.",
+      "next_step": "Keep active until official expiry proof or stronger current expiry agreement appears."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "kept_as": "active",
+      "conflict": "PCGamesN, Destructoid, and U7BUY list it active/current; Pocket Tactics, GamesRadar, Pro Game Guides, and Beebom list it expired/inactive.",
+      "next_step": "Move to expired only if official Discord/Trello confirms expiry or stronger current sources join explicit expired evidence."
+    },
+    {
+      "code": "SMALLDELAYCODESORRY_GHOULUPDATE_MASTERY_RAIDS",
+      "kept_as": "active",
+      "conflict": "Pro Game Guides, GamesRadar, Destructoid, Pocket Tactics, and U7BUY support active status for much of this set; Beebom or PCGamesN conflict for parts of the set.",
+      "next_step": "Do not move based on one or two conflicting sources without official or broader current expiry proof."
+    },
+    {
+      "code": "old_expired_codes_claimed_active_by_u7buy",
+      "kept_as": "expired",
+      "conflict": "U7BUY lists 700KFAVSTY, FREECODEHERE1, HUGEUPDATEWWW, DELAYCODENR1/2, visit/follow codes and similar old codes as active/new-server-only, while multiple established current sources treat them as expired and direct official proof was not accessible.",
+      "next_step": "Reactivate only with direct official/in-game evidence or broad current agreement."
+    }
+  ],
+  "redeem_tests": []
+}
