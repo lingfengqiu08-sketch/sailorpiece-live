@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-20T20:44:12+08:00",
+  "checked_at": "2026-06-20T20:40:43+08:00",
   "timezone": "Asia/Shanghai",
   "codes_data_file": "src/data/codes.json",
   "verification_rule": "Use redeem_test only after an actual in-game redemption. Use official Roblox/Discord/Trello evidence first; otherwise require at least two credible current sources or one current source explicitly citing official Discord. Move codes to expired only when expiry evidence is strong.",
