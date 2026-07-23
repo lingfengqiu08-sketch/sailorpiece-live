@@ -1,328 +1,240 @@
 {
-  "last_checked_at": "2026-07-18T20:35:57+08:00",
+  "last_checked_at": "2026-07-23T21:03:00+08:00",
   "check_frequency_hours": 24,
   "active": [
+    {
+      "code": "SORRYFORBUGS",
+      "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
+      "min_level": 12500,
+      "verified_at": "2026-07-23T21:03:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "added_at": "2026-07-23T21:03:00+08:00",
+      "notes": "Added July 23, 2026 from current source snapshots. Beebom, Pocket Tactics, and Pro Game Guides all list SORRYFORBUGS as a new July 20/Broly update code; Destructoid search snapshot also lists it active. Official Roblox public HTML still only lists KINGUPDATEHASARRIVED and RAIDUPDATENOW, and Discord channel messages were not publicly accessible. Reward bundle comes from Beebom and Pocket Tactics agreement. Exact level gate was not exposed by the accessible current source pages, so the Level Eligibility Filter uses the same 12,500 gate as matching high-value reward bundles until official or in-game evidence contradicts it. No in-game redeem test was performed."
+    },
+    {
+      "code": "BROLYUPDATE",
+      "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
+      "min_level": 12500,
+      "verified_at": "2026-07-23T21:03:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "added_at": "2026-07-23T21:03:00+08:00",
+      "notes": "Added July 23, 2026 from current source snapshots. Beebom, Pocket Tactics, and Pro Game Guides all list BROLYUPDATE as a new July 20/Broly update code; indexed Fandom and Destructoid search evidence also support the code. Official Roblox public HTML still only lists KINGUPDATEHASARRIVED and RAIDUPDATENOW, and Discord channel messages were not publicly accessible. Reward bundle comes from Beebom and Pocket Tactics agreement. Exact level gate was not exposed by the accessible current source pages, so the Level Eligibility Filter uses the same 12,500 gate as matching high-value reward bundles until official or in-game evidence contradicts it. No in-game redeem test was performed."
+    },
+    {
+      "code": "SORRYFORANTICHEAT",
+      "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
+      "min_level": 12500,
+      "verified_at": "2026-07-23T21:03:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "added_at": "2026-07-23T21:03:00+08:00",
+      "notes": "Added July 23, 2026 from current source snapshots. Beebom, Pocket Tactics, and Pro Game Guides all list SORRYFORANTICHEAT as a new July 20/Broly update code; Destructoid search snapshot also lists it active. Official Roblox public HTML still only lists KINGUPDATEHASARRIVED and RAIDUPDATENOW, and Discord channel messages were not publicly accessible. Reward bundle comes from Beebom and Pocket Tactics agreement. Exact level gate was not exposed by the accessible current source pages, so the Level Eligibility Filter uses the same 12,500 gate as matching high-value reward bundles until official or in-game evidence contradicts it. No in-game redeem test was performed."
+    },
+    {
+      "code": "SORRYFORTHEBANS",
+      "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
+      "min_level": 12500,
+      "verified_at": "2026-07-23T21:03:00+08:00",
+      "verification_method": "source_snapshot",
+      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "added_at": "2026-07-23T21:03:00+08:00",
+      "notes": "Added July 23, 2026 from current source snapshots. Beebom, Pocket Tactics, and Pro Game Guides all list SORRYFORTHEBANS as a new July 20/Broly update code; Destructoid search snapshot also lists it active. Official Roblox public HTML still only lists KINGUPDATEHASARRIVED and RAIDUPDATENOW, and Discord channel messages were not publicly accessible. Reward bundle comes from Beebom and Pocket Tactics agreement. Exact level gate was not exposed by the accessible current source pages, so the Level Eligibility Filter uses the same 12,500 gate as matching high-value reward bundles until official or in-game evidence contradicts it. No in-game redeem test was performed."
+    },
     {
       "code": "KINGUPDATEHASARRIVED",
       "rewards": "30 Power Shard + 50 Passive Shard + 14 Secret Chest + 100 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
       "added_at": "2026-06-15T20:35:50+08:00",
-      "notes": "Revalidated July 18, 2026. Official Roblox game page dateModified remained 07/16/2026 and still lists KINGUPDATEHASARRIVED under NEW CODES with max level 20000. Beebom, Pocket Tactics, G2A search evidence, Mobalytics, U7BUY, and indexed Fandom evidence support the retained reward bundle; PCGamesN still conflicts on rewards, so rewards were not changed from PCGamesN alone. GamesRadar supports level 12,500, while Fandom adds Ascension IV; no accessible official or in-game evidence confirmed an ascension gate, so the Level Eligibility Filter remains level-only at 12,500. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Official Roblox still lists KINGUPDATEHASARRIVED under NEW CODES, while Beebom and Pocket Tactics now list it expired after the Broly update. Pro Game Guides and Destructoid still list it active. No official expiry proof or in-game redeem test was available, so it remains active with level 12,500 and rewards unchanged. No in-game redeem test was performed."
     },
     {
       "code": "RAIDUPDATENOW",
       "rewards": "$150,000 + 300 Gems + 3 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
       "min_level": 9000,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
       "added_at": "2026-06-15T20:35:50+08:00",
-      "notes": "Revalidated July 18, 2026. Official Roblox game page dateModified remained 07/16/2026 and still lists RAIDUPDATENOW under NEW CODES with max level 20000. Beebom, Pocket Tactics, G2A search evidence, Mobalytics, U7BUY, and indexed Fandom evidence support the retained reward bundle. GamesRadar still lists level 9,000 while Fandom lists level 12,500 plus Ascension IV; no accessible official or in-game evidence was strong enough to change the Level Eligibility Filter from the existing 9,000 gate. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Official Roblox still lists RAIDUPDATENOW under NEW CODES, while Beebom and Pocket Tactics now list it expired after the Broly update. Pro Game Guides and Destructoid still list it active. GamesRadar supports level 9,000, so the Level Eligibility Filter remains unchanged. No official expiry proof or in-game redeem test was available. No in-game redeem test was performed."
     },
     {
       "code": "1MIL200KLIKESWOWW",
       "rewards": "50 Power Shard + 75 Passive Shard + 14 Secret Chest + 125 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "source_url": "https://mobalytics.gg/gamebase/guides/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Beebom, Pocket Tactics, G2A search evidence, Mobalytics, PCGamesN, U7BUY, Radio Times, and indexed Fandom evidence support this code as active/current, while Pro Game Guides or GamesRadar mark some of this June group inactive/expired. Official Roblox only lists the two newest codes and gives no expiry proof for older codes. Kept active with rewards and level unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Mobalytics still lists this code as working, while Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid list it inactive or expired. Because official expiry proof was not accessible and prior Discord-cited U7BUY evidence supported this June set, it remains active with conflict noted. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALLL3",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "source_url": "https://mobalytics.gg/gamebase/guides/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Beebom, Pocket Tactics, G2A search evidence, Mobalytics, PCGamesN, U7BUY, Radio Times, and indexed Fandom evidence support this code as active/current, while Pro Game Guides or GamesRadar mark some of this June group inactive/expired. Official Roblox only lists the two newest codes and gives no expiry proof for older codes. Kept active with rewards and level unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Mobalytics still lists this code as working, while Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid list it inactive or expired. Because official expiry proof was not accessible and prior Discord-cited U7BUY evidence supported this June set, it remains active with conflict noted. No in-game redeem test was performed."
     },
     {
       "code": "BIGDELAYSSORRYCODE",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://beebom.com/sailor-piece-codes/",
+      "source_url": "https://mobalytics.gg/gamebase/guides/sailor-piece-codes",
       "added_at": "2026-06-09T20:33:50+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Beebom, Pocket Tactics, G2A search evidence, Mobalytics, PCGamesN, U7BUY, Radio Times, and indexed Fandom evidence support this code as active/current, while Pro Game Guides or GamesRadar mark some of this June group inactive/expired. Official Roblox only lists the two newest codes and gives no expiry proof for older codes. Kept active with rewards and level unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Mobalytics still lists this code as working, while Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid list it inactive or expired. Because official expiry proof was not accessible and prior Discord-cited U7BUY evidence supported this June set, it remains active with conflict noted. No in-game redeem test was performed."
     },
     {
       "code": "1BIL500MILVISITSTYSM",
       "rewards": "50 Power Shard + 75 Passive Shard + 14 Secret Chest + 125 Clan Reroll + 12 Aura Crate + 10 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.pockettactics.com/sailor-piece-codes",
+      "source_url": "https://mobalytics.gg/gamebase/guides/sailor-piece-codes",
       "added_at": "2026-05-25T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pocket Tactics, Mobalytics, PCGamesN, U7BUY, Radio Times, and indexed Fandom evidence support it as active/current, while Beebom, Pro Game Guides, and GamesRadar list it expired/inactive. Official Roblox gives no expiry proof for older codes. Kept active with rewards and level unchanged. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Mobalytics still lists this code as working, while Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid list it inactive or expired. Because official expiry proof was not accessible and prior Discord-cited U7BUY evidence supported this code, it remains active with rewards and level unchanged. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALLL2",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.u7buy.com/blog/sailor-piece-codes/",
       "added_at": "2026-05-25T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. U7BUY lists it active and says its June list was compiled from official Discord announcements and manually verified; PCGamesN also lists it active/current. Beebom, Pocket Tactics, Pro Game Guides, and GamesRadar list it expired/inactive. Direct Discord messages were not publicly accessible, so kept active rather than expiring on conflicting non-official evidence. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Current major July pages mostly list it expired or omit it; prior U7BUY evidence explicitly claimed the active list came from official Discord announcements and manual verification. Direct Discord messages were not publicly accessible, so this was not moved to expired without official proof. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG3",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG2",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "SORRYFORRESTARTGUYSTPBUG",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
-      "source_url": "https://www.u7buy.com/blog/sailor-piece-codes/",
+      "source_url": "https://www.destructoid.com/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. U7BUY, PCGamesN, and indexed Fandom evidence list it active/current, while Beebom, Pocket Tactics, Pro Game Guides, and GamesRadar list it expired/inactive. Kept active because direct official expiry proof was not accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Destructoid lists it active for new servers, while Beebom, Pocket Tactics, Pro Game Guides, and GamesRadar list it inactive or expired. Kept active because official expiry proof was not accessible and the source conflict is documented. No in-game redeem test was performed."
     },
     {
       "code": "BIGCONTENTUPDATESOON",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "FREECODEFORYALL",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://progameguides.com/roblox/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "SMALLDELAYCODESORRY",
       "rewards": "50 Power Shard + 75 Passive Shard + 12 Secret Chest + 100 Clan Reroll + 10 Aura Crate + 8 Cosmetic Crate",
       "min_level": 12500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "GHOULUPDATE",
       "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and Destructoid list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "MASTERY",
       "rewards": "$250,000 + 400 Gems + 25 Bloodline Stone + 35 Passive Shard + 50 Clan Reroll + 75 Trait Reroll + 100 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
       "added_at": "2026-05-19T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, and indexed RobloxDen evidence list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     },
     {
       "code": "RAIDS",
       "rewards": "$250,000 + 400 Gems + 10 Bloodline Stone + 5 Raid Key + 15 Passive Shard + 20 Clan Reroll + 50 Trait Reroll + 65 Race Reroll + 50 Haki Color Reroll",
       "min_level": 7500,
-      "verified_at": "2026-07-18T20:35:57+08:00",
+      "verified_at": "2026-07-23T21:03:00+08:00",
       "verification_method": "source_snapshot",
       "source_url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
       "added_at": "2026-05-09T00:00:00+08:00",
-      "notes": "Revalidated July 18, 2026 with active-state conflict. Pro Game Guides, GamesRadar, U7BUY, Radio Times, and indexed Fandom support much of this retained May set as active/current; Beebom, Pocket Tactics, PCGamesN omissions, or Fandom status conflicts exist for parts of the set. Kept active because current active evidence remains broad or Discord-cited and no official expiry proof was accessible. No in-game redeem test was performed."
+      "notes": "Revalidated July 23, 2026 with active-state conflict. Pro Game Guides, GamesRadar, Destructoid, and indexed RobloxDen evidence list it active/current, while Beebom and Pocket Tactics list it expired. Kept active because current active evidence remains credible and no official expiry proof was accessible. No in-game redeem test was performed."
     }
   ],
   "expired": [
-    {
-      "code": "700KFAVSTY",
-      "rewards": "Ghoul Update predecessor bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "FREECODEHERE1",
-      "rewards": "Ghoul Update predecessor bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "HUGEUPDATEWWW",
-      "rewards": "Huge update reward bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "DELAYCODENR1",
-      "rewards": "Delay compensation bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "DELAYCODENR2",
-      "rewards": "Delay compensation bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "1B100MVISITS",
-      "rewards": "1.1B visits milestone bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "1B200MVISITS",
-      "rewards": "1.2B visits milestone bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "1B300MVISITS",
-      "rewards": "1.3B visits milestone bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "1M100KLIKESTYYY",
-      "rewards": "1M likes milestone bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "TYSMFOR400KFOLLOWONEVENT",
-      "rewards": "400K follow event bundle",
-      "last_seen_active": "2026-05-18"
-    },
-    {
-      "code": "RAIDSOON",
-      "rewards": "Pre-raids teaser",
-      "last_seen_active": "2026-04-28"
-    },
-    {
-      "code": "SEA2FINALLY",
-      "rewards": "Sea 2 launch bundle",
-      "last_seen_active": "2026-03-20"
-    },
-    {
-      "code": "BIGGESTUPDATEYET",
-      "rewards": "Bundle reward",
-      "last_seen_active": "2026-03-05"
-    },
-    {
-      "code": "SEABEASTS",
-      "rewards": "Sea beasts event",
-      "last_seen_active": "2026-02-18"
-    },
-    {
-      "code": "4SPECS",
-      "rewards": "4 new specs reward",
-      "last_seen_active": "2026-02-10"
-    },
-    {
-      "code": "RESTARTSORRYYYYYY",
-      "rewards": "Server restart apology",
-      "last_seen_active": "2026-02-05"
-    },
-    {
-      "code": "THEBIG1BVISITSTYYYYY",
-      "rewards": "1B visits milestone",
-      "last_seen_active": "2026-01-25"
-    },
-    {
-      "code": "1MLIKESWOAHHH",
-      "rewards": "1M likes milestone",
-      "last_seen_active": "2026-01-15"
-    },
-    {
-      "code": "FIXINGTRADINGISSUESSOON",
-      "rewards": "Trading fix apology",
-      "last_seen_active": "2026-01-10"
-    },
-    {
-      "code": "600KFAVORITES",
-      "rewards": "Favorites milestone",
-      "last_seen_active": "2025-12-28"
-    },
-    {
-      "code": "BIGUPDATENEXTSOONN",
-      "rewards": "Update teaser",
-      "last_seen_active": "2025-12-20"
-    },
-    {
-      "code": "TYFOR250KFOLLOWEVENT",
-      "rewards": "250k followers milestone",
-      "last_seen_active": "2025-12-15"
-    },
-    {
-      "code": "SORRYFORTHETRADELOCKSS",
-      "rewards": "Trade lock apology",
-      "last_seen_active": "2025-12-08"
-    },
-    {
-      "code": "SPECBUFFS",
-      "rewards": "Spec balance changes",
-      "last_seen_active": "2025-11-30"
-    },
-    {
-      "code": "TRADINGFIXEDHOPEFULLY",
-      "rewards": "Trading fix",
-      "last_seen_active": "2025-11-25"
-    },
-    {
-      "code": "CODEFORTHERESTARTSORRY3",
-      "rewards": "Restart apology 3",
-      "last_seen_active": "2025-11-20"
-    },
-    {
-      "code": "CODEFORTHERESTARTSORRY2",
-      "rewards": "Restart apology 2",
-      "last_seen_active": "2025-11-18"
-    },
-    {
-      "code": "CODEFORTHERESTARTSORRY",
-      "rewards": "Restart apology",
-      "last_seen_active": "2025-11-17"
-    },
-    {
-      "code": "RELEASE",
-      "rewards": "Launch day bundle",
-      "last_seen_active": "2025-11-17"
-    },
-    {
-      "code": "ANTIMAGICUPDATE",
-      "rewards": "Anti-Magic Update reward bundle",
-      "last_seen_active": "2026-05-13"
-    },
-    {
-      "code": "2XLUCK",
-      "rewards": "2x luck reward bundle",
-      "last_seen_active": "2026-05-13"
-    },
-    {
-      "code": "CRYSTALDEFENSE",
-      "rewards": "Crystal Defense event code",
-      "last_seen_active": "2026-05-13"
-    }
+    { "code": "700KFAVSTY", "rewards": "Ghoul Update predecessor bundle", "last_seen_active": "2026-05-18" },
+    { "code": "FREECODEHERE1", "rewards": "Ghoul Update predecessor bundle", "last_seen_active": "2026-05-18" },
+    { "code": "HUGEUPDATEWWW", "rewards": "Huge update reward bundle", "last_seen_active": "2026-05-18" },
+    { "code": "DELAYCODENR1", "rewards": "Delay compensation bundle", "last_seen_active": "2026-05-18" },
+    { "code": "DELAYCODENR2", "rewards": "Delay compensation bundle", "last_seen_active": "2026-05-18" },
+    { "code": "1B100MVISITS", "rewards": "1.1B visits milestone bundle", "last_seen_active": "2026-05-18" },
+    { "code": "1B200MVISITS", "rewards": "1.2B visits milestone bundle", "last_seen_active": "2026-05-18" },
+    { "code": "1B300MVISITS", "rewards": "1.3B visits milestone bundle", "last_seen_active": "2026-05-18" },
+    { "code": "1M100KLIKESTYYY", "rewards": "1M likes milestone bundle", "last_seen_active": "2026-05-18" },
+    { "code": "TYSMFOR400KFOLLOWONEVENT", "rewards": "400K follow event bundle", "last_seen_active": "2026-05-18" },
+    { "code": "RAIDSOON", "rewards": "Pre-raids teaser", "last_seen_active": "2026-04-28" },
+    { "code": "SEA2FINALLY", "rewards": "Sea 2 launch bundle", "last_seen_active": "2026-03-20" },
+    { "code": "BIGGESTUPDATEYET", "rewards": "Bundle reward", "last_seen_active": "2026-03-05" },
+    { "code": "SEABEASTS", "rewards": "Sea beasts event", "last_seen_active": "2026-02-18" },
+    { "code": "4SPECS", "rewards": "4 new specs reward", "last_seen_active": "2026-02-10" },
+    { "code": "RESTARTSORRYYYYYY", "rewards": "Server restart apology", "last_seen_active": "2026-02-05" },
+    { "code": "THEBIG1BVISITSTYYYYY", "rewards": "1B visits milestone", "last_seen_active": "2026-01-25" },
+    { "code": "1MLIKESWOAHHH", "rewards": "1M likes milestone", "last_seen_active": "2026-01-15" },
+    { "code": "FIXINGTRADINGISSUESSOON", "rewards": "Trading fix apology", "last_seen_active": "2026-01-10" },
+    { "code": "600KFAVORITES", "rewards": "Favorites milestone", "last_seen_active": "2025-12-28" },
+    { "code": "BIGUPDATENEXTSOONN", "rewards": "Update teaser", "last_seen_active": "2025-12-20" },
+    { "code": "TYFOR250KFOLLOWEVENT", "rewards": "250k followers milestone", "last_seen_active": "2025-12-15" },
+    { "code": "SORRYFORTHETRADELOCKSS", "rewards": "Trade lock apology", "last_seen_active": "2025-12-08" },
+    { "code": "SPECBUFFS", "rewards": "Spec balance changes", "last_seen_active": "2025-11-30" },
+    { "code": "TRADINGFIXEDHOPEFULLY", "rewards": "Trading fix", "last_seen_active": "2025-11-25" },
+    { "code": "CODEFORTHERESTARTSORRY3", "rewards": "Restart apology 3", "last_seen_active": "2025-11-20" },
+    { "code": "CODEFORTHERESTARTSORRY2", "rewards": "Restart apology 2", "last_seen_active": "2025-11-18" },
+    { "code": "CODEFORTHERESTARTSORRY", "rewards": "Restart apology", "last_seen_active": "2025-11-17" },
+    { "code": "RELEASE", "rewards": "Launch day bundle", "last_seen_active": "2025-11-17" },
+    { "code": "ANTIMAGICUPDATE", "rewards": "Anti-Magic Update reward bundle", "last_seen_active": "2026-05-13" },
+    { "code": "2XLUCK", "rewards": "2x luck reward bundle", "last_seen_active": "2026-05-13" },
+    { "code": "CRYSTALDEFENSE", "rewards": "Crystal Defense event code", "last_seen_active": "2026-05-13" }
   ]
 }
