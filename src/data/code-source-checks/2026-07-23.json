@@ -1,0 +1,181 @@
+{
+  "checked_at": "2026-07-23T21:03:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "codes_data_file": "src/data/codes.json",
+  "verification_rule": "Use redeem_test only after an actual in-game redemption. Use official Roblox/Discord/Trello evidence first; otherwise require at least two credible current sources or one current source explicitly citing official Discord. Move codes to expired only when expiry evidence is strong.",
+  "sources": [
+    {
+      "name": "Official Roblox game page",
+      "url": "https://www.roblox.com/games/77747658251236/Sailor-Piece",
+      "type": "official_game_page_with_new_codes",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Public HTML identifies Sailor Piece by Shadowrise Devs, max level 20000, and still directly lists NEW CODES: KINGUPDATEHASARRIVED and RAIDUPDATENOW. It does not expose the four Broly update codes, rewards, per-code level requirements, ascension gates, or expiry proof for older codes. This web check did not use local shell networking because the local command runner was unavailable."
+    },
+    {
+      "name": "Official Discord invite",
+      "url": "https://discord.com/invite/sailorpiece",
+      "type": "official_discord_invite",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Public invite/search result confirms the official Shadowrise Devs Sailor Piece server, but channel messages require login/JavaScript and did not expose code-list posts. This was not direct code evidence today."
+    },
+    {
+      "name": "Beebom Sailor Piece codes",
+      "url": "https://beebom.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_with_discord_context",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Updated July 20, 2026 and says new Sailor Piece codes were added on July 20. Active list contains SORRYFORBUGS, BROLYUPDATE, SORRYFORANTICHEAT, and SORRYFORTHEBANS with matching reward bundles. It lists many previous active codes as expired and says official Discord code-list is the best source."
+    },
+    {
+      "name": "Pocket Tactics Sailor Piece codes",
+      "url": "https://www.pockettactics.com/sailor-piece-codes",
+      "type": "third_party_current_codes_with_rewards",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Updated July 20, 2026 and says four new NOW Sailor Piece codes were added. Active list contains SORRYFORBUGS, BROLYUPDATE, SORRYFORANTICHEAT, and SORRYFORTHEBANS with rewards matching Beebom. It lists many previous active codes as expired."
+    },
+    {
+      "name": "Pro Game Guides Sailor Piece codes",
+      "url": "https://progameguides.com/roblox/sailor-piece-codes/",
+      "type": "third_party_current_codes_and_retained_active_support",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Updated July 20, 2026. Active list has 14 codes including SORRYFORBUGS, BROLYUPDATE, SORRYFORANTICHEAT, SORRYFORTHEBANS, RAIDUPDATENOW, KINGUPDATEHASARRIVED, SORRYFORRESTARTGUYSTPBUG3, SORRYFORRESTARTGUYSTPBUG2, BIGCONTENTUPDATESOON, FREECODEFORYALL, SMALLDELAYCODESORRY, GHOULUPDATE, MASTERY, and RAIDS. It marks several June codes inactive."
+    },
+    {
+      "name": "Destructoid Sailor Piece codes search snapshot",
+      "url": "https://www.destructoid.com/sailor-piece-codes/",
+      "type": "third_party_current_codes_search_snapshot",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": "web_search_snapshot_current",
+      "notes": "Published July 20, 2026 and updated July 20. Search snapshot lists SORRYFORBUGS, BROLYUPDATE, SORRYFORANTICHEAT, SORRYFORTHEBANS, KINGUPDATEHASARRIVED, RAIDUPDATENOW, SORRYFORRESTARTGUYSTPBUG base/2/3, MASTERY, GHOULUPDATE, SMALLDELAYCODESORRY, FREECODEFORYALL, BIGCONTENTUPDATESOON, and RAIDS as active. It marks FREECODEFORYALLL3, BIGDELAYSSORRYCODE, 1MIL200KLIKESWOWW, 1BIL500MILVISITSTYSM, and FREECODEFORYALLL2 expired."
+    },
+    {
+      "name": "Mobalytics Sailor Piece codes",
+      "url": "https://mobalytics.gg/gamebase/guides/sailor-piece-codes",
+      "type": "third_party_july_codes_with_conflicts",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Visible July 2026 list still has six working codes: 1BIL500MILVISITSTYSM, 1MIL200KLIKESWOWW, BIGDELAYSSORRYCODE, FREECODEFORYALLL3, KINGUPDATEHASARRIVED, and RAIDUPDATENOW with rewards matching retained values. It does not include the four Broly update codes in the opened snapshot."
+    },
+    {
+      "name": "GamesRadar Sailor Piece codes",
+      "url": "https://www.gamesradar.com/games/rpg/sailor-piece-codes/",
+      "type": "third_party_july_level_context_and_expiry_conflicts",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "Recent updates line says July 2, 2026. Active list has 10 codes with explicit level gates: KINGUPDATEHASARRIVED 12500, RAIDUPDATENOW 9000, SORRYFORRESTARTGUYSTPBUG3/2 12500, MASTERY/GHOULUPDATE/RAIDS 7500, SMALLDELAYCODESORRY/FREECODEFORYALL/BIGCONTENTUPDATESOON 12500. It marks several retained June/May codes expired and does not include the four Broly update codes."
+    },
+    {
+      "name": "U7BUY Sailor Piece codes",
+      "url": "https://www.u7buy.com/blog/sailor-piece-codes/",
+      "type": "third_party_discord_cited_codes_with_conflicts",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": 200,
+      "notes": "June 15, 2026 page says it compiled newest codes from official Discord announcements and manually verified them. It lists all 16 previously retained active codes plus several old or new-server-only codes, but does not include the four Broly update codes in the opened page. Used only to avoid expiring older conflict codes without official proof."
+    },
+    {
+      "name": "Sailor Piece Wiki Codes search snapshot",
+      "url": "https://roblox-sailor-piece.fandom.com/wiki/Codes",
+      "type": "community_wiki_indexed_snapshot_with_level_context",
+      "accessed_at": "2026-07-23T21:03:00+08:00",
+      "http_status": "web_search_snapshot_current",
+      "notes": "Search result crawled today and published 2 days ago shows BROLYUPDATE with the same 30 Power Shard, 50 Passive Shard, 14 Secret Chest reward family and level context. Direct page text was not fully accessible through the browser tool, so it was supplementary only."
+    }
+  ],
+  "codes_reviewed": [
+    "SORRYFORBUGS",
+    "BROLYUPDATE",
+    "SORRYFORANTICHEAT",
+    "SORRYFORTHEBANS",
+    "KINGUPDATEHASARRIVED",
+    "RAIDUPDATENOW",
+    "1MIL200KLIKESWOWW",
+    "FREECODEFORYALLL3",
+    "BIGDELAYSSORRYCODE",
+    "1BIL500MILVISITSTYSM",
+    "FREECODEFORYALLL2",
+    "SORRYFORRESTARTGUYSTPBUG3",
+    "SORRYFORRESTARTGUYSTPBUG2",
+    "SORRYFORRESTARTGUYSTPBUG",
+    "BIGCONTENTUPDATESOON",
+    "FREECODEFORYALL",
+    "SMALLDELAYCODESORRY",
+    "GHOULUPDATE",
+    "MASTERY",
+    "RAIDS"
+  ],
+  "decisions": [
+    {
+      "code": "SORRYFORBUGS_BROLYUPDATE_SORRYFORANTICHEAT_SORRYFORTHEBANS",
+      "action": "added_active_level_12500_source_snapshot",
+      "method": "source_snapshot",
+      "reason": "Beebom, Pocket Tactics, and Pro Game Guides are current July 20 sources agreeing these four codes are active/new. Destructoid search snapshot also supports them. Reward bundles match between Beebom and Pocket Tactics. Official Roblox did not expose these codes and Discord messages were inaccessible. No redeem_test was performed."
+    },
+    {
+      "code": "KINGUPDATEHASARRIVED_RAIDUPDATENOW",
+      "action": "kept_active_revalidated_conflicting",
+      "method": "source_snapshot",
+      "reason": "Official Roblox still directly lists both under NEW CODES. Beebom and Pocket Tactics now mark them expired after Broly update, while Pro Game Guides and Destructoid still list them active. Kept active because official evidence is current enough and no official expiry proof was found."
+    },
+    {
+      "code": "1MIL200KLIKESWOWW_FREECODEFORYALLL3_BIGDELAYSSORRYCODE_1BIL500MILVISITSTYSM",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Mobalytics still lists these as working with matching rewards, while Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid mark several expired/inactive. Kept active because official expiry proof was inaccessible and prior runs had broader or Discord-cited active support."
+    },
+    {
+      "code": "FREECODEFORYALLL2",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Current major July pages mostly list it expired or omit it, but prior U7BUY evidence explicitly claimed official Discord announcements and manual verification. Kept active because no official expiry proof was accessible."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG3_SORRYFORRESTARTGUYSTPBUG2_BIGCONTENTUPDATESOON_FREECODEFORYALL_SMALLDELAYCODESORRY_GHOULUPDATE_MASTERY_RAIDS",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Pro Game Guides, GamesRadar, and Destructoid support much of this retained set as active/current; Beebom and Pocket Tactics list the set expired. No official expiry proof was accessible, so no movement to expired."
+    },
+    {
+      "code": "SORRYFORRESTARTGUYSTPBUG",
+      "action": "kept_active_conflicting_revalidated",
+      "method": "source_snapshot",
+      "reason": "Destructoid lists it active for new servers, while Beebom, Pocket Tactics, Pro Game Guides, and GamesRadar list it inactive/expired. Kept active with conflict note because official expiry proof was not accessible."
+    },
+    {
+      "code": "expired_codes",
+      "action": "none_moved_today",
+      "method": "source_snapshot",
+      "reason": "Several current third-party pages mark older codes expired, but accessible official Roblox did not publish expiry proof and at least one current or prior Discord-cited source still supports retained conflict codes."
+    },
+    {
+      "code": "level_eligibility_filter",
+      "action": "new_broly_codes_set_to_level_12500_existing_values_retained",
+      "method": "source_snapshot",
+      "reason": "Existing explicit gates came from GamesRadar and remain unchanged. The four new Broly codes did not expose exact gates in the accessible current source pages; because they share the high-value reward bundle with 12500-gated codes, and indexed wiki/search context points to high-level requirements, they were set to 12500 pending official or in-game evidence."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "code": "new_broly_codes_official_absence",
+      "kept_as": "active",
+      "conflict": "Official Roblox public HTML still lists only KINGUPDATEHASARRIVED and RAIDUPDATENOW, while three current third-party sources list four Broly update codes.",
+      "next_step": "Replace source_url with official Discord/Roblox evidence if accessible later."
+    },
+    {
+      "code": "old_active_codes_after_broly_update",
+      "kept_as": "active",
+      "conflict": "Beebom, Pocket Tactics, Pro Game Guides, GamesRadar, and Destructoid mark different subsets expired/inactive, while Roblox/Mobalytics/U7BUY/prior evidence support retaining subsets.",
+      "next_step": "Move codes to expired only after official expiry proof, successful in-game failed redemption evidence, or stronger agreement without counter-evidence."
+    },
+    {
+      "code": "new_broly_code_level_requirements",
+      "kept_as": "level_12500",
+      "conflict": "Accessible current third-party pages did not publish exact level gates for the four new codes. The 12500 value is inferred from matching high-value reward bundles and supplementary indexed wiki context, not from redeem_test.",
+      "next_step": "Update the Level Eligibility Filter if official, in-game, or stronger current-source evidence gives a different requirement."
+    }
+  ],
+  "redeem_tests": []
+}
